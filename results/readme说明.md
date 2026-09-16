@@ -60,9 +60,18 @@ base  (32 字符): The sales report was inaccurate.
 tuned (32 字符): The sales report was inaccurate.
 ```
 
-**完全一样。** 这提示当时比较的可能根本不是「基座 vs 微调」——
-**而是同一个模型自己跟自己比**（例如 adapter 没加载上、或两次都打到了同一个端点）。
-⚠️ **这一点只能提示，不能定论** —— 原始日志没记录当时用的是哪个模型。
+**完全一样。**
+
+**✅ 原因已确认**（证据在本仓库自己的文件里）：`scripts/eval/batch_evaluate.py` 第 63–66 行
+把**基座模型和微调模型都传成了 `qwen3:8b`** —— 注释写着「需要先用 Ollama 加载 LoRA」，
+**但那一 步当时从未做**。
+
+👉 **那次评测比的是「qwen3:8b vs qwen3:8b」**，两边逐字相同是必然结果，**与微调效果完全无关**。
+
+### 附带发现：胜率分母也算错了
+
+`scripts/eval/evaluate.py` 第 217–220 行，`valid_total` 被算出来后**从未使用**，
+胜率的分母用的是 `total`（**把 ERROR 也算了进去**）。见 `experiments/E05-人工判断.md` §五。
 
 ---
 
