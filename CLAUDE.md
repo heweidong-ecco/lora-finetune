@@ -240,7 +240,8 @@ lora-finetune/
 | ✅ `LICENSE`（MIT，署名 `heweidong-ecco`） | 2026-09-16 |
 | ✅ 推 GitHub 公开仓库：`github.com/heweidong-ecco/lora-finetune` | 2026-09-16 |
 | ✅ 清除泄漏的 `API_KEY`（`.env` + 12 处硬编码，共 36 处） | 2026-09-16 |
-| ✅ 五组训练产物 **小文本文件**收进仓库（`experiments/artifacts训练产物/`，110 文件 / 约 0.5 MB） | 2026-09-16 |
+| ✅ 五组训练产物 **小文本文件**收进仓库（`experiments/artifacts训练产物/`） | 2026-09-16 |
+| ✅ 精简产物：删掉 45 个**与复算无关**的重复文件（HF model card / `chat_template.jinja` / `tokenizer_config.json`）—— 110 → **66 文件** | 2026-09-16 |
 | ✅ `gateway/` 13 个文件名清理（去 `LoRA更新后的` 前缀、补扩展名、修双后缀） | 2026-09-16 |
 | ✅ `gateway/` 文档**补回丢失的代码围栏**（9 文件 / 85 段，已验证正文零改动） | 2026-09-16 |
 | ✅ 9 个目录**全部有索引**，并统一为 `README.md`（GitHub 目录浏览会自动渲染） | 2026-09-16 |

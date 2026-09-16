@@ -173,7 +173,7 @@
 - [x] 上表中每个数字都能从仓库文件复算出来 —— ✅ **现已完全可复算**（2026-09-16）：
       `artifacts训练产物/exp1_baseline/` 下的 `all_results.json`（末值 + `samples_per_second` + `total_flos`）
       与 `trainer_state.json`（逐步 loss）**均已进仓库**
-- [ ] 若结论进了 README，已标注实验编号 —— ⬜ 待办
+- [x] 若结论进了 README，已标注实验编号 —— ✅ README §二 的表与「三个理由」均已标 `E01`
 
 ### ⛔ 本记录的已知缺口（不要当成已完成）
 
