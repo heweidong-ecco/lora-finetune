@@ -2,7 +2,7 @@
 ##  代码补全的数据格式
 和之前的通用微调不同，代码补全使用的是 FIM（Fill-in-the-Middle，中间填充）格式：
 
-text
+```text
 <fim_prefix>def quick_sort(arr):<fim_suffix><fim_middle>
     if len(arr) <= 1:
         return arr
@@ -11,14 +11,17 @@ text
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
     return quick_sort(left) + middle + quick_sort(right)
+```
+
 阿里通义灵码格式（更简单，推荐）：
 
-json
+```json
 {
   "instruction": "补全以下Python代码",
   "input": "def quick_sort(arr):\n    \"\"\"快速排序算法\"\"\"",
   "output": "    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)"
 }
+```
 ## 操作流程
 - 下载代码专用模型
 代码编辑专用模型 Qwen3-Coder-7B
@@ -43,10 +46,11 @@ dataset = MsDataset.load("codefuse-ai/CodeExercise-Python-27k", split="train")
   python check_quality.py
 - 注册数据集
   编辑 data/dataset_info.json，添加：
-json
+```json
 "code_completion": {
   "file_name": "code_completion_dataset.json"
 }
+```
 - 第4步：创建微调配置
   examples/train_lora/code_completion_lora.yaml
   训练约3-5分钟完成（250条数据，7B模型）。观察loss曲线，确认正常下降后继续。

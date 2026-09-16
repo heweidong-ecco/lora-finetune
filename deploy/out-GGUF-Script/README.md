@@ -17,7 +17,7 @@ llamafactory-cli export \
     --export_ollama true
 - 方案二：合并文件为 单个 HuggingFace 格式，
 - 给其他量化使用，比较繁琐需要自己写Modelsfile
-bash
+```bash
 llamafactory-cli export \
     --model_name_or_path  /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master \
     --adapter_name_or_path /root/autodl-fs/LLaMA-Factory/saves/exp1_baseline \
@@ -27,6 +27,8 @@ llamafactory-cli export \
     --export_size 2 \
     --export_device cpu \
     --export_legacy_format false
+```
+
 等待约 2-3 分钟，看到 Export finished 即成功
 ls /root/autodl-fs/LLaMA-Factory/saves/exp1_merged/
 `#应该看到` config.json, tokenizer.json, model*.safetensors 等文件
@@ -68,8 +70,9 @@ print(f"文件大小: {size_mb:.1f} MB")
 EOF
 等待 5-10 分钟，转换完成后验证：
 ```
-bash
+```bash
 ls -lh /root/autodl-fs/LLaMA-Factory/saves/exp1_q4km.gguf
+```
 ## 备选方案：
 ### LLaMA-Factory 自带的转换命令 ，先导出为 未量化的 GGUF，
 如果 llama_cpp 的 API 有兼容性问题，使用 LLaMA-Factory 自带的转换命令：
@@ -95,7 +98,6 @@ python3 convert_hf_to_gguf.py \
     --outfile /root/autodl-fs/LLaMA-Factory/saves/exp1_fp16.gguf \
     --outtype f16
 ### 最后量化（如果需要）对 FP16 GGUF 文件进行量化
-bash
 #如果上面产出了 FP16 的 GGUF，用 llama.cpp 的量化工具压缩
 #下载量化工具（如果没有）
 git clone https://github.com/ggerganov/llama.cpp.git

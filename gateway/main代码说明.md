@@ -11,8 +11,7 @@ head -20 main.py
 在main.py头部确保有以下注释：
 
 ```
-python
-```
+```python
 """
 LLM Gateway - 生产级本地大模型推理平台
 

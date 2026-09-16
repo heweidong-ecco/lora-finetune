@@ -1,17 +1,25 @@
-#
+# 查询改写 LoRA · 操作步骤
+
+> 子方向：RAG 前置的「查询改写」。⚠️ **本子方向无实验记录**，见 `../README.md`。
+
 第1步：确认环境
-bash
+
+```bash
 cd /root/autodl-fs/LLaMA-Factory
 source llama-factory-env/bin/activate
+```
 
 第2步：设计数据集结构
 数据格式（alpaca 格式）：
-json
+
+```json
 {
   "instruction": "将以下用户口语查询改写为精确的检索查询，解决指代不明、用词模糊、信息缺失等问题。",
   "input": "那个蓝色的怎么卖？",
   "output": "请问产品型号XJ-3000的蓝色款当前价格是多少？"
 }
+```
+
 instruction 统一：所有样本使用相同的 instruction，input 是原始口语查询，output 是改写后的精确查询。
 
 第3步：构建原始问题种子（50 个）

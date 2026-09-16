@@ -72,8 +72,7 @@ python vllm_download_run_huggingface_llm.py
 python -m uvicorn main:app --host 0.0.0.0 --post 8000
 export API_KEY="your-api-key-here"
 ```
-bash
-执行test_main.md中的内容。
+执行 test_main.md 中的内容。
 3.vLLM和Ollama 性能基线压测
 确保vLLMvLLM和Ollama 服务都 已经启动
 ```bash
@@ -256,9 +255,8 @@ git clone -b v0.9.5 https://github.com/hiyouga/LLaMA-Factory.git LLaMA-Factory-s
 ```bash
 git clone https://gh-proxy.com/https://github.com/hiyouga/LLaMA-Factory.git
 ```
-bash
+```bash
 #1. 进入 LLaMA-Factory-stable 目录
-```
 cd /root/autodl-fs/LLaMA-Factory-stable
 ```
 #2. 创建独立虚拟环境
@@ -287,8 +285,11 @@ llamafactory-cli version
 pip install mlflow
 ```
 启动 MLflow UI（会占用一个端口）：
-bash
+
+```bash
 mlflow ui --host 0.0.0.0 --port 5000 --backend-store-uri /root/autodl-fs/mlflow-runs
+```
+
 参数说明：
 --host 0.0.0.0：允许外部访问
 --port 5000：Web UI 端口
@@ -422,7 +423,7 @@ ls /root/autodl-fs/LLaMA-Factory/saves/qwen3-8b-lora-my-first/
 ```
 应该看到：
 
-text
+```text
 checkpoint-50/        ← 第50步的检查点
 checkpoint-100/       ← 第100步的检查点
 adapter_config.json   ← LoRA配置
@@ -430,6 +431,8 @@ adapter_model.bin     ← LoRA权重（你的便签纸）
 trainer_state.json    ← 训练状态
 training_args.bin     ← 训练参数记录
 all_results.json      ← 训练结果摘要
+```
+
 第8步：MLflow 记录实验
 
 训练过程中，LLaMA-Factory 会自动记录到 MLflow。查看记录：
@@ -442,7 +445,6 @@ mlflow ui --host 0.0.0.0 --port 5000 --backend-store-uri /root/autodl-fs/mlflow-
 ls /root/autodl-fs/mlflow-runs/
 如果无法访问 Web UI，直接用 Python 查看：
 
-python
 import mlflow
 mlflow.set_tracking_uri("file:///root/autodl-fs/mlflow-runs")
 

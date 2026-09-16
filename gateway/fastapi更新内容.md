@@ -12,8 +12,8 @@
 
 2. 系统架构总览
 
-text
 用户请求
+    ↓
 ```
     ↓
 ```
@@ -84,9 +84,8 @@ async def complete_code(req: CodeCompleteRequest):
 
 在/root/autodl-fs/llm-gateway/docker-compose.yml中，确保Ollama服务的volumes映射正确：
 
-yaml
+```yaml
 services:
-```
   api:
     build:
       context: .

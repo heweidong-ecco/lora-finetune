@@ -9,7 +9,6 @@ ls -lh saves/exp1_q4km.gguf
 #如果没有 Q4_K_M 版本，用 FP16 版本也可以
 ls -lh saves/exp1_fp16.gguf
 ## 方案一：LLaMA-Factory 支持直接导出为 Ollama 可用的 Modelfile：
-bash
 llamafactory-cli export \
     --model_name_or_path /root/autodl-fs/models/Qwen3-8B-Instruct \
     --adapter_name_or_path /root/autodl-fs/LLaMA-Factory/saves/exp1_baseline \
@@ -19,7 +18,6 @@ llamafactory-cli export \
     --export_ollama true
 这会自动生成 Modelfile 和所需的模型文件，直接执行：
 
-bash
 ollama create my-fine-tuned-model -f /root/autodl-fs/LLaMA-Factory/saves/exp1_ollama/Modelfile
 
 如果需要量化可以使用方案二中的量化工具进行量化
@@ -64,8 +62,10 @@ top_k	候选token数	40
 num_predict	最大输出长度	512
 TEMPLATE	对话格式模板	Qwen系列用 chatml
 如果你用的是 FP16 版本，把 FROM 改为：
-dockerfile
+
+```dockerfile
 FROM /root/autodl-fs/LLaMA-Factory/saves/exp1_fp16.gguf
+```
 
 # 导入模型到 Ollama并进行测试
 ```
@@ -74,11 +74,9 @@ FROM /root/autodl-fs/LLaMA-Factory/saves/exp1_fp16.gguf
 #后续的指令名要 根据这个进行更改 
 ollama create my-fine-tuned-model -f Modelfile
 看到 success 即导入成功。验证：
-bash
 ollama list
 #应该能看到 my-fine-tuned-model 在列表中
 - 功能测试——验证模型能正常回答
-bash
 #测试1：简单问候
 ollama run my-fine-tuned-model "Hello, how are you?"
 #测试2：指令跟随（用 alpaca 数据集中的典型问题）
@@ -104,7 +102,6 @@ time ollama run my-fine-tuned-model "Explain machine learning in one paragraph."
 qwen3:8b（基座）	?	?	原始模型
 my-fine-tuned-model	?	?	微调后+Q4_K_M量化
 - 用 API 方式调用
-bash
 #测试 API 端点
 curl http://localhost:11434/api/generate -d '{
   "model": "my-fine-tuned-model",
