@@ -62,7 +62,7 @@ prepare_data.py → summarize_dataset.py → [训练] → batch_evaluate.py → 
 |---|---|
 | **基座与微调用了同一个模型** | `batch_evaluate.py:63-66` —— 两处都传 `"qwen3:8b"`。所以 `evaluation_results.json` 里的对比**与微调效果无关** |
 | **胜率分母把 ERROR 算了进去** | `evaluate.py:217-220` —— `valid_total` 算出来**从未被使用**，`win_rate` 除的是 `total` |
-| **早期抽查的两边回答逐字相同** | 见 `../results/readme说明.md` §二 |
+| **早期抽查的两边回答逐字相同** | 见 `../results/README.md` §二 |
 
 > 📌 这三条都已写进 `../experiments/E05-人工判断.md` 作为**必须避开的坑**。
 > **不要照抄这些脚本去跑 E04/E05。**

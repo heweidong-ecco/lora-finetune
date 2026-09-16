@@ -12,14 +12,17 @@
 
 | | |
 |---|---|
-| **数据集** | [`datasets/`](datasets/readme索引.md) —— 3 个数据集，各带数据卡 |
-| **实验** | [`experiments/`](experiments/README.md) —— E01–E03 已有记录，E04 ⬜ 待做 |
+| **数据集** | [`datasets/`](datasets/README.md) —— 3 个数据集，各带数据卡 |
+| **实验** | [`experiments/`](experiments/README.md) —— E01–E03 已跑过 · E04/E05 ⬜ 方案已就绪 |
+| **训练产物** | [`experiments/artifacts训练产物/`](experiments/artifacts训练产物/README.md) —— 五组运行的日志，**每个 loss 都可复算** |
 | **配置** | [`configs/`](configs/) —— 9 个训练配置 |
-| **脚本** | [`scripts/`](scripts/) —— 数据工程 + 评测 |
-| **结果** | [`results/`](results/) —— 评测产物 |
-| **部署** | [`deploy/`](deploy/) —— GGUF 导出 + Ollama |
-| **子方向** | [`subprojects/`](subprojects/) —— 代码补全 · RAG 查询改写 |
+| **脚本** | [`scripts/`](scripts/README.md) —— 数据工程 + 评测 |
+| **结果** | [`results/`](results/README.md) —— 评测产物（⚠️ **现有评测不可用**，原因已写明） |
+| **部署** | [`deploy/`](deploy/README.md) —— GGUF 导出 + Ollama |
+| **子方向** | [`subprojects/`](subprojects/README.md) —— 代码补全 · 查询改写（**均无实验记录**） |
 | **网关** | [`gateway/`](gateway/) —— FastAPI 推理网关 |
+| **溯源** | [`docs/`](docs/README.md) —— 整合报告 · 上游说明 · 执行日志 |
+| **模板** | [`template数据卡.md`](template数据卡.md) · [`template实验记录.md`](template实验记录.md) |
 
 ---
 
@@ -33,9 +36,13 @@
 
 > ⚠️ **两个数据集都含一个叫 `my_dataset.json` 的文件，但不是同一个东西。**
 > 这是整理历史文件时发现的坑。**看目录名，别只看文件名。**
+>
+> 📌 `alpaca-clean-500条/` 里还放着 **E04 用的两组 194 条数据**
+> （`E04-A组-194条.json` / `E04-B组-194条.json`）—— 它们是**从 500 条那份派生**的，
+> 由 `scripts/datasets/make_e04_datasets.py` 固定种子生成。
 
 每个数据集都有**数据卡**，记录它的构造过程、统计、**以及已知缺陷**。
-总索引见 [`datasets/readme索引.md`](datasets/readme索引.md)。
+总索引见 [`datasets/README.md`](datasets/README.md)。
 
 ---
 
@@ -82,20 +89,21 @@
 ```
 lora-finetune/
 ├── datasets/          ⭐ 库的核心增长轴（一个数据集一个目录）
-│   ├── readme索引.md
+│   ├── README.md
 │   ├── alpaca-clean-500条/
 │   ├── qa-general-194条/
 │   └── code-completion代码补全/
 ├── configs/           训练配置
-├── scripts/           ← 索引见 readme索引.md
+├── scripts/           ← 索引见 README.md
 │   ├── datasets/      数据工程（下载/清洗/合并/质检/可视化）
 │   └── eval/          评测（切分/批量推理/大模型裁判）
-├── experiments/       实验记录（+ artifacts训练产物/ 五组运行的训练产物）
+├── experiments/       实验记录（+ artifacts训练产物/ 五组运行的训练产物，可复算）
 ├── results/           评测产物
 ├── deploy/            GGUF 导出 + Ollama
 ├── subprojects/       代码补全 · 查询改写（两个子方向，均无实验记录）
 ├── gateway/           FastAPI 推理网关
-└── docs/              溯源与说明
+├── docs/              溯源与说明
+└── template*.md       数据卡 / 实验记录模板
 ```
 
 ---
@@ -112,6 +120,12 @@ python scripts/datasets/datasets_check_data_quality.py   # → 质检报告
 
 # ── 评测用切分（✅ 可精确复现：脚本内 random.seed(42)）──
 python scripts/eval/prepare_data.py                      # → alpaca-clean-500条/ 500 + 50
+
+# ── E04 的两组数据集（✅ 可精确复现：固定种子）
+#    需要先有一个含全部 51760 条的合法 JSON（42 MB，不入库），生成方式见脚本文件头
+python scripts/datasets/make_e04_datasets.py
+#    → alpaca-clean-500条/E04-A组-194条.json（从全量随机抽）
+#    → alpaca-clean-500条/E04-B组-194条.json（从前 550 区块抽）
 
 # ── 训练（需要 GPU + 本地模型，见 configs/）───────────
 llamafactory-cli train configs/exp1_baseline.yaml
@@ -140,8 +154,8 @@ llamafactory-cli train configs/exp1_baseline.yaml
 |---|---|
 | **E04：改数据的对照实验** | 核心判断无法被验证（⬜ 方案已就绪，缺 GPU 环境） |
 | **人工判断 / 对照样例** | 所有 loss 数字**无法变成质量结论**（⬜ 方案 + 脚本已就绪） |
-| 自动评测分数（BLEU/ROUGE/裁判） | `results/` 里的裁判对比是**另一条线**（基座 vs 微调），不能替代 E01–E03 之间的对比 |
-| 启动命令、框架版本（日志级） | 别人**无法精确复现** E01–E03 |
+| 自动评测分数（BLEU/ROUGE/裁判） | ⚠️ `results/` 里那份「基座 vs 微调」的评测**已查实不可用** —— 两边跑的其实是同一个模型。见 `results/README.md` |
+| **启动命令**（日志级） | 别人**无法精确复现** E01–E03。⚠️ 框架版本**已知**（`v0.9.5-41-g2ebe7be6`），缺的是**当时敲的那行命令** |
 | `code-completion代码补全` 的来源与许可 | ✅ 已处置：**数据文件已撤出仓库**，只留数据卡。来源仍未确认 |
 
 **这些不是"还没写"，是"确实没有"。** 不会为了让文档好看而填上。
