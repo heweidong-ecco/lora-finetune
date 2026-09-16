@@ -1,3 +1,17 @@
+### E01 · 基线 —— rank 8 · lr 2e-4 · 3 epochs
+###
+### ⚠️ 本文件是【实际跑过的那一版】（2026-07-27）。
+###    三条独立证据都指向 `save_steps: 100` / `save_total_limit: 2` / **无早停段**：
+###      ① 训练产物里只有 `checkpoint-100` 与 `checkpoint-189`
+###         （若 save_steps=50，会出现 50/100/150）
+###      ② 五组训练的 `trainer_state.json` 里 `best_model_checkpoint` **全部为 None**
+###         → 早停/评估段从未生效过
+###      ③ 归档中 AutoDL 上与它同名的文件，内容与本文件一致
+###
+### ⛔ **本仓库早先收录的是「本地后来改过的版本」**（`save_steps: 50` + 早停段），
+###    **那一版从未跑过**。两版差异见文件末尾的注释块。
+###    👉 教训：整理历史文件时，「内容更全」≠「实际跑过的那版」。
+
 ### 模型配置
 model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master
 
@@ -29,17 +43,29 @@ warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 
-### 日志与保存 （检查点保存 优化）
-logging_steps: 10 # 每10步记录一次日志
-save_steps: 50 # 每50步保存一次
-save_total_limit: 5 # 保留最近5个检查点
-plot_loss: true # 生成 loss 曲线图
+### 日志与保存
+logging_steps: 10
+save_steps: 100
+save_total_limit: 2
+plot_loss: true
 report_to: mlflow
 
-# 优化策略
-# 早停与评估（新增）
-load_best_model_at_end: true # 训练结束加载最优检查点
-metric_for_best_model: loss # 以 loss 为评判标准
-greater_is_better: false # loss 越低越好
-eval_strategy: steps # 按步数评估
-eval_steps: 25 # 每25步评估一次
+
+################################################################################
+# ⚠️ 以下【不是本文件的一部分】，而是「本地改过、但从未跑过」的那一版的差异，
+#    保留在此仅供对照。**不要取消注释去跑** —— 那会产生与 E01 记录不一致的结果。
+#
+# 与上面相比，那一版多了/改了：
+#
+#   save_steps: 50                  # 改自 100
+#   save_total_limit: 5             # 改自 2
+#   load_best_model_at_end: true    # 新增（以下 5 行都是新增）
+#   metric_for_best_model: loss
+#   greater_is_better: false
+#   eval_strategy: steps
+#   eval_steps: 25
+#
+# 📌 为什么它没生效：`eval_strategy: steps` 需要配置验证集（`val_size` 或 `eval_dataset`）
+#    才会真正触发评估。本配置里没有这两项，因此**从未产生过一次评估**，
+#    `best_model_checkpoint` 也就一直是 None。
+################################################################################
