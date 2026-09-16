@@ -1,0 +1,11 @@
+=== ENGLISH SUMMARY ===  
+The dataset covers a diverse range of domains, including **creative writing** (e.g., generating poems, slogans, and rhyming words), **mathematics** (e.g., solving equations, calculating surface areas), **programming** (e.g., writing functions, checking binary trees), **general knowledge** (e.g., historical events, scientific concepts), **language and grammar** (e.g., correcting errors, rewriting sentences), **technology** (e.g., explaining IoT, blockchain), and **social sciences** (e.g., analyzing societal impacts, comparing software).  
+
+The most common task types are **generation** (e.g., creating names, poems, recipes), **classification** (e.g., categorizing items, identifying metaphors), **summarization** (e.g., condensing arguments), **problem-solving** (e.g., math problems, coding challenges), and **grammar/linguistic tasks** (e.g., correcting errors, rewriting sentences). Some tasks also involve **analysis** (e.g., sentiment analysis, identifying themes) and **creative expression** (e.g., jokes, haikus).  
+
+The overall style is **clear and direct**, with most instructions being concise and actionable. However, some tasks may lack specificity (e.g., "design an app for a delivery company"), which could lead to ambiguity. The quality of instructions is generally high, though the mix of technical and creative tasks reflects a broad skill range.  
+
+=== 中文总结 ===  
+该数据集涵盖多个领域，包括**创意写作**（如生成诗歌、标语、押韵词），**数学**（如解方程、计算表面积），**编程**（如编写函数、检查二叉树），**常识**（如历史事件、科学概念），**语言和语法**（如纠正错误、改写句子），**技术**（如解释物联网、区块链），以及**社会科学**（如分析社会影响、比较软件）。  
+
+最常见的任务类型是**生成**（如创建名称、诗歌、食谱），**分类**（如分类物品、识别隐喻），**总结**（如压缩论点），**问题解决**（如数学问题、编程挑战），

@@ -1,0 +1,369 @@
+{
+  "total": 50,
+  "base_model_wins": 5,
+  "tuned_model_wins": 1,
+  "ties": 23,
+  "errors": 21,
+  "base_win_rate": "10.0%",
+  "tuned_win_rate": "2.0%",
+  "details": [
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 0,
+      "instruction": "Describe the Renaissance period."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty and fail to address the instruction about net neutrality.",
+      "category": "both_bad",
+      "id": 1,
+      "instruction": "Explain the concept of net neutrality."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty and fail to address the instruction. Neither provides a scientific explanation for the blue sky.",
+      "category": "both_bad",
+      "id": 2,
+      "instruction": "Write a scientific explanation for why the sky is blue."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 3,
+      "instruction": "Compare two types of text processing techniques and explain differences between them."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty and fail to address the instruction. The task required selecting nouns from the list, but neither response provided any answer.",
+      "category": "both_bad",
+      "id": 4,
+      "instruction": "Pick out the correct noun from the following list."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction completely. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 5,
+      "instruction": "Design an algorithm to find the maximum profit of a stock buy and sell when given it's historical prices."
+    },
+    {
+      "winner": "A",
+      "confidence": "high",
+      "reason": "Response A correctly converts the date to ISO 8601 format with clear explanation, while Response B is empty. A demonstrates accuracy, completeness, and clarity without unnecessary content.",
+      "category": "A_better",
+      "id": 6,
+      "instruction": "Standardize the following date to the ISO 8601 format."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty strings and fail to address the mathematical problem. Neither provides a solution, explanation, or attempt to solve the equation.",
+      "category": "both_bad",
+      "id": 7,
+      "instruction": "Find the real root of the equation \n sqrt(x) + sqrt(x+2) = 10."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses correctly rewrite the sentence with identical accuracy, completeness, clarity, and conciseness. They perfectly address the instruction without altering the original meaning.",
+      "category": "both_good",
+      "id": 8,
+      "instruction": "Rewrite the following sentence without changing the meaning."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings, failing to address the instruction entirely. Neither demonstrates accuracy, completeness, clarity, or conciseness.",
+      "category": "both_bad",
+      "id": 9,
+      "instruction": "Write a blog post on how to deploy machine learning models."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 10,
+      "instruction": "Describe the character of Romeo from Romeo and Juliet."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 11,
+      "instruction": "Generate a creative birthday wish for a friend."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 12,
+      "instruction": "Compare and contrast two types of computer networks."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"B\",\n  \"confidence\": \"high\",\n  \"reason\": \"Response B is more complete and coherent, finishing its sentence and covering all key points without truncation. It maintains clarity and conciseness while effectively addressing the instruction. Response A is cut off mid-sentence, compromising completeness and readability.\",\n ",
+      "id": 13,
+      "instruction": "Write a short paragraph about the given topic."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 14,
+      "instruction": "Explain the difference between a personal computer and a server"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 15,
+      "instruction": "Write a few sentences about the current state of the given topic."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"B\",\n  \"confidence\": \"high\",\n  \"reason\": \"Response B directly answers the instruction with the transformed question without unnecessary explanation. Response A adds redundant commentary that wasn't",
+      "id": 16,
+      "instruction": "Change this sentence to make it a question."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 17,
+      "instruction": "Design a database schema to record employee salaries."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 18,
+      "instruction": "What are the three primary colors of light mentioned in the passage?"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 19,
+      "instruction": "Translate the following phrase into French."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 20,
+      "instruction": "Given the following context, answer the question at the end. If you do not know the answer, just say you don't know the answer given the context. Do not make up an answer.\n\nWhat is Roll-to-Roll Printing? \nWhat a fantastic question. This printing system is where you utilize a full roll of media (DTF film), rather than a single sheet of media, that feeds onto another empty roll at the end of the system. It is a really efficient system if you need to print constantly. It’s almost a set-and-forget type of printer that will print until you run out of media or ink, which is already faster than single feed sheets that cannot be stacked.\nWhen compared to standard printing methods, the process improves printer life cycle costs while also making it easy to scale up your operation. Efficiency is also maximized when manufacturing requires multiple prints. A well-designed roll-to-roll system can make manufacturing quicker and cheaper without compromising quality. \n\nWith individual sheets your prints are limited by the size of the media and if you have a small format printer the prints are even smaller. The only limitation on size for roll printers is, again the size of the media. So instead of a max length of 20 inches for a single sheet we can make a print that is 328 feet long (almost a full football field from post to post). \n\nWe’ve released and promoted several different machines which already utilize this system, like the 24” STS 628D and Prestige XL2 and the large format 1682D. However, there is nothing available for the smaller format printing (under 24”) and this leaves either smaller shops or the hobbyist with not many options under $10,000.\n\nQuestion: What is the price of the Prestige XL2?"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 21,
+      "instruction": "Generate a review for a recent movie"
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 22,
+      "instruction": "Compare cats and dogs."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"TIE\",\n  \"confidence\": \"high\",\n  \"reason\": \"Both responses are empty strings,",
+      "id": 23,
+      "instruction": "Paraphrase the following sentence"
+    },
+    {
+      "winner": "B",
+      "confidence": "high",
+      "reason": "Response B provides a more complete and structured strategy with actionable steps (SEO, content optimization). Response A is cut off mid-sentence, lacking completeness and depth. B's organization and detailed tactics make it superior.",
+      "category": "B_better",
+      "id": 24,
+      "instruction": "Outline a strategy for increasing website traffic."
+    },
+    {
+      "winner": "A",
+      "confidence": "high",
+      "reason": "Response A provides a complete explanation with structured key concepts and applications, while Response B is abruptly truncated and incomplete. A covers all aspects of the instruction with clarity and depth.",
+      "category": "A_better",
+      "id": 25,
+      "instruction": "Explain what is a neural network"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"A\",\n  \"confidence\": \"high\",\n  \"reason\": \"Response A accurately identifies Charlotte Brontë as the author and provides contextual details about her pseudonym and literary context, enhancing completeness and clarity.",
+      "id": 26,
+      "instruction": "Choose the correct answer."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"B\",\n  \"confidence\": \"high\",\n  \"reason\": \"Response B correctly solves the math problem with a clear step-by-step explanation and final answer. Response A is empty and provides no solution. B meets all criteria",
+      "id": 27,
+      "instruction": "Hans went to a pet shop. He bought 15 gold fish and 7 blue fish. How many fish did he buy? Think step-by-step."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction. They provide no explanation for why 4/16 equals 1/4.",
+      "category": "both_bad",
+      "id": 28,
+      "instruction": "Explain why the following fraction is equivalent to 1/4"
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses exactly match the context's explicit statement about the circulatory system's primary function. They are accurate, complete, clear, and concise with no unnecessary content.",
+      "category": "both_good",
+      "id": 29,
+      "instruction": "Based on the given context, what is the primary function of the human circulatory system?"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"B\",\n ",
+      "id": 30,
+      "instruction": "Give an example of a place where an endangered species of animal might be found."
+    },
+    {
+      "winner": "A",
+      "confidence": "high",
+      "reason": "Response A provides a more complete explanation with detailed points about investor assessment, while Response B truncates mid-sentence. A's structure and content better address the instruction's full scope.",
+      "category": "A_better",
+      "id": 31,
+      "instruction": "What is the purpose of Financial Accounting?"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 32,
+      "instruction": "Combine the two sentences into a single sentence."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction about distinguishing viruses and worms. Neither provides any accurate or relevant information.",
+      "category": "both_bad",
+      "id": 33,
+      "instruction": "What's the difference between a virus and a worm?"
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty and fail to address the instruction. Neither provides the area calculation for radius 4.",
+      "category": "both_bad",
+      "id": 34,
+      "instruction": "Find the area of a circle given its radius."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 35,
+      "instruction": "Choose the most appropriate answer"
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings and fail to address the instruction. Neither provides a valid example of something you can do with paper, resulting in identical failure on accuracy and completeness.",
+      "category": "both_bad",
+      "id": 36,
+      "instruction": "Name something you can do with paper."
+    },
+    {
+      "winner": "A",
+      "confidence": "high",
+      "reason": "Response A accurately translates the French sentence to English with correct grammar and meaning. Response B provides no translation, failing to address the instruction entirely. A is concise and complete, while B is empty and invalid.",
+      "category": "A_better",
+      "id": 37,
+      "instruction": "Translate this sentence from French to English."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty strings and fail to address the instruction. They lack accuracy, completeness, clarity, and conciseness.",
+      "category": "both_bad",
+      "id": 38,
+      "instruction": "Explain what an API is."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses correctly convert the sentence to active voice with identical accuracy, completeness, clarity, and conciseness. They produce the exact correct answer without unnecessary content.",
+      "category": "both_good",
+      "id": 39,
+      "instruction": "Rewrite the following sentence using active voice."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings, failing to address the instruction entirely. Neither demonstrates accuracy, completeness, clarity, or conciseness.",
+      "category": "both_bad",
+      "id": 40,
+      "instruction": "Outline the consequences of deforestation."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "low",
+      "reason": "Both responses are empty strings, failing to address the instruction entirely. Neither provides analysis of word weight in the sentence.",
+      "category": "both_bad",
+      "id": 41,
+      "instruction": "Discover which word in the sentence carries the most weight."
+    },
+    {
+      "winner": "A",
+      "confidence": "high",
+      "reason": "Response A provides actionable marketing strategies with specific examples, while Response B is empty. A addresses the instruction with structured content despite truncation.",
+      "category": "A_better",
+      "id": 42,
+      "instruction": "Generate a list of marketing strategies to promote a new mobile app."
+    },
+    {
+      "winner": "TIE",
+      "confidence": "high",
+      "reason": "Both responses are empty strings, failing to address the instruction. Neither provides any content analysis, accuracy, or completeness. They are equally bad.",
+      "category": "both_bad",
+      "id": 43,
+      "instruction": "What is the most commonly shared type of content on social media?"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 44,
+      "instruction": "Find the cutoff score for successful completion of the exam"
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 45,
+      "instruction": "Identify the incorrect word in this sentence."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"B\",\n  \"confidence\": \"high\",\n  \"reason\": \"Response B provides more complete and accurate information with clearer structure. It includes population growth context and fully explains conservation efforts, while Response A has an incomplete sentence and less detailed threats. Both are correct, but",
+      "id": 46,
+      "instruction": "Provide an example of an endangered species of animal."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 47,
+      "instruction": "Generate a creative description of a sunset in the beach."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "{\n  \"winner\": \"",
+      "id": 48,
+      "instruction": "Look up the boiling point of water."
+    },
+    {
+      "winner": "ERROR",
+      "reason": "",
+      "id": 49,
+      "instruction": "Summarize the following article in your own words."
+    }
+  ]
+}

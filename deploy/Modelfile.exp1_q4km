@@ -1,0 +1,23 @@
+# Modelfile - 微调模型部署配置
+
+# 指定 GGUF 文件路径
+FROM /root/autodl-fs/LLaMA-Factory/saves/exp1_q4km.gguf
+
+# 系统提示词（定义模型的行为和风格）
+SYSTEM """You are a helpful AI assistant trained on the Alpaca dataset. 
+You provide accurate, clear, and concise responses to user questions.
+You follow instructions carefully and respond in the same language as the user."""
+
+# 推理参数
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER num_predict 512
+
+# 模板（对话格式，Qwen系列用 chatml）
+TEMPLATE """<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""

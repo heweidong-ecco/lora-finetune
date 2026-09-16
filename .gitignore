@@ -1,0 +1,45 @@
+# ⛔ 原始素材目录：**已于 2026-09-16 整块移出本仓库**，现位于
+#     /Users/heweidong/Desktop/Product/lora-finetune-原始文件归档/  （160 MB）
+# 这里保留规则作为**兜底** —— 万一它被拖回仓库，不会被提交。
+# 不该进仓库的原因：
+#   1. 含 30MB 上游 LLaMA-Factory 官方仓库（含 .git/）—— 别人的代码，不是你的作品
+#   2. 含 84MB alpaca-cleaned 原始数据（CC BY-NC 4.0，且一行脚本可重新下载）
+#   3. 是整理过程中的原料，不是最终产物
+原始文件/
+*原始文件归档/
+
+# ⛔ 密钥（第二铁律）—— 一律走环境变量
+.env
+.env.*
+!.env.example
+
+# ⛔ 模型权重 / 适配器（放 HuggingFace 或魔搭，仓库只放链接）
+*.safetensors
+*.bin
+*.gguf
+saves/
+outputs/
+merged_model/
+
+# ⛔ 实验数据库（数据已抽进 configs/best_lora_config.yaml 与 experiments/）
+*.db
+mlflow.db
+
+# ⛔ 已主动撤出的数据文件（来源未确认，含混合第三方许可风险）
+#    见 datasets/code-completion代码补全/数据卡-codecompletion.md §五-3
+datasets/code-completion代码补全/code_completion_dataset.json
+
+# 临时 / 系统文件
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.swp
+*~
+.vscode/
+.idea/
+
+# 训练日志（体积大且无必要，结论已在 experiments/ 里）
+runs/
+wandb/
+*.log

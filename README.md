@@ -1,0 +1,151 @@
+# lora-finetune
+
+> **一个 LoRA 微调的「数据与实验库」。**
+> 把每次 LoRA 工作产生的**数据集、训练配置、实验记录、评测结果**集中存放 ——
+> 数据是怎么造的、参数是怎么选的、哪次成了哪次废了，都在这里。
+
+**这是一个库，不是一次性的项目。** 新的 LoRA 数据进来就新增一个目录，不改动已有的。
+
+---
+
+## 目录
+
+| | |
+|---|---|
+| **数据集** | [`datasets/`](datasets/readme索引.md) —— 3 个数据集，各带数据卡 |
+| **实验** | [`experiments/`](experiments/README.md) —— E01–E03 已有记录，E04 ⬜ 待做 |
+| **配置** | [`configs/`](configs/) —— 9 个训练配置 |
+| **脚本** | [`scripts/`](scripts/) —— 数据工程 + 评测 |
+| **结果** | [`results/`](results/) —— 评测产物 |
+| **部署** | [`deploy/`](deploy/) —— GGUF 导出 + Ollama |
+| **子方向** | [`subprojects/`](subprojects/) —— 代码补全 · RAG 查询改写 |
+| **网关** | [`gateway/`](gateway/) —— FastAPI 推理网关 |
+
+---
+
+## 一 · 数据集
+
+| 数据集 | 条数 | 来源 | 许可证 |
+|---|---|---|---|
+| [`alpaca-clean-500条/`](datasets/alpaca-clean-500条/) | 500 + 50 | `yahma/alpaca-cleaned` 前 550 条切分 | `CC BY-NC 4.0` |
+| [`qa-general-194条/`](datasets/qa-general-194条/) | 194 | 开源 100 条 + 本地 Ollama `qwen3:8b` 生成 94 条 | 混采 |
+| [`code-completion代码补全/`](datasets/code-completion代码补全/) | 250 | Python 代码提取<br>⚠️ 来源**未记录**（回忆指向本机依赖，**未经确认**） | ⚠️ 待确认 |
+
+> ⚠️ **两个数据集都含一个叫 `my_dataset.json` 的文件，但不是同一个东西。**
+> 这是整理历史文件时发现的坑。**看目录名，别只看文件名。**
+
+每个数据集都有**数据卡**，记录它的构造过程、统计、**以及已知缺陷**。
+总索引见 [`datasets/readme索引.md`](datasets/readme索引.md)。
+
+---
+
+## 二 · 实验现状（**这一节请务必看完**）
+
+| # | 改了什么 | 训练 loss | 耗时 | 结论 |
+|---|---|---|---|---|
+| **E01** 基线 | rank 8 · lr 2e-4 · 3 epochs | **0.5603** | 181.5 s | 基线 |
+| **E02** rank16 | **rank 8 → 16** | 0.8462 | 301.0 s | 🔴 loss +51%，慢 +66% |
+| **E03** lr5e-5-epoch5 | **lr ÷4，epochs 3 → 5** | 0.9941 | 479.1 s | 🔴 loss +77%，慢 +164% |
+
+**观察到的现象**：**两次调参都让 loss 更高、耗时更长；什么都没调的基线反而最好。**
+
+### ⛔ 但这些不能当成结论 —— 三个理由
+
+1. **三组实验全是「改参数」，没有一组「改数据」**
+   → 本库一直关注的判断是「**数据质量 ≫ 超参数**」。这个判断**一次都没有被检验过**。
+   要检验它，需要 **E04：固定全部参数，只换数据集** —— ⬜ **还没做**。
+
+2. **训练 loss ≠ 输出质量**
+   → 目前**没有任何输出质量证据**（没有人工判断、没有对照样例、没有自动指标）。
+   「越调越差」**只是 loss 现象，不是质量结论**。
+
+3. **三次实验之间严格来说不可直接横比**
+   → E01 多了一段 E02/E03 没有的早停/评估配置；E03 跑了 5 epoch 而 E01/E02 只有 3 epoch，
+   「末值 loss」是在**不同训练步数**上取的。且 E03 **同时改了两个变量**，即使有差异也**无法归因**。
+
+> **目前能证明的只有**：在这个设置下，这两次调参都没有收益，且都更慢。
+> 更多的，等 E04 和人工判断。详见 [`experiments/README.md`](experiments/README.md)。
+
+---
+
+## 三 · 仓库结构
+
+```
+lora-finetune/
+├── datasets/          ⭐ 库的核心增长轴（一个数据集一个目录）
+│   ├── readme索引.md
+│   ├── alpaca-clean-500条/
+│   ├── qa-general-194条/
+│   └── code-completion代码补全/
+├── configs/           训练配置
+├── scripts/
+│   ├── datasets/      数据工程（下载/清洗/合并/质检/可视化）
+│   └── eval/          评测（切分/批量推理/大模型裁判）
+├── experiments/       实验记录
+├── results/           评测产物
+├── deploy/            GGUF 导出 + Ollama
+├── subprojects/       code-completion-lora · rag-query-rewrite
+├── gateway/           FastAPI 推理网关
+└── docs/              溯源与说明
+```
+
+---
+
+## 四 · 快速开始
+
+```bash
+# ── 数据管线（可复现）──────────────────────────────
+export HF_ENDPOINT=https://hf-mirror.com
+python scripts/datasets/datasets_open_source_data.py     # → 51760 条原始（42MB，不入库）
+python scripts/datasets/datasets_clean_json.py           # → 清洗 + 随机抽 100
+python scripts/datasets/datasets_merge_script.py         # → qa-general-194条/my_dataset.json
+python scripts/datasets/datasets_check_data_quality.py   # → 质检报告
+
+# ── 评测用切分（✅ 可精确复现：脚本内 random.seed(42)）──
+python scripts/eval/prepare_data.py                      # → alpaca-clean-500条/ 500 + 50
+
+# ── 训练（需要 GPU + 本地模型，见 configs/）───────────
+llamafactory-cli train configs/exp1_baseline.yaml
+```
+
+> ⚠️ **`configs/` 里的 `model_name_or_path` 与 `output_dir` 仍是原环境（AutoDL）上的路径**
+> （`/root/autodl-fs/...`），**直接跑会失败**，需要改成你自己的路径。这是已知缺陷。
+
+---
+
+## 五 · 环境
+
+| 项 | 值 |
+|---|---|
+| 训练硬件 | **AutoDL · RTX 4090 · 24GB**（⚠️ 推断，训练日志未直接记录） |
+| 基座模型 | **Qwen3-8B**（另有 Qwen3-Coder-7B 用于代码补全子方向） |
+| 微调框架 | **LLaMA-Factory**，上游 commit **`2ebe7be6`**（2026-07-24，由 `.git` 判定） |
+
+---
+
+## 六 · ⚠️ 本库目前没有的东西
+
+> 这一节是**故意**放这儿的。写不出缺陷 = 没真的检查过。
+
+| 缺什么 | 后果 |
+|---|---|
+| **E04：改数据的对照实验** | 核心判断无法被验证 |
+| **人工判断 / 对照样例** | 所有 loss 数字**无法变成质量结论** |
+| 自动评测分数（BLEU/ROUGE/裁判） | `results/` 里的裁判对比是**另一条线**（基座 vs 微调），不能替代 E01–E03 之间的对比 |
+| 启动命令、框架版本（日志级） | 别人**无法精确复现** E01–E03 |
+| `code-completion代码补全` 的来源与许可 | ✅ 已处置：**数据文件已撤出仓库**，只留数据卡。来源仍未确认 |
+
+**这些不是"还没写"，是"确实没有"。** 不会为了让文档好看而填上。
+
+---
+
+## 七 · 许可
+
+| 对象 | 许可证 |
+|---|---|
+| **本库代码** | **MIT**（见 [`LICENSE`](LICENSE)） |
+| 数据 `yahma/alpaca-cleaned` | **`CC BY-NC 4.0`** —— ⛔ **非商用**。数据集卡原文：*「用该数据集训出的模型不应超出研究用途」* |
+| 数据 `codefuse-ai/CodeExercise-Python-27k` 或本地库源码 | ⚠️ **待确认** |
+| 上游 LLaMA-Factory | Apache-2.0 —— **不是本库的代码**，本库不含其副本 |
+
+> ⛔ **不要把数据许可证写成 Apache-2.0** —— 那是 alpaca-cleaned **配套代码**的许可，不是数据本身的。

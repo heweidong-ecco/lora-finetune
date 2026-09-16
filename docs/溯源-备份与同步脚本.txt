@@ -1,0 +1,28 @@
+cp /root/autodl-fs/LLaMA-Factory/data_quality_report.txt /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_check_data_quality.py /root/autodl-fs/2026.7.25LoRA/
+
+
+cp /root/autodl-fs/LLaMA-Factory/datasets_clean_json.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_generated_data_cleaned_100.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_generated_data.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_generated_data.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_handcraft_data.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_merge_script.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_open_source_data_cleaned_100.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_open_source_data_cleaned.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_open_source_data.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_open_source_data.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datasets_visualize_data.py /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory/datesets_handcraft_data.json /root/autodl-fs/2026.7.25LoRA/
+
+
+cp /root/autodl-fs/LLaMA-Factory-stable/data/my_dataset.json /root/autodl-fs/2026.7.25LoRA/
+cp /root/autodl-fs/LLaMA-Factory-stable/examples/train_lora/my_first_lora.yaml /root/autodl-fs/2026.7.25LoRA/
+
+————————————————
+cp /root/autodl-fs/2026.7.25LoRA/my_dataset.json /root/autodl-fs/LLaMA-Factory/data/
+cp /root/autodl-fs/2026.7.25LoRA/my_first_lora.yaml /root/autodl-fs/LLaMA-Factory/examples/train_lora/
+
+
+echo 'export MLFLOW_TRACKING_URI=sqlite:////root/autodl-fs/LLaMA-Factory/mlflow.db' >> ~/.bashrc
+source ~/.bashrc

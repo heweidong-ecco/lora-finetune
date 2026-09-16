@@ -1,0 +1,97 @@
+# best_lora_config.yaml（示例，训练完成后填入实际最优值）
+lora_rank: [最优rank]
+lora_alpha: [最优rank的2倍]
+learning_rate: [最优lr]
+num_train_epochs: [最优epochs]
+
+lora_rank: [ ]
+lora_alpha: [ ]
+learning_rate: [ ]
+num_train_epochs: [ ]
+# /root/autodl-fs/LLaMA-Factory/best_lora_config.yaml
+# 最优LoRA微调配置（基于500条alpaca-cleaned数据验证）
+# best_lora_config.yaml
+# 已验证最优，后续所有微调任务直接使用
+适用条件：500条数据、8B模型、单卡24GB显存。如果数据量发生数量级变化，需要重新验证。
+# 基础参数
+lora_rank: 8
+lora_alpha: 16
+learning_rate: 2.0e-4
+num_train_epochs: 3
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+
+# 早停与评估
+load_best_model_at_end: true
+metric_for_best_model: loss
+greater_is_better: false
+eval_strategy: steps
+eval_steps: 25
+
+# 检查点保存
+save_steps: 50
+save_total_limit: 5
+logging_steps: 10
+plot_loss: true
+report_to: mlflow
+
+#################################3
+实验: Default, 总运行次数: 6
+                             run_id  metrics.train_runtime  metrics.train_loss params.num_train_epochs params.learning_rate
+0  c0beed18beb74e53b7c4aa58aed59a97               120.5208            1.058765                       3               0.0002
+1  beee18c8dc1547d1ba025b474a6492d4               479.0966            0.994134                       5                5e-05
+2  b2db7731cd354dfd852b4574b95c4df3               300.9799            0.846231                       3               0.0002
+exp1_baseline	
+epoch3
+total_flos15138681363628032
+train_loss0.5602585398961627
+train_runtime181.5449
+train_samples_per_second8.262
+train_steps_per_second1.041
+
+exp2_rank16	
+epoch3
+total_flos16597684605911040
+train_loss0.8462307465770257
+train_runtime300.9799
+train_samples_per_second4.984
+train_steps_per_second0.628
+
+exp3_lr5e5_epoch5
+epoch5
+total_flos27574026769465344
+train_loss0.9941337812514532
+train_runtime479.0966
+train_samples_per_second5.218
+train_steps_per_second0.657
+
+
+选出最优参数组合
+对比三组实验的关键指标：
+实验	            rank	lr	  epochs	最终loss	训练时长	评价
+exp1_baseline	    8	    2e-4	3	      ?	        ?	      基线
+exp2_rank16	      16	  2e-4	3	      ?	        ?	      与exp1对比rank的影响
+exp3_lr5e5_epoch5	8	    5e-5	5	      ?	        ?	      与exp1对比lr+epoch的影响
+
+判断标准：
+现象	结论
+loss 最低且训练时间可接受	该参数组合是最优选择
+loss 接近但训练时间短很多	优先选训练快的（性价比更高）
+loss 反而更高	该参数改动方向错误，保持原参数
+两个实验 loss 几乎一样	选择rank小的（适配器更小，加载更快）
+
+更新最优配置
+选定最优参数后，将对应的参数组合记录为“最优训练配置”，保存为 best_lora_config.yaml，供后续所有微调任务使用。
+yaml
+# best_lora_config.yaml（示例，训练完成后填入实际最优值）
+
+MLflow 在参数调优中的核心价值
+没有 MLflow	有 MLflow
+三次训练结束，只能凭记忆说“好像第二次loss更低”	打开 MLflow UI，三条 loss 曲线叠在一起，肉眼可见哪个收敛最快
+忘记某次训练用了什么参数，翻 YAML 文件找	所有参数自动记录，搜索即可
+无法向别人展示“我为什么选这组参数”	截图 MLflow 对比图，面试时直接展示实验管理能力
+MLflow 的真正用途就在这里——不是记录单次训练（all_results.json 做得更好），而是对比多次训练。
+

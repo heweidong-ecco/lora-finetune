@@ -1,0 +1,85 @@
+
+复制下载清理好的数据集
+cp /root/autodl-fs/2026.7.25LoRA/datasets_open_source_data_cleaned.json /root/autodl-fs/LLaMA-Factory/BadCase_AI_evaluation_pipeline
+第1步：准备数据集和测试集
+cd /root/autodl-fs/LLaMA-Factory
+source llama-factory-env/bin/activate
+# python prepare_data.py 提前数据集中的内容
+产物：my_dataset.json 和 my_test_dataset.json
+路径：/root/autodl-fs/LLaMA-Factory/BadCase_AI_evaluation_pipeline/data/
+# 再经过一系列的cleaned 得到 “my_dataset.json”
+
+第2步：总结数据集领域
+# python summarize_dataset.py 
+# 总结，提取的英文 数据集 中的内容，并翻译，保留中英文内容。
+产物：dataset_summary.txt
+路径：/root/autodl-fs/LLaMA-Factory/BadCase_AI_evaluation_pipeline/data/
+
+#训练新模型 LoRA
+更改 新的 “my_dataset.json”
+路径：/root/autodl-fs/LLaMA-Factory/data/my_dataset.json
+创建 新的训练配置 YMAL文件 
+路径：/root/autodl-fs/LLaMA-Factory/examples/train_lora/my_second_lora.yaml
+YMAL文件 修改output_dir: /root/autodl-fs/LLaMA-Factory/saves/qwen3-8B-lora-my-second
+启动训练
+llamafactory-cli train examples/train_lora/my_second_lora.yaml
+产物：得到新的训练结果文件夹 和 适配器
+/root/autodl-fs/LLaMA-Factory/saves/qwen3-8B-lora-my-second
+
+第3步：加载基座模型和微调模型
+下面的文件的文字是错的，huggingface格式的真实名字是：Qwen3-8B，路径也要改，等下要改，
+LLaMA-Factory的推理需要指定配置文件 在examples/inference/文件夹中创建。
+你的判断正确：之前的命令行文件不存在是因为路径不对。
+推理配置文件
+基座模型推理配置 examples/inference/qwen3_base_infer.yaml：
+yaml
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B
+template: qwen
+infer_backend: huggingface
+微调模型推理配置 examples/inference/qwen3_lora_second_infer.yaml：
+yaml
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B
+adapter_name_or_path: /root/autodl-fs/LLaMA-Factory/saves/qwen3-8b-lora-my-second
+template: qwen
+infer_backend: huggingface
+finetuning_type: lora
+推理命令
+bash
+# 基座模型
+llamafactory-cli chat examples/inference/qwen3_base_infer.yaml
+# 微调模型
+llamafactory-cli chat examples/inference/qwen3_lora_second_infer.yaml
+
+第4步：批量整合测试文档，基座模型回答和微调模型回答 脚本
+# python batch_evaluate.py
+产物：evaluation_results.json
+路径：/root/autodl-fs/LLaMA-Factory/BadCase_AI_evaluation_pipeline/data/
+
+第5步：大模型对比评估脚本
+这是最关键的脚本，prompt必须严格设计以确保客观性。
+# python compare_and_judge.py
+产物：final_judgment.json
+路径：/root/autodl-fs/LLaMA-Factory/BadCase_AI_evaluation_pipeline/
+
+本次操作的脚本体系
+脚本	功能	产出
+prepare_data.py	下载alpaca-cleaned，切分训练/测试集（500+50）	my_dataset.json + my_test_dataset.json
+summarize_dataset.py	用大模型总结数据集领域	dataset_summary.txt（中英双语）
+batch_evaluate.py	基座模型和微调模型批量推理	evaluation_results.json
+compare_and_judge.py	大模型裁判对比评估	final_judgment.json（含胜率统计）
+
+#完整执行流程
+bash
+# 按顺序执行
+python prepare_data.py            # 第1步：准备数据
+python summarize_dataset.py      # 第2步：总结数据集领域
+# 第3步：启动训练（参考第12天的命令）
+llamafactory-cli train examples/train_lora/my_first_lora.yaml
+python batch_evaluate.py         # 第4步：批量测试
+python compare_and_judge.py      # 第5步：大模型对比评估
+# 第6步：查看 final_judgment.json，撰写评估报告
+关于微调模型加载的问题
+你注意到测试脚本中基座模型和微调模型都用了 qwen3:8b。这是因为当前你还没有把LoRA适配器部署到Ollama。
+临时方案（今天可用）：两个都用 qwen3:8b，先跑通评估流程。这次评估验证的是“评估管道是否正常工作”。
+正式方案（第16-17天会做）：用 ollama create 把LoRA适配器导入Ollama，然后微调模型就有独立的模型名了（如 my-tuned-model）。
+当前阶段，先把评估管道跑通。管道通了，下次训练完就能直接复用。

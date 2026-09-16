@@ -1,0 +1,23 @@
+name: llm-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - matplotlib
+  - pip:
+    - fastapi>=0.115.0
+    - uvicorn>=0.30.0
+    - python-multipart>=0.0.9
+    - pydantic>=2.0.0
+    - python-dotenv>=1.0.0
+    - loguru>=0.7.0
+    - requests>=2.31.0
+    - redis>=5.0.0
+    - fastapi-limiter==0.1.4
+    - ollama>=0.1.0
+    - vllm>=0.5.0
+    - huggingface_hub>=0.20.0
+    - locust

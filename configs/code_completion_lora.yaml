@@ -1,0 +1,42 @@
+### 模型配置（使用Coder版本）
+model_name_or_path: /root/autodl-fs/models/Qwen3-Coder-7B-Instruct
+
+### 训练方法（使用已验证的最优参数）
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+lora_dropout: 0.05
+
+### 数据集
+dataset: code_completion
+template: qwen
+cutoff_len: 1024
+max_samples: 250
+
+### 输出目录
+output_dir: /root/autodl-fs/LLaMA-Factory/saves/code_completion_lora
+
+### 训练参数（best_lora_config.yaml）
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 日志与保存（早停+最优检查点）
+logging_steps: 10
+save_steps: 50
+save_total_limit: 3
+plot_loss: true
+report_to: mlflow
+load_best_model_at_end: true
+metric_for_best_model: loss
+greater_is_better: false
+eval_strategy: steps
+eval_steps: 25

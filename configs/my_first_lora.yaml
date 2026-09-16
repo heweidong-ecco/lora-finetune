@@ -1,0 +1,51 @@
+### 模型配置
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master
+
+### 训练方法
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+lora_dropout: 0.05
+
+### 数据集
+dataset: my_dataset
+template: qwen
+cutoff_len: 1024
+max_samples: 200
+
+### 输出目录
+output_dir: /root/autodl-fs/LLaMA-Factory/saves/qwen3-8b-lora-my-first
+
+### 训练参数
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 日志与保存
+logging_steps: 10
+save_steps: 50
+save_total_limit: 2
+plot_loss: true
+
+### MLflow 集成
+report_to: mlflow
+
+# 训练参数速查
+# 参数	本次训练值	含义	调优方向
+# lora_rank	8	便签纸的大小	不够就升到16，过拟合就降到4
+# lora_alpha	16	便签纸的墨水浓度	通常保持 rank 的2倍
+# learning_rate	2e-4	每次调整的步长	不收敛就降到5e-5
+# num_train_epochs	3	把数据集看几遍	loss还在降就加到5
+# per_device_train_batch_size	2	每次看几条数据	OOM就降到1
+# gradient_accumulation_steps	4	攒几次再一起更新	batch_size降了，这个就翻倍
+# cutoff_len	1024	每条数据最大token数	长文本任务需要加大
+# bf16	true	混合精度训练	省显存，几乎不影响效果
+# save_total_limit	2	只保留最近2个检查点	防止磁盘被撑满

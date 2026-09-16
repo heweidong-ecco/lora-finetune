@@ -1,0 +1,45 @@
+### 模型配置
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master
+
+### 训练方法
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+lora_dropout: 0.05
+
+### 数据集
+dataset: my_dataset
+template: qwen
+cutoff_len: 1024
+max_samples: 500
+
+### 输出目录
+output_dir: /root/autodl-fs/LLaMA-Factory/saves/exp1_baseline
+
+### 训练参数
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 日志与保存 （检查点保存 优化）
+logging_steps: 10 # 每10步记录一次日志
+save_steps: 50 # 每50步保存一次
+save_total_limit: 5 # 保留最近5个检查点
+plot_loss: true # 生成 loss 曲线图
+report_to: mlflow
+
+# 优化策略
+# 早停与评估（新增）
+load_best_model_at_end: true # 训练结束加载最优检查点
+metric_for_best_model: loss # 以 loss 为评判标准
+greater_is_better: false # loss 越低越好
+eval_strategy: steps # 按步数评估
+eval_steps: 25 # 每25步评估一次
