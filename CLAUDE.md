@@ -153,8 +153,10 @@ lora-finetune/
 
 ### 工程待办
 
-- [ ] ⬜ 本仓库代码的 `LICENSE`（已建 MIT，待确认）
-- [ ] ⬜ `git init` + 推 GitHub（**注意 `.gitignore` 已挡掉原始素材目录**）
+- [x] ✅ `LICENSE` —— MIT，署名 `heweidong-ecco`（2026-09-16）
+- [x] ✅ **已推 GitHub**：`https://github.com/heweidong-ecco/lora-finetune`（**public**）
+       台账：93 个文件 / 0.98 MB ／ 提交 `c41d5fa` ／ 分支 `main`
+       ⚠️ 推送后**始终先确认 `.gitignore` 生效**再 `git add`，原始素材目录已在仓库外
 - [x] ✅ `gateway/` 文件名已清理（2026-09-16，13 个文件改名）
 - [ ] ⬜ `gateway/` 的文档**代码围栏丢失**（从对话粘贴所致，`test_main.md` 有 12 处裸 `bash`/`json` 标记），代码块不渲染
 - [ ] ⬜ `LICENSE` 版权所有者已填 `heweidong-ecco`，请确认是否用这个账号
