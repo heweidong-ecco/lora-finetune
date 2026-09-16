@@ -155,6 +155,13 @@ lora-finetune/
 
 ### 工程待办
 
+- [x] ✅ **训练产物已找回**（2026-09-16）：五组训练（exp1/2/3 + my-first/my-second）的
+      `trainer_state.json` / `trainer_log.jsonl` / `all_results.json` / `training_args.bin` 等
+      **小文本文件已归档**（权重与优化器状态因体积过大未保留）。
+      它们使 E01~E03 的每一个 loss 数字**都变得可复算** —— 见 `experiments/E01-baseline.md` §五。
+      ⚠️ 归档在**仓库外**，仓库内只保留结论与复算说明。
+- [ ] ⬜ **可选**：把上述小文本文件**收进仓库**（每个几 KB），让实验记录的每个数字都能被外人复算。
+      收益明显，但会让仓库多出 100+ 个小文件，**要不要收由你定**
 - [x] ✅ `LICENSE` —— MIT，署名 `heweidong-ecco`（2026-09-16）
 - [x] ✅ **已推 GitHub**：`https://github.com/heweidong-ecco/lora-finetune`（**public**）
        台账：93 个文件 / 0.98 MB ／ 提交 `c41d5fa` ／ 分支 `main`
