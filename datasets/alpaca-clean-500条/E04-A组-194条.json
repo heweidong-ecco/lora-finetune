@@ -1,0 +1,972 @@
+[
+  {
+    "instruction": "Generate a creative name for a restaurant serving Mexican cuisine.",
+    "input": "",
+    "output": "\"Maya's Magic Spice\""
+  },
+  {
+    "instruction": "Come up with a slogan to describe a new lipstick product.",
+    "input": "",
+    "output": "\"Unleash your inner beauty with our vibrant, long-lasting lipstick!\""
+  },
+  {
+    "instruction": "Evaluate this sentence for spelling and grammar mistakes",
+    "input": "He finnished his meal and left the resturant",
+    "output": "There are two spelling errors in the sentence. The corrected sentence should be: \"He finished his meal and left the restaurant.\""
+  },
+  {
+    "instruction": "Suggest a good screen capture tool for Mac.",
+    "input": "",
+    "output": "One good screen capture tool for Mac is Snagit. It allows you to capture screenshots, screen recordings, and even create GIFs. It has powerful annotation and editing tools, allowing you to mark up and enhance your images before sharing them. Its interface is easy to use, and it is available as a standalone application or as a browser extension. Other options you could consider are Lightshot, CloudApp or the native Mac screenshot tool using the built-in shortcut keys (Command + Shift + 4 for selected area, Command + Shift + 3 for full screen)."
+  },
+  {
+    "instruction": "Evaluate the following statement",
+    "input": "AI is the new electricity.",
+    "output": "The statement \"AI is the new electricity\" is a metaphor often used to convey the transformational impact that artificial intelligence is expected to have on both society and industry. Similar to how electricity transformed every aspect of life and business when it was first introduced, AI is also expected to bring about fundamental changes. Like electricity, AI has become an essential component of daily life, and its applications are wide-ranging, from healthcare to transportation to communication. The impact of AI is already being felt, and its use is expected to only accelerate in the coming years, making it an apt comparison to the revolutionary impact of electricity. Of course, like all metaphors, it is not meant to be taken literally, but it does capture the idea of profound change that AI is bringing."
+  },
+  {
+    "instruction": "Compose a poem about a single color.",
+    "input": "",
+    "output": "Title: The Depth of Blue\n\nSoft and gentle like a lullaby,\nCool and calm like the ocean's tide,\nEndless skies on a summer's day,\nThe color blue in its tranquil array.\n\nThe hue of sapphires and forget-me-nots,\nA peaceful aura it gently plots,\nThe color of denim, a timeless style,\nBlue evokes a comforting smile.\n\nIt’s the shade of sadness and melancholy too,\nA depth of emotion, pure and true,\nSteady like the breath of the night,\nThe color blue, an enchanting sight.\n\nFrom baby blue to navy deep,\nA range of feelings it keeps,\nIt's a color that soothes the soul,\nThe color blue, forever whole."
+  },
+  {
+    "instruction": "What does DNA stand for?",
+    "input": "",
+    "output": "DNA stands for Deoxyribonucleic Acid. It is the molecule that carries the genetic instructions used in the growth, development, functioning, and reproduction of all living organisms."
+  },
+  {
+    "instruction": "Come up with a social media campaign slogan.",
+    "input": "",
+    "output": "\"Let's connect the world, one post at a time.\""
+  },
+  {
+    "instruction": "Compose a haiku with the provided subject.",
+    "input": "Spring",
+    "output": "Amidst blooming flowers\nGentle breeze moves budding trees\nSpring awakens life."
+  },
+  {
+    "instruction": "Generate a haiku poem.",
+    "input": "",
+    "output": "Fallen crimson leaves,\nSighing softly in the breeze,\nNature's tranquil peace."
+  },
+  {
+    "instruction": "Variable x is defined as “4x + 2y = 10”. Find the value of x.",
+    "input": "",
+    "output": "Given the equation 4x + 2y = 10, there are infinitely many solutions for the value of x, depending on the value of y. In other words, the value of x is dependent on the value of y.\n\nHowever, it is still possible to express x in terms of y. To do so, we can rearrange the equation to solve for x:\n\n4x + 2y = 10\n4x = 10 - 2y\nx = (10 - 2y)/4\n\nSo, according to the equation, the value of x is (10 - 2y)/4. Without knowing the specific value of y, it is not possible to determine the exact value of x."
+  },
+  {
+    "instruction": "Find the differences between the two short texts.",
+    "input": "Text A: She was wearing a beautiful red dress.\nText B: She had on a gorgeous red dress.",
+    "output": "Both texts convey the same basic meaning: a woman wearing a red dress. The differences between the two texts are in the word choices and sentence structure. In Text A, the verb used is 'wearing', while in Text B the verb used is 'had on'. Additionally, Text A describes the dress as 'beautiful' while Text B describes it as 'gorgeous'. These are both synonyms, but may carry slightly different connotations."
+  },
+  {
+    "instruction": "The positive integers A, B, A-B, and A+B are all prime numbers. The sum of these four primes is\n\nA. even\nB. divisible by 3\nC. divisible by 5\nD. divisible by 7\nE. prime\n\nExpress your answer using a letter, as A, B, C, D, or E.",
+    "input": "",
+    "output": "We are given that the positive integers A, B, A-B, and A+B are all prime numbers. We need to find the sum of these four primes.\n\nFirst, note that A-B and A+B are either both odd or both even. However, they are also both prime, so they must both be odd.\n\nTherefore, one of A and B is odd and the other even. Since A is the prime number lying between A-B and A+B, A must be the odd prime.\n\nThus, B=2 (the only even prime), and A-2, A, and A+2 are consecutive odd primes (3, 5, and 7).\n\nThe sum of the four primes 2, 3, 5, and 7 is the prime number 17.\n\nTherefore, the correct answer is (E), prime."
+  },
+  {
+    "instruction": "Name five characteristics of a typical resume.",
+    "input": "",
+    "output": "Here are five common characteristics of a typical resume:\n\n1. Concise and clear formatting: A typical resume is formatted in a clear and easy-to-read manner, with headings, bullet points, and consistent font styles.\n\n2. Tailored content: The content of a typical resume is tailored to match the job requirements and highlights relevant skills, accomplishments, and experiences of the applicant.\n\n3. Use of keywords: Many resumes include specific keywords related to the job or industry, to make them more easily discoverable by applicant tracking systems.\n\n4. Professional tone: A typical resume uses a professional and formal tone throughout, avoiding slang or overly casual language.\n\n5. Contact information: A typical resume includes the applicant's contact information at the top, such as their name, phone number, email address, and sometimes a link to their LinkedIn profile or personal website."
+  },
+  {
+    "instruction": "Given a binary tree, check if it is a binary search tree. Write a Java function to do it. Assume the Node class is implemented.",
+    "input": "",
+    "output": "To check if a binary tree is a binary search tree (BST), we need to ensure that all the nodes in the left subtree of a node are less than or equal to the current node's value while all the nodes in the right subtree of a node are greater than the current node's value. Below is a Java function that checks if a binary tree is a BST.\n\n```\npublic boolean isBST(Node root) {\n    return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);\n}\n\nprivate boolean isBST(Node node, int min, int max) {\n    if (node == null) {\n        return true;\n    }\n    if (node.data < min || node.data > max) {\n        return false;\n    }\n    return isBST(node.left, min, node.data - 1) && isBST(node.right, node.data + 1, max);\n}\n```\n\nThe `isBST` function takes in the root node of the binary tree and calls the private `isBST` function with the minimum and maximum possible integer values as the initial parameters. The `isBST` function checks if the node is null, in which case it returns true. Otherwise, it checks if the node's value is within the given range of min and max. If not, it returns false because the node violates the BST property. If the value is within the given range, it recursively checks the left and right subtrees with updated min and max values. If both subtrees return true, the function returns true."
+  },
+  {
+    "instruction": "Summarize the main argument of the paper \"A Social Network that Influences Attitudes and Behaviors\"",
+    "input": "",
+    "output": "The paper \"A Social Network that Influences Attitudes and Behaviors\" argues that social networking sites have a significant impact on people's attitudes and behavior. The authors argue that through features like content sharing, online messaging, and commenting systems, members of a network can influence each other's thoughts and actions. They provide evidence from several studies that show how online communication can affect individuals’ attitudes towards social issues, consumer behavior, and even health decisions. The paper suggests that social networks can be a powerful tool for promoting positive behavioral changes, but also warns of the potential negative consequences of these influences. Overall, the main argument of this paper is that social networks play a vital role in shaping people's attitudes and behaviors."
+  },
+  {
+    "instruction": "Create a new recipe for flavorful noodles",
+    "input": "",
+    "output": "## Flavorful Noodles with Chicken, Garlic and Basil\n\n### Ingredients:\n- 12 cloves of garlic (thinly sliced)\n- 400g of fresh egg noodles\n- 2 boneless and skinless chicken breasts\n- 1 cup fresh basil leaves\n- Salt to taste\n- Ground black pepper to taste\n- Red pepper flakes to taste (optional)\n- 3 tablespoons of light soy sauce\n- 2 tablespoons olive oil or vegetable oil\n- 2 thinly sliced spring onions\n\n### Instructions:\n1. Cut the chicken breasts into thin slices, season with salt, black pepper, and set aside.\n2. Heat a large frying pan or wok over medium-high heat, add 2 tablespoons of oil and sauté the sliced garlic until golden brown. Set the garlic aside.\n3. In the same pan, add the seasoned chicken slices and cook for about 5-7 minutes or until they turn golden brown in color. Set the cooked chicken aside.\n4. In the same pan, add 1 tablespoon of oil and then sauté the spring onions for 1-2 minutes.\n5. Add the fresh egg noodles, and fry for 2-3 minutes.\n6. Add the light soy sauce, red pepper flakes, and mix well.\n7. Add the cooked chicken, browned garlic and fresh basil leaves, and toss until all ingredients are well mixed and the noodles are heated through.\n8. Serve hot and enjoy!"
+  },
+  {
+    "instruction": "Rewrite the given sentence using a different but similar word.",
+    "input": "She partook in the event.",
+    "output": "She participated in the event."
+  },
+  {
+    "instruction": "Correct the grammatical errors in the sentence.",
+    "input": "She come to the store for supplies.",
+    "output": "She came to the store for supplies."
+  },
+  {
+    "instruction": "Rewrite the sentence in a different tense.",
+    "input": "He asked her to join him for lunch.",
+    "output": "He will ask her to join him for lunch. (future tense)"
+  },
+  {
+    "instruction": "Generate a list of present continuous verbs.",
+    "input": "",
+    "output": "1. Eating\n2. Drinking\n3. Running\n4. Laughing\n5. Singing\n6. Dancing\n7. Sleeping\n8. Cooking\n9. Reading\n10. Writing\n11. Playing\n12. Swimming\n13. Walking\n14. Talking\n15. Listening\n16. Watching\n17. Studying\n18. Working\n19. Exercising\n20. Smiling."
+  },
+  {
+    "instruction": "Generate 10 rhyming words for the word \"love\".",
+    "input": "",
+    "output": "1. Dove\n2. Glove\n3. Above\n4. Shove\n5. Strove\n6. Wove\n7. Behove\n8. Cove\n9. Nov\n10. Autoclave"
+  },
+  {
+    "instruction": "Name three diseases that can be caused by poor hygiene.",
+    "input": "",
+    "output": "1. Diarrhea: This is often caused by eating contaminated food or water. Poor hygiene, such as not washing hands before handling food or eating, can spread harmful bacteria and viruses that can lead to diarrhea.\n\n2. Influenza (the flu): The flu virus can spread through the air from coughing or sneezing. Poor hygiene behaviors, such as not washing hands regularly or touching one’s face, can increase the likelihood of contracting the flu.\n\n3. Skin infections: Poor hygiene can contribute to the spread of skin infections such as ringworm, athlete’s foot, and impetigo. These infections spread through direct contact with the skin or infected objects or surfaces, and can be prevented by regular hand washing and good personal hygiene."
+  },
+  {
+    "instruction": "Arrange the words in the given sentence to form a grammatically correct sentence.",
+    "input": "quickly the brown fox jumped",
+    "output": "The brown fox jumped quickly."
+  },
+  {
+    "instruction": "Write a review of the restaurant.",
+    "input": "The restaurant is called La Taqueria.",
+    "output": "I recently visited La Taqueria and was blown away by the quality of the food and the friendly atmosphere. This place certainly lives up to its reputation for serving up some of the best Mexican food in town. The tacos were incredibly fresh and packed with flavor, while the salsas and sides were a perfect compliment to the main course. Additionally, the staff at La Taqueria were warm and welcoming, making my experience all the more enjoyable. Overall, I would highly recommend this restaurant to anyone looking for a tasty and authentic Mexican meal."
+  },
+  {
+    "instruction": "What are some negative effects of deforestation mentioned in the following passage?",
+    "input": "Deforestation, the large-scale removal of trees, has several adverse effects on the environment. It leads to the loss of habitat for countless species, which can result in a decline in biodiversity. Additionally, deforestation contributes to climate change by releasing stored carbon dioxide into the atmosphere.",
+    "output": "The negative effects of deforestation mentioned in the passage include loss of habitat for species, decline in biodiversity, and contribution to climate change by releasing stored carbon dioxide."
+  },
+  {
+    "instruction": "Compare and contrast the two pieces of software, Microsoft Word and Google Docs.",
+    "input": "",
+    "output": "Microsoft Word and Google Docs are both word processing software that allows users to create, edit and share documents.\n\nOne of the main differences between the two is that Microsoft Word is a standalone software that is installed on a computer, while Google Docs is a web-based application that can only be accessed via the internet. This means that Word documents are saved directly onto the user's computer, while Google Docs are saved on Google's servers.\n\nMicrosoft Word is part of the Microsoft Office suite of applications, and is a paid software. On the other hand, Google Docs is free to use for anyone with a Google account. However, Word does offer more advanced features and tools, such as change tracking and document comparison, that are not available on Google Docs.\n\nGoogle Docs has a strong collaboration feature, where multiple users can work on the same document at the same time, with changes appearing in real-time. While Microsoft Word also features collaboration tools, they are not as robust as those found in Google Docs.\n\nMicrosoft Word and Google Docs both have similar formatting and editing capabilities, although Word has more options when it comes to style customization. They also both offer a wide range of templates and add-ons.\n\nIn conclusion, Microsoft Word is a more powerful, standalone software with advanced features, while Google Docs is a free, web-based application with strong collaboration capabilities. The choice between the two depends on the user's needs and preferences."
+  },
+  {
+    "instruction": "Arrange the given sentences into a well-structured paragraph.",
+    "input": "Many of the world’s problems can be traced back to a lack of education. People must be provided with a good foundation in education. Education has the power to provide societies with long-term solutions.",
+    "output": "Education is a powerful tool that has the ability to provide societies with long-term solutions to many of the world's problems. Many of these problems can be traced back to a lack of education, which highlights the importance of providing people with a good foundation in education. By investing in education, we can empower individuals and communities to tackle challenges and create positive change."
+  },
+  {
+    "instruction": "Classify the item as either animal or vegetable.",
+    "input": "Banana",
+    "output": "Vegetable"
+  },
+  {
+    "instruction": "Give three tips for staying healthy.",
+    "input": "",
+    "output": "1. Eat a balanced and nutritious diet: Make sure your meals are inclusive of a variety of fruits and vegetables, lean protein, whole grains, and healthy fats. This helps to provide your body with the essential nutrients to function at its best and can help prevent chronic diseases.\n\n2. Engage in regular physical activity: Exercise is crucial for maintaining strong bones, muscles, and cardiovascular health. Aim for at least 150 minutes of moderate aerobic exercise or 75 minutes of vigorous exercise each week.\n\n3. Get enough sleep: Getting enough quality sleep is crucial for physical and mental well-being. It helps to regulate mood, improve cognitive function, and supports healthy growth and immune function. Aim for 7-9 hours of sleep each night."
+  },
+  {
+    "instruction": "Replace the single quote (') to double quote (\") in the given sentence.",
+    "input": "In the U.S., KIPP is a 'public-private partnership'.",
+    "output": "In the U.S., KIPP is a \"public-private partnership\"."
+  },
+  {
+    "instruction": "Analyze the historical significance of the Stonewall Uprising.",
+    "input": "",
+    "output": "The Stonewall Uprising is a historical event that took place on June 28, 1969, when members of the LGBTQ+ community in New York City fought back against systemic discrimination and police harassment. This event is recognized as a major turning point in the fight for LGBTQ+ rights and is often regarded as the start of the modern LGBTQ+ rights movement.\n\nBefore the Stonewall Uprising, much of American society viewed homosexuality as a mental illness, and police would regularly raid establishments known to cater to LGBTQ+ clientele. This was the case for the Stonewall Inn, a gay bar in Greenwich Village, where a police raid sparked a spontaneous uprising from the patrons and the surrounding community.\n\nWhat followed were six days of protests and violent clashes with law enforcement outside the Stonewall Inn. The event quickly became an international news story, and it galvanized the LGBTQ+ community to organize and fight for their rights. In the following years, many LGBTQ+ organizations formed, and the first gay pride parades took place in major cities across the United States.\n\nThe Stonewall Uprising helped to usher in a new era in the LGBTQ+ rights movement, with the LGBTQ+ community becoming more visible and vocal in their demands for equal treatment. It remains a powerful symbol of resistance and resilience in the face of discrimination and oppression.\n\nOverall, the historical significance of the Stonewall Uprising lies in its role as a catalyst for the modern LGBTQ+ rights movement, and its enduring legacy in the ongoing fight for LGBTQ+ equality."
+  },
+  {
+    "instruction": "Pretend you are a project manager of a construction company. Describe a time when you had to make a difficult decision.",
+    "input": "",
+    "output": "I had to make a difficult decision when I was working as a project manager at a construction company. I was in charge of a project that needed to be completed by a certain date in order to meet the client’s expectations. However, due to unexpected delays, we were not able to meet the deadline and so I had to make a difficult decision. I decided to extend the deadline, but I had to stretch the team’s resources even further and increase the budget. Although it was a risky decision, I ultimately decided to go ahead with it to ensure that the project was completed on time and that the client’s expectations were met. The project was eventually successfully completed and this was seen as a testament to my leadership and decision-making abilities."
+  },
+  {
+    "instruction": "Reword the following sentence to the past tense.",
+    "input": "She is writing a novel inspired by her grandfather.",
+    "output": "She wrote a novel inspired by her grandfather."
+  },
+  {
+    "instruction": "Generate a function to sort a list of strings alphabetically",
+    "input": "",
+    "output": "Here's a simple function that takes a list of strings as an argument and returns the sorted list in alphabetical order:\n\n``` python\ndef alphabetical_sort(strings_list):\n    return sorted(strings_list)\n\n# example usage\nexample_list = ['banana', 'cherry', 'apple', 'grape']\nsorted_list = alphabetical_sort(example_list)\nprint(sorted_list)\n```\n\nThis function uses the built-in `sorted` function to sort the list of strings in ascending order, which is alphabetical order for strings. You can use this function to sort any list of strings, and it will always return a new list containing the sorted strings."
+  },
+  {
+    "instruction": "Calculate the total surface area of a cube with a side length of 5 cm.",
+    "input": "",
+    "output": "The surface area of a cube is found by calculating the area of one of its faces and multiplying it by six (since a cube has six faces). The area of a cube face is simply its side length squared.\n\nThus for this particular cube:\n\nSurface Area = 6 × (Side Length)² \n             = 6 × (5 cm)²\n             = 6 × 25 cm²\n             = 150 cm²\n\nThe total surface area of this cube is 150 square centimeters."
+  },
+  {
+    "instruction": "Describe the major differences between the Catholic and Protestant faiths.",
+    "input": "",
+    "output": "Catholicism and Protestantism are two denominations or branches of Christianity that emerged from differences in beliefs and interpretations of the Bible, as well as in the organization of the Church.\n\nSome of the major differences between the two include:\n\n1. Authority: In the Catholic faith, the Pope is considered the highest authority in the Church and has the power to make decisions on behalf of all Catholics. In contrast, Protestant churches do not have a central figure or authority and are generally organized in a more democratic fashion.\n\n2. Role of scripture: Catholics believe in the authority of both the Bible and Church tradition, while Protestants rely solely on the Bible as the ultimate source of truth.\n\n3. Role of saints: Catholics venerate saints and believe that they can intercede on behalf of believers, while Protestants do not believe in the intercession of saints.\n\n4. Sacraments: In the Catholic Church, there are seven sacraments (Baptism, Confirmation, Eucharist, Reconciliation, Anointing of the Sick, Holy Orders, and Matrimony) while Protestant churches recognize only two (Baptism and the Lord’s Supper).\n\n5. Salvation: Catholics believe that salvation comes through faith as well as good works, while Protestants believe that salvation comes through faith alone.\n\nThese are some of the major differences between Catholicism and Protestantism, although there are many other differences, both minor and major, between the two branches of Christianity."
+  },
+  {
+    "instruction": "Rewrite the sentence into more descriptive form:\nThe food was delicious.",
+    "input": "",
+    "output": "The food was absolutely delightful, with a tantalizing blend of flavors that left my taste buds dancing with joy."
+  },
+  {
+    "instruction": "Describe what it takes to be a successful manager.",
+    "input": "",
+    "output": "Being a successful manager requires an array of skills and traits that enable one to effectively lead and manage a team towards achieving common goals. Here are some of the key qualities and skills that contribute to being a successful manager:\n\n1. Leadership: A successful manager must possess strong leadership skills, such as the ability to motivate and inspire team members, delegate tasks effectively, and set clear goals and expectations.\n\n2. Communication: Effective communication is crucial for a manager’s success. They must be able to clearly articulate their vision, goals, and expectations as well as listen to feedback and concerns from their team.\n\n3. Decision-making: Managers are responsible for making important decisions that affect their team and the organization. They must be able to gather and analyze information, assess risks, and make timely decisions that are in the best interest of the organization.\n\n4. Adaptability: Successful managers must be adaptable and flexible in their approach. They must be able to pivot quickly when faced with unexpected challenges and adapt to changing circumstances.\n\n5. Emotional Intelligence: A manager with a high level of emotional intelligence is better equipped to understand and manage their own emotions, as well as those of their team members. This enables them to build strong relationships, resolve conflicts, and foster a positive work environment.\n\n6. Time Management: Effective time management is essential for a manager’s success. They must be able to prioritize tasks, delegate effectively, and efficiently manage their own time as well as that of their team.\n\n7. Strategic Thinking: A successful manager must possess the ability to think strategically – to see the big picture, identify long-term goals, and develop a plan to achieve them.\n\nOverall, being a successful manager requires a combination of hard and soft skills, as well as the ability to effectively lead and manage a team towards achieving common goals."
+  },
+  {
+    "instruction": "For the following passage, identify the theme or thesis statement.",
+    "input": "Corruption affects countries on many levels and erodes their competitive edge in a global economy. Poor compliance to regulations, ethical standards, and laws impairs public trust and results in conflict. Transnational financial crime drains a nation’s resources, weakens government tools to deliver long-term social goals, and destabilizes markets.",
+    "output": "The theme or thesis statement of this passage is that corruption has severe negative impacts on a country's economy, society, and governance."
+  },
+  {
+    "instruction": "Design an app for a delivery company.",
+    "input": "",
+    "output": "The delivery company app would provide an efficient way for customers to manage all their delivery needs in one place. Here are the key features of this app:\n\n1. User Account: Customers will be able to create a personal account to track their delivery orders and view their account history. Through the account, they can edit their personal information, contact details, and addresses.\n\n2. Order Placement: Customers can place their delivery orders on the app, either by selecting their desired items or by uploading an image of their shopping list. Orders can be scheduled for specific dates and times or placed on a recurring basis.\n\n3. Real-time tracking: Customers can track their orders in real-time on a map, with updates on the estimated time of arrival.\n\n4. In-app communication: The customer will be able to communicate with the delivery driver about delivery instructions, schedules or special requests through an in-app chat function.\n\n5. Delivery confirmation: After the delivery is complete, the customer will receive a notification, and they will be able to confirm the delivery and rate the service.\n\n6. Payment: Customers will be able to add their preferred payment method to the app, such as a credit card or through a mobile payment system, and transactions will be processed seamlessly.\n\n7. Customer Support: Customers will able to access the help center, where they can report any issues, get answers to their questions, or call customer support directly from the app.\n\nOverall, this delivery app will provide an intuitive and user-friendly interface for customers, making the delivery process seamless and stress-free."
+  },
+  {
+    "instruction": "Write a humorous joke.",
+    "input": "",
+    "output": "Why don't scientists trust atoms? Because they make up everything!"
+  },
+  {
+    "instruction": "Identify the correct order for the following commands",
+    "input": "pack, prepare, travel",
+    "output": "The correct order for the commands would be: \n1. Prepare\n2. Pack\n3. Travel"
+  },
+  {
+    "instruction": "List five of the main characters in the movie.",
+    "input": "Titanic",
+    "output": "1. Jack Dawson, played by Leonardo DiCaprio\n2. Rose DeWitt Bukater, played by Kate Winslet\n3. Cal Hockley, played by Billy Zane\n4. Margaret \"Molly\" Brown, played by Kathy Bates\n5. Ruth DeWitt Bukater, played by Frances Fisher"
+  },
+  {
+    "instruction": "Perform a sentiment analysis on the given sentence.",
+    "input": "I love this movie!",
+    "output": "The sentiment of the sentence \"I love this movie!\" is positive. This is indicated by the word \"love\" which shows a strong positive emotion or feeling towards the subject, in this case, the movie."
+  },
+  {
+    "instruction": "Analyze the following poem and explain its meaning.",
+    "input": "'My love is like a red, red rose'",
+    "output": "This is the first line of a famous poem by Robert Burns, titled \"A Red, Red Rose.\" In this line, the speaker is comparing his love to a red rose, using a simile. This comparison suggests that the speaker's love is beautiful, passionate, and delicate, much like the flower. The repetition of the word \"red\" adds emphasis to the color, further emphasizing the passion and intensity of the speaker's love. Overall, this line sets the tone for the rest of the poem, which celebrates the depth of the speaker's emotions and the beauty of the object of his love."
+  },
+  {
+    "instruction": "How does the internet of things (IoT) work?",
+    "input": "",
+    "output": "The Internet of Things (IoT) refers to the interconnectivity of physical devices and everyday objects that are embedded with sensors, electronics, and software enabling them to exchange data with other devices and systems over the internet. IoT devices can range from simple sensors to complex machines, and they can communicate with each other and with humans via the internet.\n\nAt its most basic level, an IoT system consists of three main components: the devices or \"things,\" the connectivity that enables them to communicate, and the platform or software that collects and analyzes the data.\n\n1. Devices/Things: These are the actual physical devices that are connected to the internet, such as sensors, cameras, thermostats, and home appliances.\n\n2. Connectivity: In order for the devices to communicate, they need to be connected to the internet. This can be done through various wireless or wired communication technologies, including Wi-Fi, Bluetooth, cellular or satellite.\n\n3. Platform/Software: Once the data from the devices is collected, it is sent to an IoT platform or software that aggregates and analyzes the data, and then makes it available to users or other systems. This can be done in the cloud, on a local server, or on the device itself.\n\nIn summary, IoT involves connecting devices, collecting data from those devices, and then using that data to provide insights and facilitate actions. These actions could include triggering an alarm, adjusting the temperature, or ordering supplies. By allowing devices to communicate with each other and with other systems, IoT is making it possible to automate and optimize many aspects of daily life, from home automation to industrial processes."
+  },
+  {
+    "instruction": "Indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\".",
+    "input": "Gregoire in Zola's Germinal",
+    "output": "In Émile Zola’s novel Germinal, Gregoire is one of the characters who reflects the theme of the corrupting influence of power. Being a member of the bourgeoisie, Gregoire is portrayed as an owner of shares in the mining company that represents an upper class of the society that exploits the poor working class. He plays a key role in the story in the way he uses his influential power to maintain the capitalist social order.\n\nThroughout the novel, Gregoire displays an attitude of complacency and acceptance of the social status quo, showing little concern or empathy towards the plight of the working-class miners. In fact, he presents himself as viewing the miners simply as part of the machinery of his business rather than real human beings, and he refuses to acknowledge their suffering or the injustices they endure. Instead, Gregoire justifies the company’s actions towards the workers, citing the need for profits and stability in the industry.\n\nGregoire’s behavior can be seen as a reflection of the corrupting nature of power. His position of influence, wealth, and prestige has clouded his judgment and morality, causing him to disregard the basic human needs and rights of the miners. In the end, his desire to maintain his position and status perpetuates the cycle of exploitation and oppression of the working class."
+  },
+  {
+    "instruction": "What is the product of 6 and 2?",
+    "input": "",
+    "output": "The product of 6 and 2 is 12."
+  },
+  {
+    "instruction": "Name 6 components of an artificial neural network",
+    "input": "",
+    "output": "An artificial neural network consists of several components, including:\n\n1. Input layer: This is the first layer of the neural network that receives the input data and passes it to the other layers for processing.\n\n2. Hidden layer(s): These are intermediate layers that apply transformation functions to the data, and are responsible for identifying patterns and relationships.\n\n3. Output layer: This is the final layer in the neural network that provides the result or prediction based on the inputs and processing done by the network.\n\n4. Neurons: These are the basic computational units that make up the neural network, receiving input signals and producing output signals.\n\n5. Weights: These are the values that determine the strength of the connections between the neurons in the neural network, and can be adjusted during the training process to improve the network's performance.\n\n6. Activation function: This is a mathematical function that applies a non-linear transformation to the neuron's input, helping the neural network to better represent complex data and patterns."
+  },
+  {
+    "instruction": "Reverse a linked list using haskel.",
+    "input": "",
+    "output": "Sure, here's one way to reverse a linked list in Haskell, using pattern matching and recursion:\n\n```\ndata LinkedList a = Nil | Cons a (LinkedList a)\n\nreverseLinkedList :: LinkedList a -> LinkedList a\nreverseLinkedList list = reverseLinkedListHelper list Nil\n  where\n    reverseLinkedListHelper Nil acc = acc\n    reverseLinkedListHelper (Cons x xs) acc = reverseLinkedListHelper xs (Cons x acc)\n```\n\nThe `LinkedList` type definition represents a singly linked list with a head element of type `a` and a tail of another linked list. \n\nThe `reverseLinkedListHelper` function is a helper function that uses tail recursion to reverse the list by iterating over each element in the original list and adding it to the front of the accumulating list `acc`, until the original list is empty (represented by `Nil` in the pattern matching). \n\nThe `reverseLinkedList` function is the top-level function that initializes the accumulating list `acc` as empty, then calls the `reverseLinkedListHelper` function with the original list and empty `acc`. This returns the reversed linked list."
+  },
+  {
+    "instruction": "Create a tweet with the following hashtag.",
+    "input": "#SharingIsCaring",
+    "output": "\"Remember that a small act of kindness can make a big difference in someone's life. Let's spread love and positivity by sharing what we have with those in need. #SharingIsCaring 💕\""
+  },
+  {
+    "instruction": "Generate a limerick poem about a lemur.",
+    "input": "",
+    "output": "There once was a lemur from Madagascar,\nWith soft, fuzzy fur like a czar.\nHe'd swing and he'd leap,\nIn the trees, oh so steep,\nThat dashing and daring lemur star!"
+  },
+  {
+    "instruction": "Write a 250 word essay about Coral Reef Conservation",
+    "input": "",
+    "output": "Coral reefs are one of the most biodiverse ecosystems on the planet and are often referred to as the “rainforests of the sea”. They provide habitats and shelter to a variety of marine organisms, as well as support human economies through fishing and tourism. However, rising ocean temperatures, acidification, pollution, and overfishing are major threats to coral reefs and the species that depend on them. To address these challenges, it is crucial to adopt measures for coral reef conservation.\n\nOne of the key approaches to coral reef conservation is to reduce the human impact on coral reefs. This involves reducing greenhouse gas emissions, which can help to slow down climate change and the warming of our oceans, protecting coral reefs from further damage. Additionally, reducing land-based sources of pollution, such as industrial waste and agricultural runoff, can help to improve the water quality around coral reefs. This, in turn, can enhance the resilience and the ability of corals to recover from damage.\n\nFostering sustainable fishing practices is another effective way to promote the conservation of coral reefs. Implementing marine protected areas and no-take zones can help to restore the balance of the ecosystem and allow depleted fish stocks to recover. Furthermore, encouraging public awareness and education on the importance of coral reefs can help to promote positive behavioral changes that support the conservation of these vital ecosystems.\n\nIn conclusion, coral reefs are a valuable resource that must be protected. To preserve these ecosystems and the species that inhabit them, it is essential to reduce human impact, promote sustainable practices, and raise awareness about their importance. With the right conservation measures in place, it is possible to secure a sustainable future for coral reefs and the marine life that depends on them."
+  },
+  {
+    "instruction": "Edit the following sentence for grammar and style.",
+    "input": "The professor answers the questions of the student accurately.",
+    "output": "The professor accurately answers the student's questions."
+  },
+  {
+    "instruction": "Write a short story about a day in the life of a software engineer.",
+    "input": "",
+    "output": "Once upon a time, in a bustling city, there lived a software engineer named John. John had always been passionate about technology and had pursued a career in software engineering to turn his passion into a profession.\n\nJohn's typical day began at 6:30 am when he woke up, and after his morning routine, he headed to his office, located in the downtown area of the city. As soon as he reached the office, he grabbed a cup of coffee and settled down at his desk, ready to dive into the lines of code that awaited him.\n\nJohn was the lead engineer of his team, responsible for creating, testing, and maintaining complex software systems. His workday involved a lot of coding, debugging, and problem-solving. He was extremely skilled at his job, and his team members looked up to him for guidance and support.\n\nAt noon, John took a break to have lunch with his colleagues. They talked about their ongoing projects and brainstormed ideas for new updates and features. After lunch, John spent the rest of the day coding and collaborating with his team. They had daily meetings to discuss progress, and John played a significant role in keeping the team motivated and focused.\n\nJohn loved his job, and every day was an opportunity to learn something new and to create something unique. As the day ended, John headed back home, content with the day's achievements. He spent his evenings relaxing or working on side projects, always looking for ways to improve and develop his skills.\n\nIn the end, John's job as a software engineer was more than just a career; it was an intellectual pursuit that brought him immense satisfaction and purpose. Every day brought new challenges and opportunities, and John tackled them with determination and skill."
+  },
+  {
+    "instruction": "Generate three verbs that mean the same as \"to apologize\"",
+    "input": "",
+    "output": "1. To express regret\n2. To atone\n3. To make amends"
+  },
+  {
+    "instruction": "Generate a poem about spring.",
+    "input": "",
+    "output": "In the air, there's a scent of something new,\nAs the sun kisses the earth, the flowers bloom,\nSpring has arrived with its delightful hue,\nAnd the world awakens from winter's gloom.\n\nThe soft breeze carries the sound of chirping birds,\nThe bees are buzzing, the butterflies take flight,\nNature is alive, whispering sweet words,\nAs the days grow longer, and the stars shine bright.\n\nThe grass is greener and the skies are blue,\nAs the trees blossom in pink and white,\nSpring is a season of beginnings anew,\nA time of growth, warmth, and pure delight.\n\nThe world is vibrant, full of energy and charm,\nAs we welcome spring with open arms."
+  },
+  {
+    "instruction": "Classify the following into animals, plants, and minerals",
+    "input": "Oak tree, copper ore, elephant",
+    "output": "Animals: Elephant\nPlants: Oak tree\nMinerals: Copper ore"
+  },
+  {
+    "instruction": "Explain why the election of Abraham Lincoln was considered a revolutionary moment.",
+    "input": "",
+    "output": "The election of Abraham Lincoln in 1860 is widely considered a revolutionary moment in American history. Several reasons contributed to this:\n\nFirst, Lincoln's election marked the first time a president from the newly-formed Republican Party had won the presidency. The Republican Party had been established only a few years earlier, primarily to oppose the expansion of slavery into new territories and states. This meant that Lincoln's election was a victory for those who opposed the expansion of slavery and represented a major shift in the country's political landscape.\n\nAdditionally, Lincoln's election came at a time when the country was deeply divided over the issue of slavery. Many southern states saw Lincoln's victory and his party's stance on slavery as a direct threat to their way of life. As a result, following Lincoln's election, several southern states seceded from the Union, leading to the start of the American Civil War. In this way, Lincoln's election marked a turning point in American history, as it set in motion events that would ultimately lead to the abolition of slavery and the reunification of the country.\n\nFinally, Lincoln is widely regarded as one of America's greatest presidents. During his time in office, he navigated the country through its greatest crisis, the Civil War, and played a key role in ending slavery through the Emancipation Proclamation and the passage of the Thirteenth Amendment. Lincoln's leadership and his legacy of fighting for freedom and equality make his election a revolutionary moment in American history."
+  },
+  {
+    "instruction": "How does the human brain remember information?",
+    "input": "",
+    "output": "The human brain remembers information through several intricate processes that involve encoding, storage, and retrieval. \n\nEncoding refers to the process of interpreting and organizing incoming information and converting it into a form that can be stored. This information can enter our brain through our senses: sight, sound, touch, taste, and smell. Once the information is encoded, it is then stored in various parts of the brain, such as the hippocampus and the prefrontal cortex for later retrieval. Storage involves the creation of a permanent record of the encoded information, which can change and modify over time.\n\nRetrieval is the process of accessing the stored information in response to a specific cue or trigger. Recall, recognition, and relearning are all types of retrieval. The more often information is retrieved, the stronger the memory becomes, making it easier to recall in the future. The connections between neurons strengthens with repeated retrieval, making the memory more durable.\n\nMemory is a complex and dynamic process, and while there is still much to learn about it, research has shown that our brain is capable of retaining a vast amount of information through these processes of encoding, storage, and retrieval."
+  },
+  {
+    "instruction": "Give a description of the following customer segment.",
+    "input": "Online shoppers in the US aged between 18-25",
+    "output": "Online shoppers in the US aged 18-25 represent a young adult, tech-savvy customer segment that frequently engages in e-commerce activities. This age group is likely to be digitally native, having grown up with the internet and being comfortable with technology. They are likely to use various digital platforms and devices to research, compare, and purchase products and services online. They may have different motivations for shopping online, including convenience, variety, and the ability to quickly find and compare the best deals. They may also have high expectations for fast and free shipping, easy returns, and personalized recommendations. This is a valuable customer segment for businesses, as they have a high level of engagement and potential for long-term loyalty."
+  },
+  {
+    "instruction": "Compile a list of five items that would help someone go camping.",
+    "input": "",
+    "output": "1. Tent: A good quality tent will provide shelter and protect you from the elements while camping.\n2. Sleeping bag and pad: These will keep you warm and comfortable while sleeping outdoors.\n3. Portable stove or grill: A stove or grill is a key piece of equipment for cooking meals while camping.\n4. Cooler: A cooler is necessary for keeping food and drinks cold and fresh, especially during hot weather.\n5. Lantern or flashlight: These are important for providing light after dark, whether you're navigating around the campsite or relaxing in your tent."
+  },
+  {
+    "instruction": "Describe the color pink.",
+    "input": "",
+    "output": "Pink is a pale, yet warm color that ranges from a soft, pastel shade to a vibrant and bright hue. It is a mix of the colors red and white, and often associated with feelings of romance, love, and femininity. Pink is also known to evoke feelings of playfulness, sweetness, and calm. This color is commonly seen in flowers, sunsets, and can be found in fashion, decorations, and artwork."
+  },
+  {
+    "instruction": "Classify the following sentence as either a metaphor or hyperbole.",
+    "input": "The room was so hot it felt like a sauna.",
+    "output": "The sentence \"The room was so hot it felt like a sauna\" is a metaphor."
+  },
+  {
+    "instruction": "Write a function to calculate the factorial of a given number.",
+    "input": "",
+    "output": "Sure! Here's one way to write a function to calculate the factorial of a given number in Python:\n\n```python\ndef factorial(n):\n    # Base case\n    if n <= 1:\n        return 1\n    # Recursive case\n    else:\n        return n * factorial(n-1)\n\n# Example: Calculate the factorial of 5\nnum = 5\nprint(f\"The factorial of {num} is {factorial(num)}\")\n```\n\nThis function uses recursion, which means that it calls itself until the base case (n <= 1) is reached. When the base case is reached, the function returns 1. Otherwise, the function will continue to call itself, multiplying n by the factorial of (n-1) at each call, until the base case is reached."
+  },
+  {
+    "instruction": "Suggest topics for an informal discussion about the given country.",
+    "input": "China",
+    "output": "1. China's rich cultural heritage and traditions \n2. Modernization and rapid urbanization in China \n3. Cuisine: Regional diversity and traditional dishes \n4. The Great Wall of China and other famous landmarks \n5. China's leading role in global trade and economy \n6. Chinese New Year and other festivals \n7. Historic cities and natural wonders of China \n8. Martial arts and its impact on global culture \n9. The rise of technology and innovation in China \n10. The social and environmental impact of population growth in China."
+  },
+  {
+    "instruction": "Generate a poem with 10 lines.",
+    "input": "",
+    "output": "A meadow filled with flowers, colorful and bright,\nA sky of endless blue in the warm sunlight,\nBirds singing melodies so pure and so true,\nNature's beauty bursting with every hue.\n\nThe rustling of leaves in a gentle breeze,\nThe buzzing of bees, busy as you please,\nA river flowing with grace and with ease,\nAll coming together in perfect harmony.\n\nThe wonder of creation so vast and so grand,\nNature's poetry in the palm of your hand."
+  },
+  {
+    "instruction": "Explain the implications of artificial intelligence in health care.",
+    "input": "",
+    "output": "Artificial intelligence (AI) is rapidly transforming the field of healthcare, bringing about a vast array of implications for patients, medical professionals and the industry as a whole. AI techniques including machine learning, natural language processing, and computer vision, are empowering numerous innovations that could have far-reaching impacts on patient care and medical research. Some of these implications include:\n\n1. Improved accuracy in diagnosis: AI has the ability to analyze large sets of patient data alongside a patient's symptoms, medical history and test results to provide improved diagnosis, reducing the likelihood of misdiagnosis or delayed diagnosis and leading to better patient outcomes.\n\n2. Enhanced treatment plans: Through big data analysis, AI can assess patient-specific information to propose more personalized treatment plans. This approach could be far more effective than the \"one-size-fits-all\" model of care delivery often used today, as it is tailored to the individual needs of each patient.\n\n3. Increased efficiency: AI can help automate routine tasks such as data entry, appointment scheduling, and the analysis of medical scans, freeing up more time for medical professionals to focus on patient care. AI-powered chatbots and virtual assistants can also take on the role of triage nurses, helping to answer patient queries and providing personalized health advice.\n\n4. Advanced drug discovery: AI is being used to accelerate drug discovery, helping to identify new drug candidates much more quickly and cost-effectively than traditional methods. This could greatly reduce the time and resources required to bring new treatments to market, potentially enhancing the speed and quality of healthcare delivery.\n\n5. Predictive analytics: AI is being used to develop algorithms that can predict a patient's likelihood of suffering certain conditions, or their risk of being readmitted following a hospital stay, allowing for earlier intervention and better health outcomes.\n\nThese are just some of the many ways that AI is revolutionizing healthcare, potentially leading to more accurate diagnosis, enhanced treatment, and overall improved patient care. However, care must be taken to ensure that AI is developed and used ethically, and that the technology does not widen health disparities or reduce the human touch that is so important in medical care."
+  },
+  {
+    "instruction": "What critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland?",
+    "input": "",
+    "output": "The movie you are likely thinking of is \"Mad Max: Fury Road,\" which was released in 2015 and has a setting of a post-apocalyptic wasteland. It received widespread critical acclaim for its action, direction, visuals, and performances."
+  },
+  {
+    "instruction": "What is the meaning of the following idiom?",
+    "input": "It’s raining cats and dogs",
+    "output": "The idiom \"It’s raining cats and dogs\" means that it is raining very heavily or pouring down, as if animals were falling from the sky. It is a colorful expression that is used to describe an intense rainstorm."
+  },
+  {
+    "instruction": "Identify three factual errors in the given paragraph and correct them.",
+    "input": "The Statue of Liberty was a gift from France to the United States, designed by architect Antonio Gaudi in the 18th century. It is made of pure gold and is located on Liberty Island, just off the coast of New Jersey. The statue represents freedom and was unveiled on October 28, 1848.",
+    "output": "The Statue of Liberty was designed by architect Frédéric Auguste Bartholdi, not Antonio Gaudi. It is made of copper, not pure gold. The statue was unveiled on October 28, 1886, not in 1848."
+  },
+  {
+    "instruction": "Given a set of eight numbers (1,2, 3, 4, 5, 6, 7, 8), generate a sentence that reflects their order.",
+    "input": "",
+    "output": "In ascending order, the numbers are arranged as follows: 1, 2, 3, 4, 5, 6, 7, and finally 8."
+  },
+  {
+    "instruction": "Find a rhyming word for the word \"river\".",
+    "input": "",
+    "output": "A rhyming word for the word \"river\" could be \"quiver.\""
+  },
+  {
+    "instruction": "Given two strings, check whether one string is a rotation of another?",
+    "input": "s1 = ‘waterbottle’\ns2 = ‘erbottlewat’",
+    "output": "Yes, s2 is a rotation of s1.\n\nOne way to check this is to concatenate s1 with itself and see if s2 is a substring of the concatenated string. This works because if a string is rotated, its characters will still be in the same order, just in a different position in the string. If we concatenate s1 with itself, we can see that all the possible rotations will be present in the new string.\n\nIn this case, if we concatenate s1 with itself, we get \"waterbottlewaterbottle\". \"erbottlewat\" is indeed a substring of \"waterbottlewaterbottle\", so s2 is a rotation of s1."
+  },
+  {
+    "instruction": "What is the main purpose of blockchain technology?",
+    "input": "",
+    "output": "The primary purpose of blockchain technology is to enable secure, transparent, and tamper-resistant transactions without requiring a central authority or intermediary. It achieves this through the use of a decentralized, distributed ledger that records and verifies all transactions, making it nearly impossible to alter or falsify data. This technology can be used for a wide range of applications including, but not limited to, cryptocurrency, supply chain management, voting systems, and identity verification."
+  },
+  {
+    "instruction": "Write a blog post about how AI is transforming the healthcare industry.",
+    "input": "",
+    "output": "The healthcare industry is continually evolving to provide better patient care and improve overall health outcomes. One of the recent developments in healthcare has been the integration of Artificial Intelligence (AI) into the industry. AI is a powerful technology that is used to assist doctors, nurses, and patients, making the healthcare delivery process more efficient and effective. In this blog post, we will explore the various ways AI is transforming the healthcare industry.\n\nImproved Diagnosis\n\nOne of the most significant impacts of AI in healthcare is its ability to improve diagnosis. AI tools and algorithms can analyze vast amounts of data such as medical records, genetic information, and symptoms to provide better diagnostic accuracy. This ability is particularly valuable for complex conditions such as cancer, where early recognition can dramatically improve a patient's outcome.\n\nBetter Treatment Planning \n\nAI is also transforming the way doctors and medical professionals approach treatment. With access to vast amounts of patient data and the ability to analyze it quickly, AI can help physicians make more informed treatment decisions. This technology can assist in creating personalized treatment plans for individuals, taking into account their unique characteristics, medical history and genetic predispositions.\n\nImproved Patient Care\n\nAI is playing a significant role in improving patient care. With the emergence of smart devices and wearables, patients can now monitor their health and track their progress from the comfort of their homes. This technology also allows doctors to monitor their patients remotely, ensuring that they receive timely care and intervention when needed. This can especially be helpful for patients in rural or remote areas, where access to healthcare is limited.\n\nEfficient Administrative Tasks\n\nThe integration of AI in healthcare is not only improving patient care but also making administrative tasks more efficient. AI algorithms can assist with scheduling, billing, and managing electronic health records, reducing the administrative burden on doctors and nurses. This allows medical professionals to focus on what they do best - providing high-quality care to their patients.\n\nIn conclusion, AI is transforming the healthcare industry in numerous ways. From improving the accuracy of diagnosis to assisting with treatment planning and enhancing patient care, this technology is making the healthcare delivery process more efficient and effective. As AI continues to evolve, we can expect even more significant changes and improvements in the industry."
+  },
+  {
+    "instruction": "Provide a topic for the following passage",
+    "input": "The vegan diet is becoming increasingly popular, as an increasing number of people are making the switch for environmental, ethical, and health reasons. People on a vegan diet consume only plant-based foods, such as fruits, vegetables, grains, nuts, and seeds. Veganism has also become popular with athletes, as many have discovered that a rich and varied vegan diet can help them reach their fitness goals.",
+    "output": "Vegan Diet and its Rising Popularity."
+  },
+  {
+    "instruction": "Describe the 1981 NBA MVP award ceremony",
+    "input": "",
+    "output": "I'm sorry, but as an AI language model, I don't have access to specific and detailed information about the events of the 1981 NBA MVP award ceremony beyond what is publically available. What I found is that in 1981, the NBA MVP Award was won by Julius 'Dr. J' Erving of the Philadelphia 76ers. This was his first time winning the award, after leading his team to a 62-20 regular-season record and reaching the NBA Finals. Unfortunately, the information about the details of the award ceremony itself is not readily available. It is possible that the award ceremony was covered by the media at the time, but this information is not easily accessible to me."
+  },
+  {
+    "instruction": "Change this sentence into the future tense.",
+    "input": "She walks to school.",
+    "output": "She will walk to school."
+  },
+  {
+    "instruction": "Make the second sentence shorter.",
+    "input": "Winter is usually the coldest season of the year. Snow is a common element during winter.",
+    "output": "Winter typically brings cold and snow."
+  },
+  {
+    "instruction": "Brainstorm creative ideas for designing a conference room.",
+    "input": "",
+    "output": "1. Incorporating nature: Having green walls or a small indoor garden can help create a calm and inviting atmosphere for meetings and conferences.\n2. High-tech features: Installing smart boards, touch screens, and video conferencing systems can facilitate better communication and collaboration among participants.\n3. Comfortable and ergonomic seating: Using adjustable chairs and tables can provide a comfortable setting for long meetings.\n4. Adequate lighting: Natural light is ideal, but if that's not possible, installing ambient lighting that can be adjusted to the time of day or mood can help keep attendees focused and alert.\n5. Colorful and themed decor: Adding some color and an attractive theme can create a vibrant and engaging atmosphere for brainstorming and discussion.\n6. Soundproofing: Ensuring the conference room is well soundproofed can prevent interruptions and distractions from outside noise.\n7. Small breakout areas: Having smaller areas within the conference room where participants can have one-on-one discussions or work in smaller groups can promote better communication and collaboration.\n8. Refreshment station: Providing a small area for refreshments can keep attendees hydrated, energized, and focused throughout the meeting.\n9. Artwork: Displaying artwork or inspirational quotes on the walls can spark creativity and provide visual interest.\n10. Flexibility: Using modular furniture and movable partitions can allow for the conference room to be rearranged to suit the needs of different meetings and events."
+  },
+  {
+    "instruction": "Describe the pros and cons of the following policy",
+    "input": "Providing free college education",
+    "output": "Like any policy, providing free college education has its own set of advantages and disadvantages.\n\nPros:\n- Equal Opportunities: Providing free college education can help level the playing field by giving students from low income and underprivileged backgrounds an equal chance to pursue higher education, without having to worry about financial hurdles.\n- Economic Growth: An educated workforce is crucial for the growth and development of an economy. By making college education free, more people would be able to acquire the skills and knowledge needed to contribute to the economy.\n- Reduced Debt: College education can be very expensive and can result in students accumulating large amounts of debt. Free college education would eliminate this issue, allowing students to start their careers without the burden of college debt.\n- Increased Enrollment: The cost of college education can be a deterrent for some students. By removing this barrier, more students may be encouraged to enroll in college and pursue higher education.\n\n\nCons:\n- Financial Burden: Providing free college education comes with a cost. This would mean that the government would have to allocate a significant amount of funds towards education, possibly resulting in cuts to other important programs or an increase in taxes.\n- Overcrowding: With the increase in enrollment that free college education could bring, existing colleges and universities may become overcrowded, leading to larger class sizes and reduced resources for students.\n- Reduced Quality: Due to the financial burden of providing free education, the quality of education may suffer in the long run, especially if there are not enough funds allocated to maintain facilities, attract and retain quality faculty and keep up with the latest developments in various fields of study.\n- Decreased Value: There is also a risk that with the increase in the number of college graduates, the value of a college degree may go down, as the job market may become oversaturated with graduates competing for the same jobs."
+  },
+  {
+    "instruction": "Propose an idea for a self-driving car.",
+    "input": "",
+    "output": "Self-driving cars are becoming increasingly popular as technology advances and the demand for safer and more efficient transportation increases. One idea for a self-driving car would be to equip it with advanced sensors and cameras, allowing it to navigate roads safely and autonomously. The car would use machine learning algorithms to analyze road conditions, traffic patterns, and potential hazards, and make real-time decisions about how to respond to these factors.\n\nThe car would be able to communicate with other self-driving cars on the road, sharing information and coordinating their movements to reduce traffic congestion and improve safety. The car would be able to adjust its speed and route based on real-time traffic information, and would be able to automatically take detours to avoid traffic jams or accidents.\n\nIn addition, the car would be equipped with safety features such as automatic emergency braking, lane departure warnings, and collision avoidance systems, ensuring that the car and its occupants are always safe on the road.\n\nThe self-driving car would also have a user-friendly interface, allowing passengers to input their destination and preferred route, while also providing information about the estimated time of arrival and any potential delays. This would make traveling by car more convenient and stress-free, and would allow people to focus on other tasks while the car takes care of the driving."
+  },
+  {
+    "instruction": "Generate a list of random words.",
+    "input": "",
+    "output": "Here is a list of ten random words: \n\n1. Quibble\n2. Avarice\n3. Embellish\n4. Resonance\n5. Mercurial\n6. Conflagration\n7. Indefatigable\n8. Mischievous\n9. Delineate\n10. Paragon"
+  },
+  {
+    "instruction": "Describe a typical workday for a barista.",
+    "input": "",
+    "output": "A typical workday for a barista starts early in the morning, before the coffee shop opens to customers. The barista arrives at the shop and begins preparing for the day by brewing fresh coffee, refilling supplies, and setting up the equipment. Some tasks that may be done during this time include grinding coffee beans, restocking pastry cases, and preparing special drink ingredients such as syrups and whipped cream.\n\nOnce the shop opens, the barista greets customers with a warm smile and takes their orders. The barista must be knowledgeable in the different types of coffee drinks and be able to prepare them quickly and efficiently. This requires skilled multitasking, as the barista must simultaneously take orders, make drinks, and handle cash or card transactions.\n\nDuring busy periods, the barista must work at a fast pace to keep up with the rush of orders, all while maintaining a friendly and professional demeanor. The barista must also keep the work area clean and maintain high standards of hygiene and food safety.\n\nThroughout the day, the barista may also be responsible for additional tasks such as restocking supplies, cleaning equipment, and handling customer inquiries or complaints. At the end of the day, the barista performs closing duties such as cleaning the shop, wiping down counters and machines, and preparing for the next day's service.\n\nOverall, a typical workday for a barista is busy and fast-paced, with a focus on providing excellent customer service and delicious coffee beverages."
+  },
+  {
+    "instruction": "Explain what the article is about in 1 to 2 sentences.",
+    "input": "Summary: This paper describes a novel deep learning technique called Generative Autowavelets (GAW) and examines its uses in natural language processing (NLP) tasks. GAW is a combination of an autoencoder and wavelet transformer, meaning it can both compress features in text and enable structured extraction of these features.",
+    "output": "The article is about a new deep learning technique called Generative Autowavelets (GAW), which is a combination of an autoencoder and wavelet transformer. Its potential uses in natural language processing tasks, including both the compression and structured extraction of text features, are examined."
+  },
+  {
+    "instruction": "Generate a poem that expresses joy.",
+    "input": "",
+    "output": "A burst of laughter, a sprinkle of cheer\nMoments of joy that we hold so dear\nA leap of faith, a smile so wide\nA feeling of warmth that blooms inside\n\nThe sun shining bright, the sky so blue\nA colorful world, a stunning view\nA hug so tight, a word so kind\nA happy heart, a peaceful mind\n\nDancing to the rhythm, singing out loud\nBeing yourself, standing out from the crowd\nEmbrace the little things that make us glow\nAnd let the joy within you overflow\n\nHappiness is a journey, not a place to be\nA state of mind, just let it be free\nSpread the joy, wherever you go\nAnd the world will shine, with a radiant glow."
+  },
+  {
+    "instruction": "Find the distance between the vertices of the hyperbola\n\n (x^2)/99 - (y^2)/36 = 1.",
+    "input": "",
+    "output": "We read that a^2 = 99, so a = sqrt(99) = 3 sqrt(11). Therefore, the distance between the vertices is 2a = 6 sqrt(11)."
+  },
+  {
+    "instruction": "Select the most appropriate word from the list.",
+    "input": "joyful, joyous, festive",
+    "output": "All three words provided, joyful, joyous, and festive, are appropriate in describing happiness, cheer, or celebration. Could you provide more context or specific sentence where you want to add the word so that I could suggest the most appropriate word from the list?"
+  },
+  {
+    "instruction": "Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\nFounded in the 13th century, Berlin has had an eventful history. Excavations from 2008 suggest that the city may be even older than was previously assumed: state archaeologists have discovered an oak beam that probably dates back to 1183.\n\nAlmost no other metropolis has experienced such frequent, radical change transforming the face of the city. Although Berlin saw steady growth in its importance, dazzling epochs alternated with darker eras. Nevertheless, the formerly divided city has succeeded in becoming a vibrant metropolis in the heart of Europe.\n\nQuestion: What events occurred in 20th century Berlin?",
+    "input": "",
+    "output": "The context provided does not provide specific information about the events that occurred in 20th century Berlin. However, as Berlin has had an eventful history, it is known that the city has undergone frequent and radical changes throughout its history, including in the 20th century, which saw both bright and dark periods."
+  },
+  {
+    "instruction": "A recipe for 30 cookies requires two cups of flour among its ingredients. Eduardo wants to bake five dozen cookies. How many cups of flour will he need to use in his adjusted recipe?",
+    "input": "",
+    "output": "Eduardo wants to make twice as many cookies as the recipe makes. Therefore, he must double the amount of flour required: (2 cups)×2=4 cups."
+  },
+  {
+    "instruction": "What are the important contributions of NASA to space exploration?",
+    "input": "",
+    "output": "NASA, or the National Aeronautics and Space Administration, has made numerous important contributions to space exploration since its establishment in 1958. Some of the most notable include:\n\n1. The Apollo Program: NASA's most famous achievement is the Apollo program, which successfully landed astronauts on the Moon in 1969. This was the first time humans had ever set foot on another celestial body, and it remains one of the greatest accomplishments in human history.\n\n2. The Space Shuttle: NASA's Space Shuttle program ran from 1981 to 2011 and was responsible for launching numerous satellites, conducting scientific experiments, and building the International Space Station. The shuttle fleet was the first reusable spacecraft in history, greatly reducing the cost of spaceflight.\n\n3. The Hubble Space Telescope: NASA's Hubble Space Telescope, launched in 1990, is one of the most famous telescopes in history. It has captured stunning images of galaxies, nebulas, and other astronomical phenomena, revolutionizing our understanding of the universe.\n\n4. The Mars Rovers: NASA has sent several rovers to Mars, including Spirit, Opportunity, and Curiosity. These rovers have explored the surface of the red planet, conducting experiments and sending back stunning images.\n\n5. The International Space Station: NASA has played a key role in the construction and operation of the International Space Station, which has been continuously inhabited since 2000. The ISS is a collaboration between several countries, including the United States, Russia, and Japan, and is used for scientific research and technology development.\n\nThese are just a few examples of the many contributions NASA has made to space exploration. The agency continues to push the boundaries of what is possible, with plans for future missions to the Moon, Mars, and beyond."
+  },
+  {
+    "instruction": "Imagine you are a popular coffee brand looking to promote your new line of environmentally friendly coffee beans. Write a short advertising slogan that emphasizes this aspect of the product.",
+    "input": "",
+    "output": "Savor the rich taste of our earth-loving beans – coffee that's good for you and the planet!"
+  },
+  {
+    "instruction": "Come up with a creative metaphor for smile",
+    "input": "",
+    "output": "\"A smile is a burst of sunlight breaking through the clouds, illuminating the face and warming the hearts of those around it.\""
+  },
+  {
+    "instruction": "Explain the role of a computer scientist in the modern world.",
+    "input": "",
+    "output": "A computer scientist plays a vital role in the modern world as technology continues to evolve and become more integrated into our lives. A computer scientist's primary task is to research, design, develop, and test computer systems and applications. They constantly seek to innovate and push the boundaries of what technology can do. \n\nOne of the most important roles that they have is solving problems in a wide range of fields such as healthcare, education, business, and science, among others. By developing and improving software, they are able to improve and streamline processes, automate tasks, and make information more accessible. Additionally, a computer scientist can specialize in fields like Artificial Intelligence, Big Data, Cybersecurity or Computer Graphics, and can apply their knowledge by creating changes in their field of expertise.\n\nComputer scientists also play a critical role in ensuring the safety and security of digital systems. With the increasing number of cyber-attacks, computer scientists are tasked with developing new and better ways to protect sensitive information and prevent unauthorized access.\n\nOverall, the role of a computer scientist in the modern world is multifaceted and essential. They are innovators, problem solvers, and pioneers that help shape the future of technology and its impact on society."
+  },
+  {
+    "instruction": "Generate a question that could follow the response below.",
+    "input": "I saw a movie last week.",
+    "output": "What movie did you see last week?"
+  },
+  {
+    "instruction": "Find the synonyms of the following word: 'Tenacious'.",
+    "input": "",
+    "output": "Here are some synonyms for the word 'Tenacious':\n\n1. Persistent\n2. Determined \n3. Resolute \n4. Steadfast \n5. Obstinate\n6. Persevering\n7. Unyielding\n8. Unwavering\n9. Strong-willed\n10. Dogged."
+  },
+  {
+    "instruction": "Rewrite the following paragraph to make it sound more formal.",
+    "input": "Moving away from home to college was really hard. It's like I had to let go of my comfort and safety and figure things out on my own.",
+    "output": "The transition from residing at home to attending college presented a significant challenge. It necessitated the release of one's sense of familiarity and security, compelling the development of independence and self-sufficiency."
+  },
+  {
+    "instruction": "What type of plant is a skunk cabbage?",
+    "input": "",
+    "output": "The skunk cabbage (Symplocarpus foetidus) is a perennial, low-growing plant that is native to wetlands, swamps, and streamsides in eastern North America. It is named for its distinctive, pungent odor, which is said to resemble the smell of a skunk. The plant has large, broad leaves and produces small flowers on a fleshy spadix that is enclosed by a hood-like spathe. Skunk cabbage is a member of the Araceae family, which also includes plants like philodendrons and peace lilies."
+  },
+  {
+    "instruction": "Construct a timeline for the coronavirus outbreak.",
+    "input": "",
+    "output": "Here's a timeline of major events during the coronavirus outbreak:\n\nDecember 31, 2019 - China alerts the World Health Organization (WHO) of several flu-like cases with an unknown cause in Wuhan, Hubei Province.\n\nJanuary 7, 2020 - Chinese authorities identify the new virus as belonging to the coronavirus family.\n\nJanuary 11, 2020 - China reports its first death from the virus.\n\nJanuary 13, 2020 - Thailand reports the first case outside China.\n\nJanuary 20, 2020 - The first cases are reported outside of Asia, in the United States and Australia.\n\nJanuary 23, 2020 - Wuhan is placed under quarantine, halting all travel in and out of the city.\n\nJanuary 30, 2020 - WHO declares the outbreak a global emergency.\n\nFebruary 2, 2020 - The first death outside China is reported in the Philippines.\n\nFebruary 11, 2020 - The virus is officially named COVID-19.\n\nMarch 11, 2020 - WHO declares COVID-19 a pandemic.\n\nMarch 13, 2020 - Many countries begin implementing travel restrictions, quarantines, and lockdowns.\n\nMarch 16, 2020 - Global stock markets suffer significant losses.\n\nMarch 24, 2020 - The 2020 Olympics scheduled to take place in Tokyo are postponed until 2021.\n\nApril 2, 2020 - The global number of confirmed cases surpassed 1 million.\n\nApril 7, 2020 - The global death toll reached 100,000.\n\nJune 2020 - The number of COVID-19 cases in India and Brazil begins to spike.\n\nJuly 2020 - The United States becomes the first country to reach 3 million cases.\n\nAugust 2020 - Russia announces it has developed the first vaccine for COVID-19.\n\nDecember 8, 2020 - The UK begins its vaccination program.\n\nDecember 11, 2020 - The Pfizer/BioNTech COVID-19 vaccine is authorized for emergency use in the US.\n\nJanuary 6, 2021 - The global death toll reaches 2 million.\n\nFebruary 17, 2021 - The Johnson & Johnson COVID-19 vaccine is authorized for emergency use by the US.\n\nMarch 11, 2021 - The WHO reports that more than 300 million vaccine doses have been administered worldwide.\n\nApril 2021 - India experiences a devastating second wave of COVID-19"
+  },
+  {
+    "instruction": "Describe the differences between a substantive and procedural law.",
+    "input": "",
+    "output": "Substantive law and procedural law are two different categories of law that serve distinct purposes and have unique characteristics.\n\nSubstantive law refers to the body of law that sets out the rights and obligations of individuals and governs the behavior of people in society. It lays down the legal principles and rules that define what is lawful and unlawful, establishes the duties and responsibilities of individuals and organizations, and provides for the protection of rights and freedoms. Examples of substantive laws include criminal law, contract law, and tort law.\n\nOn the other hand, procedural law pertains to the rules and processes that govern legal proceedings in both civil and criminal matters. It establishes the methods and procedures by which legal processes and the administration of justice are carried out, and the steps that must be followed in pursuing or defending legal actions. Procedural law covers things like the rules of evidence, the jurisdiction of courts, and the rights of litigants in legal proceedings.\n\nIn summary, substantive law deals with the substance of a case, that is, the rights and duties of those involved, while procedural law deals with the procedure for enforcing those rights and duties, and the manner in which a legal case is conducted."
+  },
+  {
+    "instruction": "Summarize the article below in 5 sentences.",
+    "input": "The COVID-19 crisis has brought many changes to our everyday lives, including the way we work and interact. Working from home has become the norm for many people, but it has also brought its own unique challenges. It can be difficult to stay productive and motivated while working remotely, especially if you’re feeling burned out or isolated. So how do you make the most of it? Here are some tips to help you stay productive while working from home.",
+    "output": "1. The current global pandemic has resulted in multiple alterations in our daily routine, namely the way we communicate and work.\n2. Remote working, which is now prevalent, brings with it its own set of trials.\n3. Being productive and inspired is much harder when working from home, especially when facing burnout or loneliness.\n4. It is crucial to determine how to handle these difficulties in order to maintain efficiency while working remotely. \n5. The use of certain tips and tricks can aid workers in staying highly productive even when working from home."
+  },
+  {
+    "instruction": "Suggest a powerful quote.",
+    "input": "",
+    "output": "\"Be the change you wish to see in the world.\" - Mahatma Gandhi"
+  },
+  {
+    "instruction": "Provide a summary for the passage given below.",
+    "input": "Artificial intelligence (AI) is a broad field that seeks to mimic or augment human capabilities through information processing technology and algorithms. AI has been an area of study since the 1950s, but has gained popular attention in recent years due to vast improvements in processing power. While some fear existential threats such as a Terminator-like hypothetical AI takeover, most of the practical applications of AI are in mundane areas such as image recognition, natural language processing, and task automation. AI is used to improve or automate mundane tasks, quickly identify patterns, and predict future events.",
+    "output": "Artificial Intelligence (AI) is a broad field that tries to replicate or improve human abilities using technology and algorithms, and has garnered popularity recently due to increased processing power. Despite concerns of a futuristic AI takeover, most practical uses of AI are in everyday areas such as image recognition, natural language processing, and task automation, helping to enhance or automate tasks, quickly detect patterns, and forecast future events."
+  },
+  {
+    "instruction": "Who is the world's most famous painter?",
+    "input": "",
+    "output": "The title of the world's most famous painter is subjective and can vary depending on an individual's personal opinion. However, many people consider Leonardo da Vinci, a famous artist of the Italian Renaissance, as one of the most famous painters in the world. He is known for his iconic works including the \"Mona Lisa\" and \"The Last Supper.\" Other notable painters often cited as being among the most famous in the world include Vincent van Gogh, Pablo Picasso, and Michelangelo."
+  },
+  {
+    "instruction": "Given a set of numbers, find the maximum value.",
+    "input": "Set: {10, 3, 25, 6, 16}",
+    "output": "The maximum value in the set {10, 3, 25, 6, 16} is 25."
+  },
+  {
+    "instruction": "Describe the qualities of a good leader",
+    "input": "",
+    "output": "A good leader exemplifies a variety of qualities that enable them to effectively guide, inspire, and influence others. Some of the key qualities of a good leader include:\n\n1. Vision: A good leader has a clear vision of what they want to achieve and a roadmap of how to get there.\n\n2. Empathy: Leaders should be able to put themselves in the shoes of others and understand their perspectives, needs and feelings.\n\n3. Honesty and Integrity: A good leader is transparent, honest, and has strong ethical principles that they uphold at all times.\n\n4. Positive Attitude: A leader should have an optimistic, can-do attitude that inspires those around them to strive for excellence and stay motivated through challenges.\n\n5. Communication Skills: Leaders need to be able to effectively communicate their vision, goals, and expectations to their team, as well as listen actively to feedback and concerns.\n\n6. Decisiveness: A good leader is able to make timely, confident decisions, even in high-pressure situations.\n\n7. Confidence: Leaders need to have faith in their own abilities and be able to inspire confidence in others to reach their full potential.\n\n8. Collaboration: The ability of a leader to work effectively with others, build meaningful partnerships and create a collaborative environment is essential.\n\n9. Accountability: A good leader takes responsibility for their actions and decisions, and holds themselves and others accountable for their performance.\n\n10. Adaptability: Leaders must be able to adapt to changing circumstances, learn from their mistakes and continually grow and develop their skills."
+  },
+  {
+    "instruction": "Calculate the area of the triangle.",
+    "input": "Base: 5cm; Height: 6cm",
+    "output": "Using the formula for the area of a triangle, which is (base x height) / 2, we can calculate the area with the given input values.\n\nThe base of the triangle is 5cm, and the height is 6cm.\n\nTherefore, the area of the triangle would be (5cm x 6cm) / 2 = 15 cm².\n\nSo, the area of the triangle is 15cm²."
+  },
+  {
+    "instruction": "Create a list of 10 different animals",
+    "input": "",
+    "output": "1. Lion\n2. Elephant\n3. Panda\n4. Giraffe\n5. Dolphin\n6. Kangaroo\n7. Tiger\n8. Gorilla\n9. Camel\n10. Zebra"
+  },
+  {
+    "instruction": "Summarize the paragraph into a sentence.",
+    "input": "When buying furniture, it's important to take into account the overall look and feel of the space. That means that you should ask yourself if the pieces you are selecting are a good match for the existing furnishings as well as what you imagine the overall style to be.",
+    "output": "It's essential to consider the overall aesthetic of the space and ensure the furniture matches the existing furnishings and desired style when purchasing furniture."
+  },
+  {
+    "instruction": "Give me a detailed overview of the framework of a web service.",
+    "input": "",
+    "output": "A web service is a software system that is designed to support the interoperable interaction between machines over a network. It allows computers to communicate and exchange data with each other via a common set of rules and protocols, known as the web services framework. The framework is essentially a combination of standards and technologies that make it possible for computers to communicate and work together.\n\nAt the core of the web services framework are four key technologies: XML (Extensible Markup Language), SOAP (Simple Object Access Protocol), WSDL (Web Services Description Language), and UDDI (Universal Description, Discovery, and Integration).\n\nXML is a markup language that is used to encode data in a format that can be exchanged between machines. It is a flexible and widely adopted technology, which makes it a popular choice for web services. It provides the common syntax for defining and exchanging data between web services.\n\nSOAP is a messaging protocol that is used to transmit data and invoke web service methods. It provides the means for exchanging information between web services, and is responsible for defining the format and structure of messages. SOAP messages are typically sent over HTTP, but can be sent over other transport protocols as well.\n\nWSDL is an XML-based language that is used to describe the functionality of a web service. It provides machine-readable documentation of the service, and specifies the methods and data types that the service can provide. WSDL makes it possible for clients to discover the capabilities of the service and to generate code to interact with it.\n\nUDDI is a platform-independent, XML-based registry for businesses to list and discover web services. It provides a directory of services, which allows clients to find the services they need and to obtain the necessary information to interact with them.\n\nIn summary, the web services framework is a combination of technologies that enables machines to communicate and exchange data with each other in a standardized way. The framework is based on open standards and is widely adopted, which makes it easy for organizations to integrate and use web services in their operations."
+  },
+  {
+    "instruction": "Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.\nChat History:\nUser: What's the best way to learn a new language?\nAI: The most effective way to learn a new language is by practicing regularly, immersing yourself in the language, using it in real-life situations, and studying with various resources like books, apps, and language partners.\nUser: How long does it typically take to become fluent?\nAI: That depends on several factors, including how often one is practicing the language, what resources are available and whether or not the person is immersed.",
+    "input": "How can I practice speaking with native speakers?",
+    "output": "Standalone question: What are some effective ways to practice speaking a foreign language with native speakers?"
+  },
+  {
+    "instruction": "Design a function to count the number of unique characters in a string.",
+    "input": "string = “Butterflies”",
+    "output": "Here is one way to count the number of unique characters in a string using Python:\n\n```\ndef count_unique_chars(string):\n    unique_chars = set(string)\n    return len(unique_chars)\n```\n\nTo use this function with the example input you provided, we can call the function like this:\n\n```\nstring = \"Butterflies\"\ncount = count_unique_chars(string)\nprint(f\"Number of unique characters in '{string}' is: {count}\")\n```\n\nThis would output:\n`Number of unique characters in 'Butterflies' is: 9`"
+  },
+  {
+    "instruction": "Explain the process of cellular respiration in plants.",
+    "input": "",
+    "output": "Cellular respiration in plants is the process by which they convert glucose into ATP, a molecule used as the primary energy source by cells. This process is similar to the one in animals, and it involves various enzymatic reactions.\n\nIn plants, cellular respiration usually occurs in the mitochondria, and the process can be divided into three stages: glycolysis, the citric acid cycle (also known as the Krebs cycle), and the electron transport chain.\n\nDuring glycolysis, a molecule of glucose is broken down into two molecules of pyruvate. This process takes place in the cytoplasm of the cell and produces two molecules of ATP and two of NADH, a molecule that carries electrons.\n\nThe next stage, the citric acid cycle, takes place inside the mitochondria. Here, the two pyruvate molecules produced in glycolysis are further broken down to produce ATP, NADH, and FADH2, another molecule that carries electrons.\n\nFinally, in the electron transport chain, the NADH and FADH2 molecules produced in the previous stages carry electrons to a series of protein complexes embedded in the inner membrane of the mitochondrion. These electrons produce a flow of protons across the membrane, creating a gradient that drives the production of ATP through a process known as chemiosmosis.\n\nIn summary, cellular respiration in plants is a process that involves the breakdown of glucose to produce ATP, which is used as the primary energy source by cells. This process occurs in the mitochondria and involves several stages including glycolysis, the citric acid cycle, and the electron transport chain."
+  },
+  {
+    "instruction": "Categorize the following text into one of the two sentiment classes: positive or negative.",
+    "input": "I didn't like the product very much because it was too slow and not user friendly.",
+    "output": "Negative"
+  },
+  {
+    "instruction": "Create a funny one-liner.",
+    "input": "",
+    "output": "\"I told my wife she was drawing her eyebrows too high. She looked surprised.\""
+  },
+  {
+    "instruction": "Explain the implications of the given information.",
+    "input": "A recent study suggests that teenagers are spending too much time on social media.",
+    "output": "This statement could have several implications for both the teenagers in question and the broader society. For teenagers, excessive social media use may lead to negative consequences such as decreased physical activity, diminished interpersonal communication skills, anxiety, depression, sleep deprivation, and increased exposure to cyberbullying or inappropriate content. On a societal level, this finding may prompt concern from parents, educators, and healthcare professionals about the overall well-being of the younger generation. There might be a call for increased education and awareness campaigns to encourage more moderate and responsible use of social media among teenagers, along with more research to understand the long-term effects of social media on mental health and development."
+  },
+  {
+    "instruction": "Name one benefit of meditation.",
+    "input": "",
+    "output": "Meditation can be incredibly relaxing and can help reduce stress levels by allowing you to quiet your mind and let go of tension. As a result, it can improve your overall well-being, and help you feel more calm, focused, and in control."
+  },
+  {
+    "instruction": "Provide an example of an antonym for the word “happy”",
+    "input": "",
+    "output": "An example of an antonym for the word \"happy\" is \"sad.\""
+  },
+  {
+    "instruction": "Suggest what content a web page about robotics should consist of.",
+    "input": "",
+    "output": "The web page should include an introduction to robotics, covering what it is and how it can be applied in various industries. It should also include a section on the history of robotics, an overview of major advances in the field, and current trends. Information about the different types of robots and their applications should be included, as well as links to resources for further research."
+  },
+  {
+    "instruction": "Describe how a Docker container works.",
+    "input": "",
+    "output": "A Docker container is an executable software package that contains all the dependencies, libraries and configuration files it will need to be able to run on any platform. It is a lightweight and stand-alone encapsulation of software code that has been optimized to share the host operating system's kernel and resources.\n\nDocker containers work by utilizing the concept of containerization, where the underlying host operating system allows multiple applications or services to run in isolation from one another. Each container is fully contained and has its own file system, operating environment, CPU allocation, memory and storage. They interact with the host system and other containers via a well-defined API, which allows them to share resources and communicate with each other.\n\nThe containers are built from Docker images, which hold all the necessary information for building and running a container. Docker images are saved in a repository, and can be downloaded and run on any system that has the Docker engine installed. \n\nIn summary, a Docker container provides a simplified way to package, ship, and deploy an application in any environment, greatly reducing the risks associated with inconsistent or incompatible infrastructure, platform or software dependencies, and improving portability, scalability, and efficiency."
+  },
+  {
+    "instruction": "Outline an itinerary for a three day trip.",
+    "input": "Location: London, England",
+    "output": "Day 1:\n- 9:00 am: Start your trip by visiting the famous Tower of London, where you can take a tour and see the Crown Jewels.\n- 12:00 pm: Head to Borough Market for lunch, where you can sample local and international foods.\n- 2:00 pm: Take a walk along the Thames River and cross the Tower Bridge to enjoy panoramic views of the city.\n- 4:00 pm: Visit the Tate Modern, which houses contemporary and modern art from around the world.\n- 7:00 pm: Have dinner at a traditional British pub, where you can try dishes like fish and chips or shepherd's pie.\n\nDay 2:\n- 9:00 am: Start your day by taking a tour of the Houses of Parliament and listen to a debate in the House of Commons or House of Lords.\n- 12:00 pm: Have lunch at a cafe in Covent Garden, where you can also enjoy some shopping and street performers.\n- 2:00 pm: Take a tour of Buckingham Palace, the residence of the Queen, and see the changing of the guard.\n- 5:00 pm: Relax in one of London's famous parks, such as Hyde Park or St. James's Park.\n- 7:00 pm: Have dinner in Soho, which has a vibrant nightlife and a wide range of restaurants to choose from.\n\nDay 3:\n- 9:00 am: Visit the British Museum, which has a vast collection of artifacts from around the world, including the Rosetta Stone.\n- 12:00 pm: Have lunch in Camden Market, which has a bohemian vibe and a wide range of street food options.\n- 2:00 pm: Take a tour of the Harry Potter studios, where you can learn about the making of the movies and see sets and costumes.\n- 6:00 pm: Have dinner in Chinatown, which has a variety of Asian restaurants and is known for its lively atmosphere.\n- 8:00 pm: End your trip by watching a show in the West End, London's theatre district."
+  },
+  {
+    "instruction": "Provide 3 practice questions for multiplication",
+    "input": "",
+    "output": "1. What is 15 multiplied by 7?\n2. Calculate the product of 12 and 9.\n3. If a box contains 6 packets of candy and each packet contains 8 candies, how many candies are there in total?"
+  },
+  {
+    "instruction": "Extract the facts from the paragraph.",
+    "input": "Online education continues to become more popular for schools and students alike. Its advantages are generally lower costs, less commitment and the ability to study at a time, place and pace that suits the student.",
+    "output": "1. Online education is increasing in popularity for both schools and students.\n2. Advantages of online education include lower costs and less commitment. \n3. With online education, students can study at a time, place, and pace that suits them."
+  },
+  {
+    "instruction": "Describe the process of account creation for a website.",
+    "input": "",
+    "output": "Creating an account on a website typically involves several steps:\n1. First, you need to navigate to the website's registration or sign-up page. This page is usually accessible through a button or link on the homepage or login page.\n\n2. On the registration page, you'll be asked to enter basic information such as your name, email address, and to create a password. Some websites might ask for additional information like date of birth, phone number, or location.\n\n3. Next, you'll usually be asked to verify your email address. This is done by sending an email to the address you provided with a link or code to confirm that it's yours. Once you click on the link or enter the code, your account is verified.\n\n4. Some websites have additional security measures, such as captchas or security questions.\n\n5. Once you have entered all the required information and verified your email address, your account will be created. You can now log in to the website using the email and password you provided.\n\n6. It is recommended to read and agree to the website's terms and conditions and privacy policy before proceeding to use the website.\n\nRemember to use a strong and unique password for each account that you create, and to never share your login credentials with anyone."
+  },
+  {
+    "instruction": "Classify the following incident as a breach of protocol. Output 1 for breach, and 0 for no breach.",
+    "input": "Using a school laptop for personal use",
+    "output": "1"
+  },
+  {
+    "instruction": "Explain the concept of a GPT language model.",
+    "input": "",
+    "output": "GPT, or Generative Pre-training Transformer, is a type of language model that generates text using a machine learning algorithm trained on large amounts of text data. The model uses the transformer neural network architecture to understand the complex relationships and dependencies between words and their meanings within a text. \n\nAt its core, a GPT model is an autoregressive model, which means that it generates new text one token at a time, using the probabilities of the previous tokens to determine the next token in the sequence. These probabilities are calculated based on the learned relationships between the text within the training data. Additionally, GPT models use pre-training to expose the model to a large amount of data before fine-tuning it for a specific task. This allows the model to transfer knowledge from its pre-training data to the new task.\n\nThe most recent version of the GPT model, GPT-3, has been trained on hundreds of billions of tokens, making it incredibly powerful in generating coherent and convincing text. These models can be used for a variety of language-based tasks, such as text generation, language translation, summarization, and question answering."
+  },
+  {
+    "instruction": "Name a planet from our solar system.",
+    "input": "",
+    "output": "One planet from our solar system is Jupiter."
+  },
+  {
+    "instruction": "Generate a story with the given keywords.",
+    "input": "princess, dragon, knight",
+    "output": "Once upon a time, in a land far, far away, there was a brave knight named Sir Cedric. Sir Cedric was known throughout the kingdom as a champion of the people; he was kind, just, and always did what was right. One day, Sir Cedric received word that a princess had been kidnapped by a fierce dragon and was being held in a tower on the outskirts of the kingdom. The king of the land called upon Sir Cedric to rescue the princess and bring her back to safety.\n\nSir Cedric donned his armor, mounted his trusty steed, and set out on his quest to rescue the princess. He rode for many days and many nights until he finally reached the tower where the princess was being held. There, he saw the dragon, perched atop the tower, guarding its prize. Sir Cedric drew his sword and charged forward, ready to do battle with the beast.\n\nThe battle was long and fierce, but Sir Cedric was determined to save the princess. He was skilled in combat and knew all of the dragon’s weaknesses. Finally, with one mighty blow, Sir Cedric defeated the dragon and it fell to the ground with a mighty thud. Sir Cedric climbed the tower and found the princess, unharmed and waiting for rescue. He took her in his arms and they rode back to the kingdom together, where they were met with cheers and celebration.\n\nThe king was grateful to Sir Cedric for rescuing the princess and offered him her hand in marriage. Sir Cedric accepted the offer and the two were wed in a grand ceremony. They lived happily ever after, ruling the kingdom with justice and kindness. And as for the dragon, it was banished from the kingdom, never to harm the people again."
+  },
+  {
+    "instruction": "Transform the following sentence into the passive voice",
+    "input": "I bought a book",
+    "output": "A book was bought by me."
+  },
+  {
+    "instruction": "List five steps for comparing two products.",
+    "input": "",
+    "output": "1. Identify the key features and specifications: The first step in comparing two products is to determine the key features and specifications that you want to compare. This could include things like size, weight, durability, performance, or overall functionality.\n\n2. Consider the price point: The next thing to consider is the price point of the products. You want to make sure that you compare products with similar price points in order to make an accurate comparison.\n\n3. Read product reviews: Reading reviews from other customers can give you a good idea of the overall quality and performance of the products you are comparing. Look for trends in the reviews, such as recurring comments or complaints, to help inform your decision.\n\n4. Compare warranties and guarantees: It's important to compare the warranties and guarantees that are offered with each product. Look for differences in the length of the warranty, the scope of coverage, or the process for making a claim.\n\n5. Evaluate the overall value proposition: Finally, based on all of the information you have gathered, you can evaluate the overall value proposition of each product. Consider the pros and cons of each product and decide which one offers the best value for your needs."
+  },
+  {
+    "instruction": "Create a slogan for a given product.",
+    "input": "Healthy snack",
+    "output": "\"Fuel up the right way, with our healthy snack every day!\""
+  },
+  {
+    "instruction": "Summarize the industrial revolution.",
+    "input": "",
+    "output": "The Industrial Revolution was a period in the late 18th and early 19th centuries during which major changes in agriculture, manufacturing, and transportation occurred, radically transforming the socio-economic and cultural conditions in Western Europe, North America and eventually the rest of the world. This period saw the mechanization of industry, agriculture and transportation, leading to the growth of factories, mass production, urbanization, and the growth of the middle class. Developments in steam power, iron and textile industries played central roles in the revolution, while advancements in transportation by railways and canals allowed for quicker and easier movement of goods and people. The Industrial Revolution had a profound effect on the global economy, leading to an unprecedented rise in the standard of living for millions, but it also brought about negative consequences such as greater disparity in wealth, pollution, and harsh working conditions in factories."
+  },
+  {
+    "instruction": "Develop a plan to reduce electricity usage in a home.",
+    "input": "",
+    "output": "1. Analyze current electricity usage: Begin by collecting data about the current electricity usage in the home, including the average monthly bill, and identify the appliances and devices that consume the most electricity.\n\n2. Replace inefficient appliances: Upgrade or replace outdated and energy-inefficient appliances with ENERGY STAR-certified appliances that consume less electricity while providing the same functionality.\n\n3. Use LED lighting: Replace traditional light bulbs with energy-efficient LED bulbs, which use up to 75% less energy and last up to 25 times longer.\n\n4. Unplug devices when not in use: Many electronic devices such as chargers, TVs, and computers consume power even when they are turned off. Unplug devices when they’re not in use to reduce electricity consumption.\n\n5. Use smart power strips: Consider using smart power strips, which automatically cut power to devices that are not in use, thereby reducing standby power consumption.\n\n6. Adjust the thermostat: Heating and cooling can account for up to half of a home’s total energy consumption. Adjust the thermostat and use programmable or smart thermostats to reduce heating or cooling usage when no one is at home, or at night.\n\n7. Install weather stripping: Install weather stripping around doors and windows to prevent air leaks, thus reducing the load on heating and cooling systems.\n\n8. Use natural lighting: Take advantage of natural daylight whenever possible by opening blinds and curtains during the day and avoiding the use of artificial lighting.\n\n9. Encourage energy-saving behaviors: Educate household members about energy-saving habits, such as turning off lights when leaving a room, taking shorter showers, and running the dishwasher and washing machine only when they are full.\n\n10. Monitor electricity usage regularly: Keep track of electricity usage on a regular basis, and make necessary adjustments to the energy-saving plan based on the results."
+  },
+  {
+    "instruction": "Generate a sentence using the following words in the correct order.",
+    "input": "house on fire",
+    "output": "The house on fire created an alarming situation for the neighborhood."
+  },
+  {
+    "instruction": "Generate a memorable quote from Albert Einstein.",
+    "input": "",
+    "output": "\"Try not to become a man of success, but rather try to become a man of value.\" - Albert Einstein"
+  },
+  {
+    "instruction": "Describe the importance of renewable energy",
+    "input": "",
+    "output": "Renewable energy is an essential aspect of modern life, as it plays a crucial role in protecting the environment, reducing our dependence on finite resources, and promoting a sustainable and secure future. There are several reasons why renewable energy is so important, including:\n\n1. Environmental protection: Renewable energy sources, like solar, wind, and hydroelectric power, produce significantly fewer emissions than traditional fossil fuels. This means that by relying more on renewable energy, we can reduce our carbon footprint and reduce the harmful effects of climate change.\n\n2. Sustainability: Traditional fossil fuels are finite resources, meaning that they will eventually run out. Renewable energy, on the other hand, is sourced from natural and sustainable resources, like the sun, wind, and water, which are constantly replenished and will never run out. By embracing renewable energy, we can develop a more sustainable energy system that guarantees a reliable and secure supply for future generations.\n\n3. Economic benefits: The renewable energy industry is growing at an unprecedented rate, creating new jobs and opportunities for economic growth. By investing in renewable energy, we can support local economies, reduce energy costs, and reduce our dependence on foreign oil.\n\n4. Energy security: By generating electricity from renewable sources, we can reduce our reliance on foreign oil and gas, which can be subject to price fluctuations and supply disruptions. This makes our energy system more resilient and secure, reducing the risk of power outages or price spikes.\n\nIn conclusion, renewable energy is essential for a sustainable, secure, and prosperous future. By investing in renewable energy, we can protect the environment, promote economic growth, and ensure that future generations have access to reliable and affordable energy."
+  },
+  {
+    "instruction": "Determine the longest word in the following sentence.",
+    "input": "It is a wonderful sunny day.",
+    "output": "The longest word in the sentence \"It is a wonderful sunny day.\" is \"wonderful\" which contains 9 letters."
+  },
+  {
+    "instruction": "Sort the following items into two categories.",
+    "input": "pencil, apple, phone",
+    "output": "Category: Stationery\n- Pencil\n\nCategory: Electronics\n- Phone\n\nCategory: food \n- apple"
+  },
+  {
+    "instruction": "Generate a list of 5 creative ways to use technology in the classroom.",
+    "input": "",
+    "output": "1. Implement a virtual reality platform - Teachers can use virtual reality technology to take their students on virtual field trips to places they might not otherwise be able to visit, such as a rainforest, the ocean depths or even outer space.\n\n2. Use Interactive Whiteboards - Interactive whiteboards allow teachers to present lessons in a dynamic and interactive way, utilizing graphics, videos, and any other multimedia tools.\n\n3. Gamification - Incorporating games into lesson plans can make learning more fun and engaging for students. By using technology, teachers can create interactive learning experiences, such as virtual scavenger hunts, puzzles or quizzes.\n\n4. Collaboration Tools - Technology has made it easy for students to collaborate with each other, even remotely. Teachers can use apps and online tools, such as Google Classroom, to facilitate group work and peer review.\n\n5. Online Assessments - Teachers can use online assessment platforms to create and administer quizzes and tests. This not only saves time and paper, it also makes it easier to quickly grade, analyze and provide feedback to students."
+  },
+  {
+    "instruction": "Compute the longest increasing subsequence of a given array?",
+    "input": "arr = [7, 10, 8, 11, 9, 5]",
+    "output": "The longest increasing subsequence of the given array is [7, 8, 9, 11]. It has a length of 4.\n\nTo compute this, you can use dynamic programming to find the length of the longest increasing subsequence ending at each position, then take the maximum value. Here is an example of how to calculate it in Python:\n\n```python\narr = [7, 10, 8, 11, 9, 5]\nn = len(arr)\nlis = [1]*n\n \nfor i in range(1, n):\n    for j in range(i):\n        if arr[i] > arr[j] and lis[i]< lis[j] + 1:\n            lis[i] = lis[j]+1\n \nprint(max(lis))\n```"
+  },
+  {
+    "instruction": "Analyze the tone of the following sentences",
+    "input": "I am so upset with you right now",
+    "output": "The tone of the sentence \"I am so upset with you right now\" is angry and frustrated."
+  },
+  {
+    "instruction": "Explain the difference between HTML and CSS.",
+    "input": "",
+    "output": "HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are both used in building websites, but they serve different purposes.\n\nHTML is a markup language used to structure and organize the content of a webpage. It provides the framework for the webpage and allows a developer to define the components of the page, such as headings, paragraphs, links, images, and forms. HTML uses tags to mark up content and tell the browser how to display it. It can be thought of as the skeleton or foundation of a webpage.\n\nCSS, on the other hand, is a stylesheet language used to describe the presentation, or appearance, of a webpage. CSS allows developers to style and layout the page by specifying colors, fonts, margins, padding, and other visual elements. It helps separate the presentation from the content, making it easier to apply and update styling across multiple pages or an entire website. CSS can be thought of as the paint and decorations that make a webpage visually appealing.\n\nIn summary, the main difference between HTML and CSS is that HTML provides the structure and content of a webpage, while CSS provides the visual style and layout. Both are essential in building a well-formed and visually appealing website."
+  },
+  {
+    "instruction": "Rewrite the sentence with more descriptive words.",
+    "input": "The game is fun.",
+    "output": "The game is incredibly engaging and enjoyable."
+  },
+  {
+    "instruction": "Classify the following sentence into one of the following labels: [positive, negative, neutral]",
+    "input": "My laptop seems to be slow today.",
+    "output": "The statement \"My laptop seems to be slow today\" can be classified as having a negative sentiment."
+  },
+  {
+    "instruction": "Describe the process of creating a website from scratch.",
+    "input": "",
+    "output": "Creating a website from scratch involves several steps that require technical and creative skills. Here is a step-by-step guide to help you understand the process:\n\n1. **Choose a Domain Name:** The first step is to select a domain name that represents your brand or the purpose of the website. This name will be the unique address of your website on the internet.\n\n2. **Select a Hosting Provider:** Next, you need to find a hosting provider that will store your website files and make them available to users. Hosting providers offer various plans with different features, so you need to select the one that best fits your requirements.\n\n3. **Design the Website:** Now comes the creative part - designing your website. This involves creating the layout, choosing the color scheme, fonts, and images. You can either do this yourself or hire a web designer to help you.\n\n4. **Create the Content:** Along with the design, you also need to create the content for your website. This includes writing text, creating graphics, and producing any other media that you want to include. The content should be engaging, informative, and easy to read.\n\n5. **Code the Website:** Once you have the design and content ready, it’s time to start coding. You can use HTML, CSS, and JavaScript to create the structure, style, and functionality of your website. Alternatively, you can use a Content Management System (CMS) like WordPress or Drupal, which make it easier to build a website without manually writing code.\n\n6. **Test the Website**: After you have built your website, you need to test it to ensure everything is working correctly. You should test it on different devices and browsers, and fix any issues that you come across.\n\n7. **Launch the Website:** Once you are satisfied that everything is working correctly, you can publish your website and make it live. Congratulations, you have just created your website from scratch!\n\n8. **Maintain and Update the Website:** Creating a website is just the first step, maintaining it is a continuous process. You will need to regularly update the content, fix technical issues, and ensure that your website remains secure and relevant.\n\nIn conclusion, creating a website involves a combination of technical and creative skills. By following these steps, you can build a website that represents your brand and engages your audience."
+  },
+  {
+    "instruction": "Create a haiku poetry with the given theme.",
+    "input": "The beauty of night sky",
+    "output": "The silver moonlight,\nEndless stars, a canvas vast,\nNight's art, pure, bright, free."
+  },
+  {
+    "instruction": "Explain why decision trees may be better than linear models for certain problems.",
+    "input": "",
+    "output": "Decision trees and linear models are both powerful machine learning algorithms used for prediction and classification tasks. However, decision trees may be a better choice than linear models for certain problems because of several reasons.\n\n1. **Capability to model non-linear relationships:** Decision trees can handle non-linear relationships between the features and the target variable, whereas linear models assume that the relationship between the inputs and the output is linear. Therefore, if the underlying relationship between the predictors and the response variable is non-linear or unknown, decision trees can be a better choice.\n\n2. **Ease of handling categorical variables:** Decision trees have the ability to handle both categorical and numerical data, making it simpler to work with data sets that have both types of variables. In contrast, in order to use linear models with categorical variables, one has to perform dummy coding or one-hot encoding to convert categorical variables into numerical format.\n\n3. **Robust to noisy and missing data:** Decision trees are relatively robust to the presence of noisy and missing data. They can handle missing values by using various imputation techniques or by treating them as a separate category. On the other hand, linear models are sensitive to noisy data and may require additional preprocessing to handle missing values.\n\n4. **Ease of interpretation and explanation:** Decision trees are simple to understand and interpret, even for people without a background in machine learning. The tree structure provides a visual representation of the decision-making process, making it easier to explain the model's predictions. Linear models, on the other hand, can be more difficult to interpret, especially if there are many predictors and interactions between them.\n\nIn conclusion, decision trees are a versatile algorithm that can handle non-linear relationships, categorical variables, noisy and missing data, and are easy to interpret. For these reasons, decision trees can be a better choice than linear models for certain problems. However, like any other algorithm, decision trees have their limitations and it's important to evaluate the specific characteristics of the problem at hand before choosing an algorithm."
+  },
+  {
+    "instruction": "Rewrite the given paragraph in a shorter, easier to understand form.",
+    "input": "Although it is generally accepted that the internet has allowed us to connect with people all over the world, there are still those people who are not familiar with its basic functions, who don’t understand why it has become so commonplace, or what its true capabilities are.",
+    "output": "Some people don't understand the internet's basic functions, its common use and full potential, despite its ability to connect us globally."
+  },
+  {
+    "instruction": "Given a movie title \"The Iron Giant\", come up with an suitable tagline",
+    "input": "The Iron Giant",
+    "output": "\"Friendship beyond circuitry: Discover the heart within the machine.\""
+  },
+  {
+    "instruction": "Brainstorm possible solutions to reduce water pollution.",
+    "input": "",
+    "output": "1. Regulate Industrial Discharges: Governments should enforce strict regulations on industries to control and reduce the amount of chemicals and pollutants they release into water bodies.\n\n2. Promote Eco-Friendly Agriculture: Farmers should be encouraged to use eco-friendly agricultural methods to reduce water pollution. This can include measures such as reducing the use of fertilizers and pesticides, and using natural methods to control pests.\n\n3. Increase Public Awareness: There should be an increased public awareness campaign on the dangers of water pollution and the steps that individuals can take to reduce it. Simple actions such as properly disposing of hazardous household waste, reducing the use of single-use plastics, and conserving water can go a long way in reducing water pollution.\n\n4. Improve Sewage and Wastewater Treatment: Governments should invest in improving sewage and wastewater treatment facilities to ensure that they are efficient and effective in removing contaminants from waste before it is released into water bodies.\n\n5. Promote Green Energy: The use of green energy sources such as solar and wind power can reduce the amount of pollutants released by fossil fuels into water bodies. Governments should provide incentives to individuals and industries to switch to green energy sources.\n\n6. Monitor Water Quality: Regular monitoring of water quality in rivers, lakes, and oceans can help to identify sources of pollution and take appropriate measures to reduce it.\n\n7. Cleanup and Restoration: Governments should invest in cleaning up polluted water bodies and restoring their natural ecosystems. This can include measures such as removing pollutants, planting vegetation to prevent erosion, and reintroducing native species.\n\n8. Strengthen and Enforce Environmental Laws: Strong environmental laws and regulations, as well as their strict enforcement, can help to reduce water pollution. Governments should take measures to ensure that violators are punished and that the laws are effective in protecting water resources."
+  },
+  {
+    "instruction": "Follow the law of supply and demand, describe what would happen to the price of a good if the demand increased.",
+    "input": "",
+    "output": "The law of supply and demand states that the price of a good is determined by the relationship between the supply of the good and the demand for that good. When demand for a good increases and the supply remains constant, the price of the good will increase. This is because there are more buyers competing for the same amount of the good, which creates a higher demand for the product. As a result, sellers can charge a higher price for the product because people are willing to pay more to obtain it. This continues until the market reaches a new equilibrium, where the supply of the good matches the new level of demand at the higher price."
+  },
+  {
+    "instruction": "Change the following sentence from the singular form to the plural form.",
+    "input": "The cat is drinking.",
+    "output": "The cats are drinking."
+  },
+  {
+    "instruction": "Describe the effects of climate change.",
+    "input": "",
+    "output": "Climate change is a broad term that refers to long-term changes in the Earth's climate system, including shifts in temperature, precipitation patterns, and weather events. Over the past century, human activities have led to an increase in greenhouse gases in the atmosphere, leading to a process known as global warming. Here are some of the key effects of climate change:\n\n1. Rising temperatures: One of the most significant effects of climate change is the increase in global temperatures. According to data from NASA, the average global temperature has increased by about 1 degree Celsius since the late 19th century, and most of this change has occurred over the past four decades.\n\n2. Changing precipitation patterns: Climate change is also affecting the amount, intensity, and distribution of precipitation. Some areas are experiencing more droughts, while others are seeing an increase in the frequency and intensity of heavy rainfall events.\n\n3. More frequent and intense weather events: Climate change is increasing the frequency and intensity of extreme weather events such as heatwaves, floods, and hurricanes.\n\n4. Shrinking ice caps and rising sea levels: The Earth's polar ice caps are melting at an alarming rate due to rising temperatures. As a result, sea levels are rising, and this poses a threat to coastal cities and small island nations.\n\n5. Impacts on ecosystems and wildlife: Changes in climate are affecting the natural habitats of many species, forcing them to adapt, migrate, or risk extinction. Coral reefs, for example, are highly sensitive to changes in temperature and are experiencing mass bleaching events, which can result in the loss of entire ecosystems.\n\n6. Effects on human health: Climate change is also having an impact on human health. The increase in heatwaves, for example, can cause heat stress and dehydration, while the worsening air quality can lead to respiratory problems.\n\nThese are just a few examples of the many effects of climate change. This complex and far-reaching issue poses significant challenges for the future, and it is important that we take action to mitigate its impact before it's too late."
+  },
+  {
+    "instruction": "Identify the language used in the given sentence.",
+    "input": "Il est incroyable.",
+    "output": "The language used in the sentence \"Il est incroyable\" is French."
+  },
+  {
+    "instruction": "Rewrite the following sentence for clarity.",
+    "input": "What makes this program different from the others?",
+    "output": "How does this program differ from other programs?"
+  },
+  {
+    "instruction": "Compose an informative sentence explaining the given term.",
+    "input": "Green bonds",
+    "output": "Green bonds are debt instruments issued in capital markets to raise funds for environmentally friendly projects such as renewable energy or energy efficiency, with the goal of mitigating the impact of climate change."
+  },
+  {
+    "instruction": "Rewrite the following sentence to avoid any logical fallacies.",
+    "input": "This medicine will cure all your health issues; you should trust me because I am a doctor.",
+    "output": "This medicine can help with some health issues, and as a doctor, I can recommend it based on my expertise and knowledge in the field. However, it is important to evaluate its effectiveness on a case by case basis."
+  },
+  {
+    "instruction": "Suggest a good idea for a family photoshoot.",
+    "input": "",
+    "output": "A great idea for a family photoshoot could be a themed shoot that shows off each family member's personality and interests. For instance, if the family loves outdoor activities, consider having the photoshoot at a park, forest, or beach with everyone dressed in their favorite outdoor gear. If the family is into music or art, consider incorporating their instruments or art supplies into the photos. Another idea is to do a generational shoot with grandparents and other extended family members, capturing the love and bond between generations. You could also have fun with costumes and props, such as having a vintage or retro theme or dress up as characters from a favorite movie or book. The key is to have fun and let the family's unique dynamics and interests shine through in the photos."
+  },
+  {
+    "instruction": "Complete the following analogy: Loud is to quiet as day is to",
+    "input": "",
+    "output": "night."
+  },
+  {
+    "instruction": "Classify the given input as either a poem, story, or song.",
+    "input": "Once upon a midnight dreary, while I pondered, weak and weary.",
+    "output": "This is a poem. It is the first line of \"The Raven,\" a poem by Edgar Allan Poe."
+  },
+  {
+    "instruction": "Generate a list of country names in the western hemisphere.",
+    "input": "",
+    "output": "Here is a list of countries located in the Western Hemisphere:\n\n1. Antigua and Barbuda\n2. Argentina\n3. The Bahamas\n4. Barbados\n5. Belize\n6. Bolivia\n7. Brazil\n8. Canada\n9. Chile\n10. Colombia\n11. Costa Rica\n12. Cuba\n13. Dominica\n14. Dominican Republic\n15. Ecuador\n16. El Salvador\n17. Grenada\n18. Guatemala\n19. Guyana\n20. Haiti\n21. Honduras\n22. Jamaica\n23. Mexico\n24. Nicaragua\n25. Panama\n26. Paraguay\n27. Peru\n28. Saint Kitts and Nevis\n29. Saint Lucia\n30. Saint Vincent and the Grenadines\n31. Suriname\n32. Trinidad and Tobago\n33. United States of America\n34. Uruguay\n35. Venezuela."
+  },
+  {
+    "instruction": "Rewrite the given sentence in a more formal tone.",
+    "input": "I had to go to the store real quick.",
+    "output": "I needed to make a brief visit to the store."
+  },
+  {
+    "instruction": "Describe a tool used for debugging a program.",
+    "input": "",
+    "output": "One of the most commonly used tools for debugging a program is a debugger. A debugger is a software tool that helps developers identify and diagnose the source of errors or bugs in their code. It enables programmers to pause program execution at specified points, known as breakpoints, and then step through the code line by line to observe the behavior of the program. This makes it easier to identify the precise point at which an error occurred and to determine the cause of the problem. Additionally, debuggers often provide features such as inspection of variables, evaluation of expressions, and control of program execution flow, which make it easier to understand and fix problems in the code."
+  },
+  {
+    "instruction": "Identify the following animal.",
+    "input": "It has thick fur, a long tail, and pointed ears.",
+    "output": "Based on the information given, the animal described could be a cat, a fox, or possibly even a lynx. More information would be needed to accurately identify the specific animal."
+  },
+  {
+    "instruction": "Design a post for a social media account to promote the following product",
+    "input": "Fresh fruit smoothie",
+    "output": "🍓🍌🍊Say hello to our freshly blended Fruit Smoothie!🍊🍌🍓 \n\nQuench your thirst and nourish your body with our delicious blend of juicy, ripe fruits. Each cup is packed with essential vitamins, minerals, and fiber to keep you feeling your best. \n\nPerfect for breakfast on-the-go, a mid-day energy boost, or a post-workout treat. Refreshing and satisfying, our fruit smoothie is the healthier option you’ve been looking for. Don't miss out, try one today! #freshfruit #smoothie #healthy #delicious #refreshing"
+  },
+  {
+    "instruction": "Generate ideas for a fiction story.",
+    "input": "",
+    "output": "1. A young girl discovers that she can communicate with animals and uses her powers to save her town from an environmental disaster.\n\n2. A time traveler goes back to ancient times and must navigate through the perils of the past while trying to find a way back to the present.\n\n3. A group of strangers are stranded on a deserted island after a plane crash and must work together to survive while uncovering the secrets of the island.\n\n4. A portal to a magical world opens up in a small town, leading a group of friends on a quest to save the kingdom from an evil sorcerer.\n\n5. A young boy discovers that he has the power to control the elements and must use his abilities to stop a group of villains from destroying the world.\n\n6. A group of teenagers gain superpowers after a science experiment goes wrong and must learn to control their abilities while fighting crime.\n\n7. A cursed object causes chaos in a small town, and a young girl must unravel the mystery and break the curse before it's too late.\n\n8. An intergalactic war breaks out, and a group of astronauts must band together to stop the enemy from taking over the galaxy.\n\n9. A group of friends find a mysterious board game that comes to life, and they must play to the end to save their town from its dangerous powers.\n\n10. A young orphan discovers that she is the heir to a magical kingdom and must fight to take her rightful place on the throne, while uncovering dark secrets about her past."
+  },
+  {
+    "instruction": "Evaluate the following expression: (6+2)*(2-2).",
+    "input": "",
+    "output": "The value of the expression (6+2)*(2-2) is 0. \n\nExplanation: \n- First, solve the operations within the parentheses: 6+2=8 and 2-2=0.\n- Then, multiply the two results: 8*0 = 0."
+  },
+  {
+    "instruction": "Provide me a list of diseases that can be caused by smoking.",
+    "input": "",
+    "output": "Sure! Here is a list of some of the diseases that can be caused by smoking: \n\n1. Lung cancer\n2. Chronic obstructive pulmonary disease (COPD)\n3. Heart disease\n4. Stroke\n5. Emphysema\n6. Atherosclerosis\n7. Peripheral artery disease\n8. Esophageal cancer\n9. Throat cancer\n10. Oral cancer\n11. Bladder cancer\n12. Pancreatic cancer\n13. Kidney cancer\n14. Stomach cancer\n15. Type 2 diabetes\n16. Rheumatoid arthritis\n17. Infertility\n18. Chronic bronchitis\n19. Cataracts\n20. Gum disease and tooth loss\n\nIt is important to note that smoking can also weaken the immune system, making it harder for the body to fight off infections and diseases. Additionally, smoking can worsen existing health conditions and reduce the effectiveness of certain medications."
+  },
+  {
+    "instruction": "Rewrite this sentence using the third person point of view.",
+    "input": "I went to the store.",
+    "output": "He went to the store."
+  },
+  {
+    "instruction": "Identify the main character in the following story.",
+    "input": "Once upon a time, there lived a poor peasant boy who worked very hard on his farm.",
+    "output": "The main character in the story is a poor peasant boy who worked very hard on his farm."
+  },
+  {
+    "instruction": "Assign this task to the design team.",
+    "input": "Design a communication tool for internal team members.",
+    "output": "Sure, I will assign the task of designing a new internal team communication tool to our design team. They will get started on this project and develop a tool that will help improve collaboration and communication among team members."
+  },
+  {
+    "instruction": "Name all the elements in the periodic table with symbol C.",
+    "input": "",
+    "output": "Carbon is the only element in the periodic table with the symbol C. Carbon is a non-metal element with atomic number 6, and its common isotopes have mass numbers of 12 and 13."
+  },
+  {
+    "instruction": "Compute the area of a rectangle with length 10cm and width 5cm.",
+    "input": "",
+    "output": "The area of a rectangle can be calculated by multiplying its length by its width. In this case, the length of the rectangle is given as 10 cm and the width as 5 cm. Therefore, the area of the rectangle with the given dimensions is `10 cm x 5 cm = 50 cm²`."
+  },
+  {
+    "instruction": "During the last member meeting, create a list of 5 ideas to improve the club.",
+    "input": "",
+    "output": "Here are five ideas to improve the club that were suggested during the last member meeting:\n\n1. Increase engagement: Encourage more participation and engagement among members with activities and events that cater to their interests.\n\n2. Promote inclusivity: Work towards creating a more welcoming and inclusive environment for all members, regardless of their background or experience level.\n\n3. Provide educational opportunities: Offer workshops, lectures, or seminars to help members learn new skills and grow in their personal and professional development.\n\n4. Expand outreach: Increase the club’s visibility and reach within the community by partnering with local organizations or businesses, hosting public events, or using social media to raise awareness.\n\n5. Improve communication: Enhance communication among members through regular newsletters, an online forum, or group chat, to keep everyone up to date on club happenings and foster greater collaboration."
+  },
+  {
+    "instruction": "Select the best prediction from the sentences below given the input \"My vacation is in ________.\"",
+    "input": "My vacation is in _______.",
+    "output": "1. My vacation is in Hawaii.\n2. My vacation is in June.\n3. My vacation is in the mountains.\n4. My vacation is in Europe.\n5. My vacation is in two weeks.\n\nAll of the above responses are valid predictions for the given input. However, if forced to choose one, the best prediction for the given input is, \"My vacation is in Hawaii.\""
+  },
+  {
+    "instruction": "Aim to reduce the following sentence without changing its meaning",
+    "input": "When he came in, he woke everyone up",
+    "output": "He woke everyone upon entering."
+  },
+  {
+    "instruction": "Name a natural process which occurs in food preservation.",
+    "input": "",
+    "output": "One natural process that occurs in food preservation is fermentation. During fermentation, microorganisms such as bacteria or yeast convert sugars and other organic compounds into acids, alcohol or gases. This process creates an acidic environment that preserves the food and enhances its flavor."
+  },
+  {
+    "instruction": "Create a questions that can be answered using the following sentence.",
+    "input": "\"It was a beautiful day\"",
+    "output": "1. What was the weather like on that day?\n2. How would you describe the day?\n3. Was the day pleasant or gloomy?\n4. Was the day cooperative and conducive for outdoor activities?\n5. What statement best describes the day?"
+  },
+  {
+    "instruction": "Construct a list of tips to help reduce stress.",
+    "input": "",
+    "output": "Here is a list of tips that can help reduce stress:\n\n1. Practice relaxation techniques: Try deep breathing, meditation or yoga to help calm the mind and reduce tension in the body.\n\n2. Stay active: Regular exercise can help release stress hormones and improve overall well-being.\n\n3. Get enough sleep: A good night's sleep can help you feel refreshed and better equipped to handle stress.\n\n4. Stay organized: Being organized can help you feel more in control and less overwhelmed.\n\n5. Set priorities: Identify what's important and focus on those things first. Trying to do everything at once can lead to stress.\n\n6. Stay positive: Try to focus on the good things in your life, and remind yourself of your accomplishments and strengths.\n\n7. Limit exposure to stressors: If possible, reduce the amount of stressors in your life, such as limiting time spent with negative people, or avoiding certain situations that cause stress.\n\n8. Take breaks: Take regular breaks from work or other stressful activities to rest and recharge.\n\n9. Stay connected: Social support from family and friends can help you through tough times.\n\n10. Seek help: If stress is becoming overwhelming, seek help from a professional, such as a counselor or therapist."
+  },
+  {
+    "instruction": "Generate a topic sentence to introduce the following text.",
+    "input": "Amidst increasing violence in the region, many civilians are fleeing their homes in search of safety.",
+    "output": "The escalating conflict is driving mass displacement among the local population."
+  },
+  {
+    "instruction": "Create a title for the following description.",
+    "input": "A story about a journey of self-discovery by a young girl.",
+    "output": "\"Finding Myself: A Young Girl's Journey of Self-Discovery\""
+  },
+  {
+    "instruction": "Write a story that begins with the following sentence.",
+    "input": "She opened the door to find a tall figure cloaked in shadows.",
+    "output": "She opened the door to find a tall figure cloaked in shadows. For a moment, she thought it was just her imagination playing tricks on her, for she had been alone in the house for days and was starting to feel the weight of isolation. But as her eyes adjusted to the darkness, she saw that it was no trick of the mind; there was indeed someone—or something—standing before her.\n\nTrembling with fear, she backed away, unsure of what to say or do. The figure stood motionless, its face obscured by the darkness. She was about to scream for help when the figure finally spoke.\n\n“Don’t be afraid,” it said in a deep, velvety voice.\n\nShe stopped in her tracks, curiosity getting the best of her fear. The figure stepped forward and, to her relief and astonishment, she saw that it was an old friend whom she hadn’t seen in years.\n\nOverjoyed to see him, she threw her arms around him and cried tears of happiness. They spent the rest of the night talking and reminiscing about old times. It was just what she needed to dispel the loneliness that had been creeping up on her.\n\nAs the first light of dawn began to filter through the windows, her friend got up to leave. She walked him to the door, feeling a sense of sadness at his departure. But as he stepped into the sunlight, he turned around and smiled.\n\n“I’ll be back, don’t worry,” he said.\n\nAnd with that, he disappeared into the morning, leaving her with a renewed sense of hope and the knowledge that sometimes, even in the darkest moments, help can come from the most unexpected places."
+  },
+  {
+    "instruction": "Write a short review for the novel \"The Catcher in the Rye\".",
+    "input": "",
+    "output": "\"The Catcher in the Rye\" is a timeless coming-of-age novel by J.D. Salinger, that captures the essence of teenage angst and alienation. Set in the 1950s, it follows the story of Holden Caulfield, a troubled teenager who has been expelled from his prep school and is wandering the streets of New York City, grappling with his emotions and trying to find his place in the world. Salinger's vivid writing style and the honesty of Holden's character make this book an engaging read. The themes of innocence and the complexities of growing up are portrayed in a raw, real way. This is a must-read for anyone who remembers what it's like to be young and lost in the world."
+  },
+  {
+    "instruction": "Compile a list of 5 US states located in the Mid West.",
+    "input": "",
+    "output": "1. Ohio\n2. Indiana\n3. Michigan\n4. Illinois\n5. Wisconsin"
+  },
+  {
+    "instruction": "What is the value of (x - y)(x + y) if x = 10 and y = 15?",
+    "input": "",
+    "output": "(x-y)(x+y) = (10-15)(10+15) = (-5)(25) = -125."
+  },
+  {
+    "instruction": "Make a list of different types of cryptocurrencies.",
+    "input": "",
+    "output": "1. Bitcoin (BTC)\n2. Ethereum (ETH) \n3. Ripple (XRP)\n4. Bitcoin Cash (BCH)\n5. Litecoin (LTC)\n6. Cardano (ADA) \n7. Binance Coin (BNB)\n8. Stellar (XLM)\n9. Chainlink (LINK)\n10. Polkadot (DOT)\n11. Monero (XMR)\n12. EOS (EOS)\n13. Tether (USDT)\n14. Dogecoin (DOGE)\n15. Dash (DASH)"
+  },
+  {
+    "instruction": "Convert the following text into a list.",
+    "input": "The four elements of design are line, color, shape, and texture.",
+    "output": "The list of the four elements of design can be represented as:\n\n1. Line\n2. Color\n3. Shape\n4. Texture"
+  },
+  {
+    "instruction": "Improve the following sentence by using a better transition.",
+    "input": "We did not have enough time so we had to leave.",
+    "output": "Due to the limited time we had, we were forced to leave."
+  },
+  {
+    "instruction": "Suggest a suitable card game for a birthday party with 10 year old kids.",
+    "input": "",
+    "output": "One fun and suitable card game for a birthday party with 10 year old kids could be \"Go Fish.\" It is an easy-to-learn game, which can be enjoyed by children of all ages. In this game, players ask each other for cards in order to make pairs, and the person with the most pairs at the end wins. It helps kids practice their communication, memory, and counting skills while having a great time with their friends."
+  },
+  {
+    "instruction": "Come up with a creative tagline for a beauty product.",
+    "input": "",
+    "output": "\"Unleash your inner glow with our beauty essentials.\""
+  },
+  {
+    "instruction": "Create a response for a customer's email about a refund issue.",
+    "input": "Dear [Company],\n\nI recently purchased a product from your store and I'm disappointed with the quality. I would like to request a refund.",
+    "output": "Dear Customer,\n\nThank you for bringing this to our attention. I am sorry to hear that you were not satisfied with the product you purchased. We strive to provide high-quality items that meet the expectations of our customers, and we regret that this was not the case for you.\n\nI would be happy to assist you in processing a refund for your purchase. Could you please provide me with the following details so that I can locate your order and initiate the refund process:\n\n- Your order number\n- The name and/or email address associated with the purchase\n- The date of purchase\n\nOnce I have this information, I will promptly process your refund.\n\nAgain, I apologize for any inconvenience this has caused you and thank you for your patience and understanding as we resolve this issue.\n\nBest regards,\n\n[Company] Customer Support"
+  },
+  {
+    "instruction": "Generate a list of questions related to a given topic.",
+    "input": "Innovation",
+    "output": "1. What makes an innovation successful or impactful?\n2. How does innovation drive economic growth and societal advancement?\n3. What are some barriers to innovation in businesses and organizations?\n4. How can innovation be encouraged and supported within a company?\n5. What role do government policies and regulations play in innovation?\n6. How does innovation shape industries, and vice versa?\n7. What are some of the major technological innovations of the past decade?\n8. How does society benefit from innovation in medicine and healthcare?\n9. What are the potential ethical and social implications of innovation?\n10. How do collaboration and diversity contribute to innovation?"
+  }
+]

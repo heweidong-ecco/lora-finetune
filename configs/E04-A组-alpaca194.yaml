@@ -1,0 +1,47 @@
+### E04 · A 组 —— 数据集 = alpaca-clean 抽 194 条
+### ⚠️ 本文件与 configs/E04-B组-qa194.yaml 【只允许 dataset 和 output_dir 两行不同】
+###    （dataset = 自变量；output_dir 不同只为避免两组产出互相覆盖，不影响训练）
+###    跑之前先跑：diff configs/E04-A组-alpaca194.yaml configs/E04-B组-qa194.yaml
+### ⚠️ model_name_or_path / output_dir 是原环境（AutoDL）路径，跑之前改成你自己的
+
+### 模型配置
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master
+
+### 训练方法
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+lora_dropout: 0.05
+
+### 数据集 —— ★ 本实验唯一的自变量
+dataset: e04_alpaca194
+template: qwen
+cutoff_len: 1024
+max_samples: 194
+
+### 输出目录
+output_dir: /root/autodl-fs/LLaMA-Factory/saves/e04-A-alpaca194
+
+### 训练参数（两组必须逐字相同）
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 日志与保存（两组必须逐字相同）
+logging_steps: 10
+save_steps: 100
+save_total_limit: 2
+plot_loss: true
+report_to: mlflow
+
+### ⚠️ 刻意不加早停/评估段
+### 理由：E01 加了、E02/E03 没加，导致那三组实验「严格来说不可横比」（见 experiments/README.md）。
+### E04 两组一律不加，保持干净。
