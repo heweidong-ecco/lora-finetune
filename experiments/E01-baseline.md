@@ -91,13 +91,40 @@ eval_steps: 25
   2. E03（lr 降 4 倍 + epochs 加到 5）的 loss **更高**（0.9941，+77%），且**慢 2.6 倍**
   3. ⚠️ 但 E01 多了一段 E02/E03 没有的**早停+评估配置**，且三者 epochs 不同，
      **train_loss 严格来说不可直接横比**
-- **⚠️ 本组留下了两个权重**（**证据**：`scripts/eval/evaluate.py` 第 55–60 行）：
-  | 权重 | 说明 |
+- **⚠️ 检查点：仓库里的说法自相矛盾，未解决**
+
+  `scripts/eval/evaluate.py` 第 55–60 行列了两个权重：
+
+  | 名称 | 该文件里标注的路径 |
   |---|---|
-  | 最终权重 | 标注为 `最终权重(step 189)` |
-  | `checkpoint-75` | 标注为 `最低loss(step 75)` |
-  👉 后续对比时**要明确用的是哪一个** —— 同名 `exp1_baseline` 下有两个不同的适配器。
-  ⚠️ 本记录**无法验证** step 189 与 step 75 的实际 loss 值（`mlflow.db` 里只记了末值，无逐步 loss）。
+  | 最终权重 | `saves/exp1_baseline`（标注 `最终权重(step 189)`） |
+  | `checkpoint-75` | `saves/exp1_baseline/checkpoint-75`（标注 `最低loss(step 75)`） |
+
+  **但 `checkpoint-75` 与训练配置对不上：**
+
+  - `configs/exp1_baseline.yaml` 里 **`save_steps: 50`** → 检查点只会出现在 **50 / 100 / 150 …**，
+    **不会出现 75**
+  - 且 **`save_total_limit: 2`** → 只保留最近 2 个，更早的会被删掉
+  - 👉 因此 **`saves/exp1_baseline/checkpoint-75` 这个路径是错的**
+
+  **步数可以复算**（纯算术，不依赖任何日志）：
+
+  | 配置 | 条数 | epochs | 有效 batch | **总步数** |
+  |---|---|---|---|---|
+  | `exp1_baseline` | 500 | 3 | 2×4=8 | **187.5** ≈ 188/189 |
+  | `my_first_lora` | 200 | 3 | 2×4=8 | **75.0** ← **正好整除** |
+  | `my_second_lora` | 200 | 3 | 2×4=8 | **75.0** |
+
+  👉 **`checkpoint-75` 是 `my_first_lora`（200 条）的产物，不是 `exp1_baseline` 的。**
+  `evaluate.py` 把它挂在 `exp1_baseline/` 下 —— **路径写错了**。
+  （exp1 的 187.5 步配 `save_steps: 50`，检查点只会是 50 / 100 / 150，**不可能是 75**。）
+
+  ⚠️ 同理 `my_second_lora` 也是 200 条、参数与 `my_first` 完全相同 ——
+  **这两个配置会产出步数相同的适配器，只是 `output_dir` 不同。**
+
+  > ⛔ **跑 E05 之前必须先确认 `saves/exp1_baseline/` 下到底有哪些 checkpoint。**
+  > ⚠️ 本记录**无法验证** step 189 与 step 75 各自的 loss（`mlflow.db` 里 `train_loss` 只有 1 个点，
+  > 即末值 **0.5603**；没有逐步 loss，也没有 `global_step`）。
 - **下一步**：
   - ⬜ **人工判断缺口必须先补**——否则「改参数没用」这个结论没有证据
   - ⬜ 本组是「改参数」，**无法支撑仓库核心论点**，需要补 **E04：固定参数只换数据**

@@ -69,6 +69,14 @@
 > （run `c0beed18` / `beee18c8` / `b2db7731`），看起来像「三次实验的结果」。
 > 对照真库，那是**按时间倒序取最后 3 行的查询结果**，**漏掉了 E01 的 run（`29e37dbc`）**，
 > 却混进了两次无关运行。**以本文件的真库表为准。**
+>
+> ✅ **出处已定位到本仓库自己的文件**：`scripts/eval/mlflow_data.py` 里写着
+> ```python
+> recent = runs.sort_values("start_time", ascending=False).head(3)
+> ```
+> —— 取的是**最近 3 次运行**，不是「三次实验」。该 yaml 中那三行的顺序
+> （`c0beed18` → `beee18c8` → `b2db7731`）与真库按 `start_time` 倒序排列的结果**完全一致**。
+> 另外该脚本要取的 `params.lora_rank` 列在 mlflow 里**根本不存在**（见 §三），取出来是空的。
 > （该 yaml 里手写的那句 `总运行次数: 6` 是**对的**。）
 
 ---
