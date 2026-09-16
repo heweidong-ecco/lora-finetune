@@ -28,7 +28,7 @@
 |---|---|
 | 硬件 | ⚠️ **推断**：AutoDL · RTX 4090 · 24GB 显存<br>（依据：备份脚本文件名 `AutoDLRTX4090备份文件目录2026.7.25LoRA`；**训练日志中未直接记录**） |
 | 基座模型 | `Qwen3-8B`（路径 `/root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master`） |
-| 微调框架 | LLaMA-Factory ｜ 上游 commit **`2ebe7be6`**（2026-07-24）<br>⚠️ **推断**：由 AutoDL 那份仓库的 `.git` 判定，日志未直接记录版本号 |
+| 微调框架 | LLaMA-Factory ｜ 上游 **`v0.9.5` 之后 41 个提交**（`git describe` = `v0.9.5-41-g2ebe7be6`，commit 日期 2026-07-24）<br>✅ 由归档仓库的 `git describe` 判定（非推断） |
 | 关键依赖版本 | ⚠️ **未记录** |
 | 训练时长 | **181.5449 秒**（`train_runtime`） |
 | 实验日期 | ⚠️ **推断** ≈ 2026-07-27（依据：配置文件 mtime）<br>⚠️ AutoDL 侧原始时间戳在下载时已全部丢失 |
@@ -112,7 +112,7 @@ eval_steps: 25
 | 缺口 | 影响 |
 |---|---|
 | 无人工判断 / 无对照样例 | **不能声称"输出质量如何"** |
-| LLaMA-Factory 版本为**推断**（`2ebe7be6`） | 版本号来自 `.git` 而非训练日志 —— **不要当成实测** |
+| ~~LLaMA-Factory 版本为推断~~ | ✅ 已确定为 `v0.9.5-41-g2ebe7be6` |
 | ~~无数据卡（500 条那份）~~ | ✅ **已补**：`datasets/alpaca-clean-500条/数据卡-alpaca500.md`（2026-09-16） |
 | 无 `all_results.json` 原件 | 两个指标无法复算 |
 | 硬件/日期为推断 | 标注了「推断」，**不要当成实测** |

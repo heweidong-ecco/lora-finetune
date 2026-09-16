@@ -94,7 +94,7 @@ learning_rate · num_train_epochs · per_device_train_batch_size · gradient_acc
 | 人工判断（哪个输出更好） | ❌ **完全没有记录** |
 | 对照样例（同一 prompt 的对照组/实验组输出） | ❌ **没有** |
 | 评测分数（BLEU/ROUGE/裁判打分） | ❌ 未记录（`results/` 里的评测是另一条线，见下） |
-| LLaMA-Factory 版本 | ⚠️ **推断** `2ebe7be6`（2026-07-24），由 AutoDL 仓库 `.git` 判定；日志未直接记录<br>（原先记为「未记录」，2026-09-16 已补） |
+| LLaMA-Factory 版本 | ✅ **`v0.9.5` 之后 41 个提交**（`v0.9.5-41-g2ebe7be6`，2026-07-24）<br>由归档仓库 `git describe` 判定 |
 | 关键依赖版本 | ❌ 未记录 |
 | 硬件 | ⚠️ 仅能**推断**（见各记录 §三） |
 | 数据卡 | ✅ **已补** `datasets/alpaca-clean-500条/数据卡-alpaca500.md`（2026-09-16） |

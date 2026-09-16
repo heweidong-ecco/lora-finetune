@@ -119,7 +119,7 @@ llamafactory-cli train configs/exp1_baseline.yaml
 |---|---|
 | 训练硬件 | **AutoDL · RTX 4090 · 24GB**（⚠️ 推断，训练日志未直接记录） |
 | 基座模型 | **Qwen3-8B**（另有 Qwen3-Coder-7B 用于代码补全子方向） |
-| 微调框架 | **LLaMA-Factory**，上游 commit **`2ebe7be6`**（2026-07-24，由 `.git` 判定） |
+| 微调框架 | **LLaMA-Factory**，上游 **`v0.9.5` 之后 41 个提交**（`v0.9.5-41-g2ebe7be6`，2026-07-24，由 `git describe` 判定） |
 
 ---
 
