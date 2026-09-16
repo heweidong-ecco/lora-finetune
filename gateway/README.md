@@ -147,9 +147,14 @@ llm-gateway/
 ├── docker-compose.yml   # 全家桶编排
 ├── requirements.txt     # Python依赖
 ├── locustfile.py        # 压测脚本
-├── evaluate.py          # 模型评估管道
 ├── README.md            # 项目文档
-└── evaluation_results/  # 评估报告
+├── test_main.md         # main.py 的测试命令集
+└── （其余为文档与配置，见本目录文件列表）
+
+> ⚠️ **本仓库的 `gateway/` 里【没有】`evaluate.py` 与 `evaluation_results/`** ——
+> 它们未随本库整理一并收录。
+> 本库的评测脚本与产物在别处：`../scripts/eval/`（含 `evaluate.py`）与 `../results/`，
+> **但那一条线已查实不可用**（两边跑的是同一个模型），见 `../results/README.md`。
 
 ## 模型列表
 
