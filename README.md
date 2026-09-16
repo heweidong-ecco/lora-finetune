@@ -54,6 +54,8 @@
 1. **三组实验全是「改参数」，没有一组「改数据」**
    → 本库一直关注的判断是「**数据质量 ≫ 超参数**」。这个判断**一次都没有被检验过**。
    要检验它，需要 **E04：固定全部参数，只换数据集** —— ⬜ **还没做**。
+   （设计已修正为**同源同语言同条数**，唯一变量是「抽样代表性」；
+   早先那版混了来源/语言/质量三个变量，已推翻，见 `experiments/E04-数据集对照.md` §二）
 
 2. **训练 loss ≠ 输出质量**
    → 目前**没有任何输出质量证据**（没有人工判断、没有对照样例、没有自动指标）。
@@ -69,7 +71,7 @@
 > 更多的，等 E04 和人工判断。详见 [`experiments/README.md`](experiments/README.md)。
 >
 > 📌 **E04 / E05 的方案已写好待跑**：
-> [`experiments/E04-数据集对照.md`](experiments/E04-数据集对照.md)（固定参数只换数据集，两组各 194 条）·
+> [`experiments/E04-数据集对照.md`](experiments/E04-数据集对照.md)（固定参数只换数据集，两组各 194 条，**同源同语言**）·
 > [`experiments/E05-人工判断.md`](experiments/E05-人工判断.md)（对照样例 + 人工判断，含三道自动检查）。
 > **需要有 GPU 的环境才能执行。**
 
@@ -85,13 +87,13 @@ lora-finetune/
 │   ├── qa-general-194条/
 │   └── code-completion代码补全/
 ├── configs/           训练配置
-├── scripts/
+├── scripts/           ← 索引见 readme索引.md
 │   ├── datasets/      数据工程（下载/清洗/合并/质检/可视化）
 │   └── eval/          评测（切分/批量推理/大模型裁判）
-├── experiments/       实验记录
+├── experiments/       实验记录（+ artifacts训练产物/ 五组运行的训练产物）
 ├── results/           评测产物
 ├── deploy/            GGUF 导出 + Ollama
-├── subprojects/       code-completion-lora · rag-query-rewrite
+├── subprojects/       代码补全 · 查询改写（两个子方向，均无实验记录）
 ├── gateway/           FastAPI 推理网关
 └── docs/              溯源与说明
 ```

@@ -1,0 +1,57 @@
+### E04 · B 组 —— 数据集 = 从【前 550 条】那个区块里抽 194 条
+###
+### ⚠️ 本文件与 configs/E04-A组-random随机194.yaml 【只允许 dataset 和 output_dir 两行不同】
+###    （dataset = 自变量；output_dir 不同只为避免两组产出互相覆盖，不影响训练）
+###    跑之前先跑：diff configs/E04-A组-random随机194.yaml configs/E04-B组-front550前段194.yaml
+###
+### 🔴 设计要点：两组必须【同源、同语言、同条数】，唯一变量是【抽样代表性】
+###    B 组取的「前 550 条」正是数据卡 §五-1 实测出 instruction 均长偏出总体 +31% 的区块
+###    详见 scripts/datasets/make_e04_datasets.py 的文件头
+###
+### 📌 dataset 需先在 LLaMA-Factory 的 data/dataset_info.json 里注册：
+###    "e04_a_random194":   { "file_name": "E04-A组-194条.json" }
+###    "e04_b_front550_194": { "file_name": "E04-B组-194条.json" }
+###
+### ⚠️ model_name_or_path / output_dir 是原环境（AutoDL）路径，跑之前改成你自己的
+
+### 模型配置
+model_name_or_path: /root/autodl-fs/vllm-models/Qwen3-8B/models/Qwen--Qwen3-8B/snapshots/master
+
+### 训练方法
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_alpha: 16
+lora_target: all
+lora_dropout: 0.05
+
+### 数据集 —— ★ 本实验唯一的自变量
+dataset: e04_b_front550_194
+template: qwen
+cutoff_len: 1024
+max_samples: 194
+
+### 输出目录
+output_dir: /root/autodl-fs/LLaMA-Factory/saves/e04-B-front550-194
+
+### 训练参数（两组必须逐字相同）
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 日志与保存（两组必须逐字相同）
+logging_steps: 10
+save_steps: 100
+save_total_limit: 2
+plot_loss: true
+report_to: mlflow
+
+### ⚠️ 刻意不加早停/评估段
+### 理由：E01 那组写过早停段，但**从未生效**（没有验证集，eval_strategy 不会触发）。
+### E04 两组一律不加，保持干净。
