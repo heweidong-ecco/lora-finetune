@@ -239,6 +239,7 @@ lora-finetune/
 |---|---|
 | ✅ `LICENSE`（MIT，署名 `heweidong-ecco`） | 2026-09-16 |
 | ✅ 推 GitHub 公开仓库：`github.com/heweidong-ecco/lora-finetune` | 2026-09-16 |
+| ✅ **打标 `v0.1.0` + 发 Release「整理完成快照」**<br>`releases/tag/v0.1.0` ｜ 标签指向 `cb6e270`（本库「整理完成」的那个提交）<br>⚠️ 发布说明**开头就写明「未做」**——E04/E05 未跑、核心判断未验证 | 2026-09-16 |
 | ✅ 清除泄漏的 `API_KEY`（`.env` + 12 处硬编码，共 36 处） | 2026-09-16 |
 | ✅ 五组训练产物 **小文本文件**收进仓库（`experiments/artifacts训练产物/`） | 2026-09-16 |
 | ✅ 精简产物：删掉 45 个**与复算无关**的重复文件（HF model card / `chat_template.jinja` / `tokenizer_config.json`）—— 110 → **66 文件** | 2026-09-16 |
