@@ -97,7 +97,8 @@ lora-finetune/
 ├── scripts/           ← 索引见 README.md
 │   ├── datasets/      数据工程（下载/清洗/合并/质检/可视化）
 │   └── eval/          评测（切分/批量推理/大模型裁判）
-├── experiments/       实验记录（+ artifacts训练产物/ 五组运行的训练产物，可复算）
+├── experiments/       实验记录 + 跑E04E05-checklist.md（照着敲的清单）
+│                      + artifacts训练产物/ 五组运行的训练产物（可复算）
 ├── results/           评测产物
 ├── deploy/            GGUF 导出 + Ollama
 ├── subprojects/       代码补全 · 查询改写（两个子方向，均无实验记录）

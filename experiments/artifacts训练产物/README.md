@@ -1,6 +1,8 @@
 # 训练产物 · 说明与**读数前必看**
 
-> 收录：2026-09-16 ｜ 共 **110 个文件 / 约 0.5 MB**
+> 收录：2026-09-16 ｜ 共 **66 个文件 / 约 0.5 MB**
+> 📌 2026-09-16 精简：删掉了 45 个**与复算无关**的重复文件
+> （15× HF 自动生成的 model card `README.md`＋15× `chat_template.jinja`＋15× `tokenizer_config.json`）
 > 来源：五组训练的 `saves/` 目录，**权重（`adapter_model.safetensors`）与优化器状态（`optimizer.pt`）
 > 因体积过大（单个 85–170 MB）已剔除**，只保留用于**复算**的小文本文件。
 
@@ -77,7 +79,6 @@ ceil(200/8) × 3 = 25 × 3 =  75   → my-first / my-second
 | `adapter_config.json` | 基座模型路径、`r` / `lora_alpha` / `target_modules` |
 | `training_args.bin` | **实际用了哪些参数的权威记录**（二进制，读它需要 `torch`） |
 | `checkpoint-*/` | 各检查点的 `trainer_state.json` / `adapter_config.json` 等 |
-| `README.md` / `chat_template.jinja` / `tokenizer_config.json` | HF 自动生成，**与复算无关** |
 
 ---
 
