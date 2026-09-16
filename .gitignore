@@ -17,6 +17,8 @@
 *.safetensors
 *.bin
 *.gguf
+# ✅ 例外：训练产物里的 training_args.bin 只有几 KB，是「实际用了哪些参数」的权威记录
+!experiments/artifacts训练产物/**/training_args.bin
 saves/
 outputs/
 merged_model/

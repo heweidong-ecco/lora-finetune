@@ -160,8 +160,9 @@ lora-finetune/
       **小文本文件已归档**（权重与优化器状态因体积过大未保留）。
       它们使 E01~E03 的每一个 loss 数字**都变得可复算** —— 见 `experiments/E01-baseline.md` §五。
       ⚠️ 归档在**仓库外**，仓库内只保留结论与复算说明。
-- [ ] ⬜ **可选**：把上述小文本文件**收进仓库**（每个几 KB），让实验记录的每个数字都能被外人复算。
-      收益明显，但会让仓库多出 100+ 个小文件，**要不要收由你定**
+- [x] ✅ 小文本产物**已收进仓库**：`experiments/artifacts训练产物/`（五组运行 · 110 文件 · 约 0.5 MB）——
+      实验记录里每个 loss 数字**外人现在都能自己复算**
+      ⚠️ 读数前必看 `artifacts训练产物/readme说明.md` §二「三个读数陷阱」
 - [x] ✅ `LICENSE` —— MIT，署名 `heweidong-ecco`（2026-09-16）
 - [x] ✅ **已推 GitHub**：`https://github.com/heweidong-ecco/lora-finetune`（**public**）
        台账：93 个文件 / 0.98 MB ／ 提交 `c41d5fa` ／ 分支 `main`

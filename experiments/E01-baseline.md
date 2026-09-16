@@ -76,7 +76,7 @@
 | **训练 loss（末值）** | **0.5602585398961627** | mlflow run `29e37dbcef0e` |
 | train_runtime | **181.5449 秒** | 同上 |
 | epoch | 3.0 | 同上 |
-| train_samples_per_second | 8.262 | `all_results.json` 转抄 |
+| train_samples_per_second | 8.262 | `artifacts训练产物/exp1_baseline/all_results.json` |
 | train_steps_per_second | 1.041 | 同上 |
 | total_flos | 15138681363628032 | 同上 |
 | **评测分数** | ⚠️ **未记录**（无 BLEU/ROUGE/裁判打分） | — |
@@ -86,8 +86,8 @@
 
 | 名称 | 值 | 出处 |
 |---|---|---|
-| **`train_loss`**（HF 汇总的末值） | **0.5602585398961627** | `all_results.json` / `mlflow.db` |
-| **最后一条逐步记录**（step 180） | **0.810824** | `trainer_state.json` 的 `log_history` |
+| **`train_loss`**（HF 汇总的末值） | **0.5602585398961627** | `artifacts训练产物/exp1_baseline/all_results.json` |
+| **最后一条逐步记录**（step 180） | **0.810824** | `artifacts训练产物/exp1_baseline/trainer_state.json` |
 
 两者**差得很多**，但都不是错的 —— 它们是不同的量。**引用时必须说清用的是哪一个。**
 
@@ -170,9 +170,9 @@
 - [x] 配置文件已进仓库（`configs/exp1_baseline.yaml`）
 - [x] 数据卡已更新 —— **`datasets/alpaca-clean-500条/数据卡-alpaca500.md`**（2026-09-16 补齐，本实验实际用的那份）
 - [ ] 脚本能一键重跑 —— ⚠️ 未记录启动命令；autoDL 路径 `/root/autodl-fs/...` 已不存在
-- [x] 上表中每个数字都能从仓库文件复算出来 —— ⚠️ **仅限可能**：
-      loss/runtime 在 `mlflow.db` 里可查；`samples_per_second` / `total_flos` 只在
-      `configs/best_lora_config.yaml` 的转抄文本里，**原始 `all_results.json` 未进仓库**
+- [x] 上表中每个数字都能从仓库文件复算出来 —— ✅ **现已完全可复算**（2026-09-16）：
+      `artifacts训练产物/exp1_baseline/` 下的 `all_results.json`（末值 + `samples_per_second` + `total_flos`）
+      与 `trainer_state.json`（逐步 loss）**均已进仓库**
 - [ ] 若结论进了 README，已标注实验编号 —— ⬜ 待办
 
 ### ⛔ 本记录的已知缺口（不要当成已完成）
@@ -182,5 +182,5 @@
 | 无人工判断 / 无对照样例 | **不能声称"输出质量如何"** |
 | ~~LLaMA-Factory 版本为推断~~ | ✅ 已确定为 `v0.9.5-41-g2ebe7be6` |
 | ~~无数据卡（500 条那份）~~ | ✅ **已补**：`datasets/alpaca-clean-500条/数据卡-alpaca500.md`（2026-09-16） |
-| 无 `all_results.json` 原件 | 两个指标无法复算 |
+| ~~无 `all_results.json` 原件~~ | ✅ **已补**（2026-09-16）：`artifacts训练产物/` 下五组运行的小文本产物全部进仓库 |
 | 硬件/日期为推断 | 标注了「推断」，**不要当成实测** |

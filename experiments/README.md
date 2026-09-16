@@ -51,7 +51,12 @@
 ## 二 · MLflow 真库（`mlflow.db`）里的 6 次运行
 
 从 `mlflow.db` 直接查询所得，**全部 `FINISHED`**。
-> 📦 该文件在原始素材归档中：
+> 📦 **本仓库已收录训练产物**，全部数字可直接复算 →
+> [`artifacts训练产物/`](artifacts训练产物/readme说明.md)（五组运行，110 个文件 / 约 0.5 MB）。
+> ⚠️ **读之前务必看那份说明的 §二「三个读数陷阱」** —— 尤其是
+> `train_loss` 与「最后一条逐步记录」不是同一个量（exp1 是 0.5603 vs 0.8108）。
+>
+> 原始 `mlflow.db` 则在该归档中：
 > `/Users/heweidong/Desktop/Product/lora-finetune-原始文件归档/AutoDL下载/LLaMA-Factory/mlflow.db`
 > （1 MB SQLite；已按 `.gitignore` 排除，不进本仓库）
 ⚠️ 6 次运行的 `mlflow.runName` **都是自动名 `capable-auk-759`**（没手动命名过）。
