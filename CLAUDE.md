@@ -83,7 +83,10 @@
 lora-finetune/
 ├── README.md                     库总说明（对外）
 ├── CLAUDE.md                     本文件
-├── LICENSE                       MIT（**只覆盖代码**；数据另有许可）
+├── LICENSE                       MIT（**只覆盖代码**；数据另有许可 —— 见 README §七）
+│                                 ⛔ **必须只放纯 MIT 正文，不许加任何别的内容** ——
+│                                 加了大段说明后，GitHub 识别不出许可证（显示 NOASSERTION）。
+│                                 曾因此失败一次，2026-09-16 已改回纯正文。
 ├── .gitignore
 ├── template数据卡.md              数据集描述模板
 ├── template实验记录.md            单次实验记录模板

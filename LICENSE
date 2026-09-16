@@ -19,24 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-<!--
-以上为 MIT 许可证正文，**必须保持在本文件最前** ——
-GitHub 的许可证识别要求「版权行之后紧接着正文」，中间插入任何内容都会导致识别失败
-（本文件此前因在两者之间插了一段说明，被识别成 NOASSERTION，2026-09-16 已修正）。
--->
-
-## ⚠️ 本许可证【只覆盖代码】，不覆盖数据
-
-| 对象 | 适用的许可证 |
-|---|---|
-| 本仓库的**代码**（脚本、配置） | **MIT**（即上方正文） |
-| `datasets/alpaca-clean-500条/` · `datasets/qa-general-194条/` 中的 **alpaca-cleaned 部分** | **`CC BY-NC 4.0`** —— ⛔ **非商用**，且需署名 |
-| `datasets/code-completion代码补全/` | ⚠️ **待确认**（来源未记录） |
-
-> 数据集卡原文：*「models trained using the dataset should not be used outside of research purposes」*
-
-**版权所有者**填的是 **GitHub 用户名**（非真实姓名）——
-依本仓库第二铁律「公开仓库不含个人信息」。
