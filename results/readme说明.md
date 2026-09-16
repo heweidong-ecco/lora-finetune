@@ -64,7 +64,7 @@ tuned (32 字符): The sales report was inaccurate.
 
 **✅ 原因已确认**（证据在本仓库自己的文件里）：`scripts/eval/batch_evaluate.py` 第 63–66 行
 把**基座模型和微调模型都传成了 `qwen3:8b`** —— 注释写着「需要先用 Ollama 加载 LoRA」，
-**但那一 步当时从未做**。
+**但那一步当时从未做**。
 
 👉 **那次评测比的是「qwen3:8b vs qwen3:8b」**，两边逐字相同是必然结果，**与微调效果完全无关**。
 
